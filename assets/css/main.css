@@ -27,6 +27,8 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 .profile .address { font-family: monospace; font-size: 1.2rem; }
 .profile .address p { margin: 0; }
 
+.footer { margin-top: 3rem; box-shadow: none; }
+
 .navbar { box-shadow: none; border-bottom: 1px solid #e8e8e8; opacity: 0.95; }
 
 .navbar.navbar-light a:hover { text-decoration: none; }
