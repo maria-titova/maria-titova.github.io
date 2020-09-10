@@ -87,21 +87,19 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .experience h4 { font-size: 1.15em; font-style: italic; text-align: left; text-decoration: underline; }
 
-.experience ol.bibliography { list-style: none; }
+.experience ol.bibliography { list-style: none; padding-left: 0; }
 
-.experience ol.bibliography li { padding-bottom: 0.75rem; }
+.experience ol.bibliography li { padding: 0; padding-bottom: 0.75rem; }
 
 .experience ol.bibliography li span { display: block; }
 
 .experience ol.bibliography li .year-right { padding-top: 3.0px; float: right; color: #424242; text-align: right; font-size: 0.75em; font-style: italic; width: 30%; }
 
-.experience ol.bibliography li .title-left { font-weight: bolder; float: left; width: 70%; }
+.experience ol.bibliography li .title-left { float: left; width: 70%; }
 
-.experience ol.bibliography li div.title-left .descr { font-weight: normal; color: lightSlateGray; font-size: 0.85em; font-style: italic; }
+.experience ol.bibliography li div.title-left .descr { color: lightSlateGray; font-size: 0.85em; font-style: italic; }
 
-.experience ol.bibliography li div.title-left .lecturer { font-weight: normal; font-size: 0.85em; font-style: italic; }
-
-.experience ol.bibliography li div.title-left .syllabus-etc { font-weight: normal; }
+.experience ol.bibliography li div.title-left .lecturer { font-size: 0.85em; font-style: italic; }
 
 .experience ol.bibliography li em.star { border-bottom: none; color: #B509AC; font-style: normal; }
 
