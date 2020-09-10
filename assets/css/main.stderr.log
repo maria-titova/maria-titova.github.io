@@ -1,0 +1,8 @@
+Latexmk: Run number 1 of rule 'pdflatex'
+Failure to make 'D:\google drive\coding-related\maria-titova.com\assets\css/main.pdf'
+Latexmk: Summary of warnings from last run of (pdf)latex:
+  =====Latex reported missing or unavailable character(s).
+=====See log file for details.
+Collected error summary (may duplicate other messages):
+  pdflatex: Command for 'pdflatex' gave return code 1
+      Refer to 'D:\google drive\coding-related\maria-titova.com\assets\css/main.log' for details

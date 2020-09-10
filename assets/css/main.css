@@ -80,3 +80,41 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 .publications ol.bibliography li .hidden.open { max-height: 100em; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
 .publications ol.bibliography li span.abstract.hidden { border: dashed 1px white; }
 .publications ol.bibliography li span.abstract.hidden.open { border-color: #828282; }
+
+.experience { padding: 0; }
+
+.experience h2 { font-size: 1.3em; padding-top: 0.05em; text-align: center; padding-bottom: 0.5em; }
+
+.experience h4 { font-size: 1.15em; font-style: italic; text-align: left; text-decoration: underline; }
+
+.experience ol.bibliography { list-style: none; }
+
+.experience ol.bibliography li { padding-bottom: 0.75rem; }
+
+.experience ol.bibliography li span { display: block; }
+
+.experience ol.bibliography li .year-right { padding-top: 3.0px; float: right; color: #424242; text-align: right; font-size: 0.75em; font-style: italic; width: 30%; }
+
+.experience ol.bibliography li .title-left { font-weight: bolder; float: left; width: 70%; }
+
+.experience ol.bibliography li div.title-left .descr { font-weight: normal; color: lightSlateGray; font-size: 0.85em; font-style: italic; }
+
+.experience ol.bibliography li div.title-left .lecturer { font-weight: normal; font-size: 0.85em; font-style: italic; }
+
+.experience ol.bibliography li div.title-left .syllabus-etc { font-weight: normal; }
+
+.experience ol.bibliography li em.star { border-bottom: none; color: #B509AC; font-style: normal; }
+
+.experience ol.bibliography li a.abstract, .experience ol.bibliography li a.bibtex { cursor: pointer; }
+
+.experience ol.bibliography li .hidden { font-size: 0.875rem; max-height: 0px; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
+
+.experience ol.bibliography li .hidden p { line-height: 1.4em; margin: 10px; }
+
+.experience ol.bibliography li .hidden pre { font-size: 1em; line-height: 1.4em; padding: 10px; }
+
+.experience ol.bibliography li .hidden.open { max-height: 100em; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
+
+.experience ol.bibliography li span.abstract.hidden { border: dashed 1px white; }
+
+.experience ol.bibliography li span.abstract.hidden.open { border-color: #828282; }
