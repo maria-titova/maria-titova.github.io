@@ -95,11 +95,15 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .publications h2.year { color: lightSlateGray; border-top: 0px solid #e8e8e8; margin-bottom: -2.75rem; text-align: right; font-size: 0.85em; font-style: italic; padding-top: 2.5rem; }
 
-.publications h3 { font-size: 1.5em; padding-top: 0.6em; text-align: center; padding-bottom: 0.0em; }
+.publications h3 { font-size: 1.5em; padding-top: 0.8em; text-align: center; padding-bottom: 0.0em; }
 
 .experience { padding: 0; }
 
 .experience h2 { font-size: 1.5em; padding-top: 0.05em; text-align: center; padding-bottom: 0.5em; }
+
+.experience img.uni-logo { display: block; margin: 0 auto; height: 60px; max-width: 90%; width: auto; padding-top: 0.05em; text-align: center; padding-bottom: 1.0em; }
+
+.experience a.img.uni-logo:hover { box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); }
 
 .experience h4 { font-size: 1.00em; font-style: italic; text-align: center; }
 
@@ -119,9 +123,9 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .experience ol.bibliography li span { display: block; }
 
-.experience ol.bibliography li .year-right { padding-top: 3.0px; float: right; color: #424242; text-align: right; font-size: 0.75em; font-style: italic; width: 30%; }
+.experience ol.bibliography li .year-right { padding-top: 3.0px; float: right; color: lightSlateGray; text-align: right; font-size: 0.85em; font-style: italic; width: 27.5%; }
 
-.experience ol.bibliography li .title-left { float: left; width: 70%; }
+.experience ol.bibliography li .title-left { float: left; width: 72.5%; }
 
 .experience ol.bibliography li div.title-left .dept { color: lightSlateGray; font-size: 0.85em; font-style: italic; }
 
