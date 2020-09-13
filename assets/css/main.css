@@ -85,15 +85,17 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .post a.btn:hover { color: #B509AC; border-color: #B509AC; }
 
+.publications ol.bibliography li { margin-bottom: 0 !important; }
+
 .publications ol.bibliography li .links a.btn { color: #424242; border: 1px solid #424242; padding-left: 1rem; padding-right: 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem; font-size: 0.75em; }
 
 .publications ol.bibliography li .links a.btn:hover { color: #B509AC; border-color: #B509AC; }
 
 .publications ol.bibliography { border-bottom: 0px solid #e8e8e8; list-style: none; padding: 0; margin-top: 1; }
 
-.publications h2.year { color: #424242; border-top: 0px solid #e8e8e8; padding-top: 3rem; margin-bottom: -3rem; text-align: right; font-size: 0.85em; font-style: italic; }
+.publications h2.year { color: lightSlateGray; border-top: 0px solid #e8e8e8; margin-bottom: -2.75rem; text-align: right; font-size: 0.85em; font-style: italic; padding-top: 2.5rem; }
 
-.publications h3 { font-size: 1.5em; padding-top: 0.1em; text-align: center; padding-bottom: 0.0em; }
+.publications h3 { font-size: 1.5em; padding-top: 0.6em; text-align: center; padding-bottom: 0.0em; }
 
 .experience { padding: 0; }
 
@@ -146,3 +148,7 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 .experience .TA2_classes.hidden { display: none !important; max-height: 0px; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
 
 .experience .TA2_classes.hidden.open { display: block !important; max-height: 100em; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
+
+.publications ol.bibliography { margin-bottom: 0 !important; }
+
+.publications ol.bibliography li { margin-bottom: 0 !important; }
