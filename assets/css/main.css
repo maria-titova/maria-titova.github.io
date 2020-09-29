@@ -95,7 +95,7 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .publications h2.year { color: lightSlateGray; border-top: 0px solid #e8e8e8; margin-bottom: -2.75rem; text-align: right; font-size: 0.85em; font-style: italic; padding-top: 2.5rem; }
 
-.publications h3 { font-size: 1.5em; padding-top: 0.8em; text-align: center; padding-bottom: 0.0em; }
+.publications h3 { font-size: 1.5em; padding-top: 0.75em; text-align: center; padding-bottom: 0.0em; }
 
 .experience { padding: 0; }
 
