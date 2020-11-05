@@ -154,3 +154,7 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 .publications ol.bibliography { margin-bottom: 0 !important; }
 
 .publications ol.bibliography li { margin-bottom: 0 !important; }
+
+.experience ol.fa-ul { font-size: 0.85em; margin-top: -0.75rem !important; }
+
+.experience ol.fa-ul li { padding-bottom: 0.25rem; }
