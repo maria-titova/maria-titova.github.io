@@ -81,13 +81,23 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 .publications ol.bibliography li span.abstract.hidden { border: dashed 1px white; }
 .publications ol.bibliography li span.abstract.hidden.open { border-color: #828282; }
 
-.post a.btn { color: #424242; border: 1px solid #424242; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.20rem; padding-bottom: 0.20rem; font-size: 0.75em; }
+.footer { position: fixed; left: 0; bottom: 0; width: 100%; background-color: gainsboro; color: white; text-align: center; }
+
+.footer p { font-size: 0.75em; color: black; margin-top: 0.55rem; padding-bottom: 0.55rem; }
+
+.footer div.social { padding-top: 0.55rem; }
+
+.footer div.social a.social-btn { color: #424242; padding: 10px; font-size: 30px; width: 20px; text-align: center; text-decoration: none; border-radius: 50%; }
+
+.footer div.social a.social-btn:hover { opacity: 0.7; }
+
+.post a.btn { color: #424242; border: 1px solid #424242; padding-left: 0.25rem; padding-right: 0.25rem; padding-top: 0.05rem; padding-bottom: 0.05rem; font-size: 0.65em; margin-left: 0.1rem; }
 
 .post a.btn:hover { color: #B509AC; border-color: #B509AC; }
 
 .publications ol.bibliography li { margin-bottom: 0 !important; }
 
-.publications ol.bibliography li .links a.btn { color: #424242; border: 1px solid #424242; padding-left: 1rem; padding-right: 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem; font-size: 0.75em; }
+.publications ol.bibliography li .links a.btn { color: #424242; border: 1px solid #424242; padding-left: 0.25rem; padding-right: 0.25rem; padding-top: 0.05rem; padding-bottom: 0.05rem; font-size: 0.65em; margin-left: 0.1rem; }
 
 .publications ol.bibliography li .links a.btn:hover { color: #B509AC; border-color: #B509AC; }
 
@@ -131,7 +141,7 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .experience ol.bibliography li div.title-left .dept a:hover { border-bottom-style: solid; text-decoration: none; }
 
-.experience ol.bibliography li .syllabus-etc a.btn { color: #424242; border: 1px solid #424242; padding-left: 1rem; padding-right: 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem; font-size: 0.75em; }
+.experience ol.bibliography li .syllabus-etc a.btn { color: #424242; border: 1px solid #424242; padding-left: 0.25rem; padding-right: 0.25rem; padding-top: 0.05rem; padding-bottom: 0.05rem; font-size: 0.65em; margin-left: 0.1rem; }
 
 .experience ol.bibliography li .syllabus-etc a.btn:hover { color: #B509AC; border-color: #B509AC; }
 
