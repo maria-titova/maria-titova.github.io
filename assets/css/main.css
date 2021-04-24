@@ -81,7 +81,7 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 .publications ol.bibliography li span.abstract.hidden { border: dashed 1px white; }
 .publications ol.bibliography li span.abstract.hidden.open { border-color: #828282; }
 
-.footer { position: fixed; left: 0; bottom: 0; width: 100%; background-color: gainsboro; color: white; text-align: center; }
+.footer { position: absolute; bottom: 0; width: 100%; background-color: gainsboro; color: white; text-align: center; }
 
 .footer p { font-size: 0.75em; color: black; margin-top: 0.55rem; padding-bottom: 0.55rem; }
 
