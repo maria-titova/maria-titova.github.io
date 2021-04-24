@@ -1,11 +1,19 @@
 /******************************************************************************* Variables used throughout the theme. To adjust anything, simply edit the variables below and rebuild the theme. *****************************************************************************/
 /* Set theme colors *************************/
 /****************************************************************************** Content *****************************************************************************/
-body { padding-bottom: 70px; color: #111; }
+body { color: #111; }
 
 body.fixed-top-nav { padding-top: 56px; }
 
-body.sticky-bottom-footer { padding-bottom: 0; }
+.footer { margin-top: 1.25rem; color: white; text-align: center; }
+
+.footer p { font-size: 0.75em; color: black; margin-top: 0.55rem; padding-bottom: 0.25rem; }
+
+.footer div.social { padding-top: 0.00rem; margin-top: 0.00rem; }
+
+.footer div.social a.social-btn { color: #424242; padding: 10px; font-size: 30px; width: 20px; text-align: center; text-decoration: none; border-radius: 50%; }
+
+.footer div.social a.social-btn:hover { opacity: 0.5; }
 
 .container { max-width: 800px; }
 
@@ -26,8 +34,6 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .profile .address { font-family: monospace; font-size: 1.2rem; }
 .profile .address p { margin: 0; }
-
-.footer { margin-top: 3rem; box-shadow: none; }
 
 .navbar { box-shadow: none; border-bottom: 1px solid #e8e8e8; opacity: 0.95; }
 
@@ -80,16 +86,6 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 .publications ol.bibliography li .hidden.open { max-height: 100em; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
 .publications ol.bibliography li span.abstract.hidden { border: dashed 1px white; }
 .publications ol.bibliography li span.abstract.hidden.open { border-color: #828282; }
-
-.footer { position: absolute; bottom: 0; width: 100%; background-color: gainsboro; color: white; text-align: center; }
-
-.footer p { font-size: 0.75em; color: black; margin-top: 0.55rem; padding-bottom: 0.55rem; }
-
-.footer div.social { padding-top: 0.55rem; }
-
-.footer div.social a.social-btn { color: #424242; padding: 10px; font-size: 30px; width: 20px; text-align: center; text-decoration: none; border-radius: 50%; }
-
-.footer div.social a.social-btn:hover { opacity: 0.7; }
 
 .post a.btn { color: #424242; border: 1px solid #424242; padding-left: 0.25rem; padding-right: 0.25rem; padding-top: 0.05rem; padding-bottom: 0.05rem; font-size: 0.65em; margin-left: 0.1rem; }
 
