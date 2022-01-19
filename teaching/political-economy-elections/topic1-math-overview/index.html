@@ -109,7 +109,13 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#expected-utility-function">Expected Utility Function</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#examples-of-expected-utility-politicians">Examples of Expected Utility: Politicians</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#examples-of-expected-utility-moderate-voter">Examples of Expected Utility: Moderate Voter</a>
+    </li>
     </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../topic2-social-choice.md">None</a>
                   </li>
               </ul>
       </div>
@@ -260,15 +266,15 @@
 <li><strong>voters</strong> prefer policies close to their bliss points (ideal policies)<ul>
 <li>set of policies is <span class="arithmatex">\(X = [0,1]\)</span>, where  <span class="arithmatex">\(0\)</span> is <strong>left</strong> (blue) and <span class="arithmatex">\(1\)</span> is <strong>right</strong> (red)</li>
 <li>voter has ideal position <span class="arithmatex">\(v\)</span></li>
-<li>utility of policy <span class="arithmatex">\(w \ne v\)</span> decreases with distance between <span class="arithmatex">\(w\)</span> and <span class="arithmatex">\(v\)</span></li>
-<li><span class="arithmatex">\(u_v(w) = - |v-w|\)</span></li>
+<li>utility of policy <span class="arithmatex">\(x \ne v\)</span> decreases with distance between <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(v\)</span></li>
+<li><span class="arithmatex">\(u_v(x) = - |v-x|\)</span></li>
 </ul>
 </li>
 </ul>
 <h2 id="utility-maximization">Utility Maximization</h2>
 <ul>
 <li>what does it mean to maximize utility?<ul>
-<li>utility assigns numbers to each element of choice set <span class="arithmatex">\(\Longrightarrow\)</span> pick element with the highest number</li>
+<li>choose element with the highest level of utility</li>
 </ul>
 </li>
 <li>actors are usually <strong>constrained</strong> in some way<ul>
@@ -292,7 +298,7 @@
 <li>instead of a choice set, we have a set of <strong>lotteries</strong><ul>
 <li>let <span class="arithmatex">\(X\)</span> be the set of outcomes </li>
 <li>let <span class="arithmatex">\(\Delta X\)</span> be the set of <em>all</em> probability distributions over <span class="arithmatex">\(X\)</span></li>
-<li>a <strong>lottery</strong> <span class="arithmatex">\(L\)</span> is a probability distribution over <span class="arithmatex">\(X\)</span>, or <span class="arithmatex">\(L \in \Delta X\)</span><ul>
+<li>a <strong>lottery</strong> <span class="arithmatex">\(L\)</span> is a probability distribution over <span class="arithmatex">\(X\)</span> (<span class="arithmatex">\(L \in \Delta X\)</span>)<ul>
 <li>each outcome is assigned a probability (possibly <span class="arithmatex">\(0\)</span>), probabilities sum up to <span class="arithmatex">\(1\)</span></li>
 </ul>
 </li>
@@ -305,27 +311,27 @@
 <li>
 <p>example: election with two candidates, set of outcomes <span class="arithmatex">\(X = \{ A \text{ wins}, B \text{ wins} \}\)</span></p>
 <ul>
-<li><span class="arithmatex">\(\text{lottery }1\)</span>: <span class="arithmatex">\((0.5, 0.5)\)</span> <span class="arithmatex">\(\longleftarrow\)</span> each candidate wins with probability <span class="arithmatex">\(1/2\)</span></li>
-<li><span class="arithmatex">\(\text{lottery }2\)</span>: <span class="arithmatex">\((1,0)\)</span> <span class="arithmatex">\(\longleftarrow\)</span> candidate <span class="arithmatex">\(A\)</span> wins for sure</li>
+<li><span class="arithmatex">\(L_1\)</span>: <span class="arithmatex">\((0.5, 0.5)\)</span> <span class="arithmatex">\(\longleftarrow\)</span> each candidate wins with probability <span class="arithmatex">\(1/2\)</span></li>
+<li><span class="arithmatex">\(L_2\)</span>: <span class="arithmatex">\((0,1)\)</span> <span class="arithmatex">\(\longleftarrow\)</span> candidate <span class="arithmatex">\(B\)</span> wins for sure</li>
 </ul>
 </li>
 <li>
-<p>does candidate <span class="arithmatex">\(B\)</span> prefer <span class="arithmatex">\(\text{lottery }1\)</span> or <span class="arithmatex">\(\text{lottery }2\)</span>?</p>
+<p>does candidate <span class="arithmatex">\(A\)</span> prefer <span class="arithmatex">\(L_1\)</span> or <span class="arithmatex">\(L_2\)</span>?</p>
 </li>
 </ul>
 <h2 id="preferences-under-uncertainty-continuous-outcome-space">Preferences Under Uncertainty: Continuous Outcome Space</h2>
 <ul>
 <li>set of outcomes <span class="arithmatex">\(X\)</span> could be continuous (as opposed to finite)<ul>
-<li>for example, <span class="arithmatex">\([0,1]\)</span> or <span class="arithmatex">\([0, + \infty)\)</span> or <span class="arithmatex">\((-\infty, +\infty)\)</span></li>
+<li>examples: <span class="arithmatex">\([0,1]\)</span>, <span class="arithmatex">\([0, + \infty)\)</span>, <span class="arithmatex">\((-\infty, +\infty)\)</span></li>
 <li>if <span class="arithmatex">\(X\)</span> is continuous, then a lottery could be a <em>continuous</em> distribution</li>
 </ul>
 </li>
 <li>example: <span class="arithmatex">\(X = [0,1]\)</span>, policy space from ultra-left to ultra-right<ul>
-<li><span class="arithmatex">\(\text{lottery }1\)</span>: uniform distribution <span class="arithmatex">\(U[0,1]\)</span></li>
-<li><span class="arithmatex">\(\text{lottery }2\)</span>: <span class="arithmatex">\(0\)</span> with probability <span class="arithmatex">\(0.75\)</span> and <span class="arithmatex">\(1\)</span> with probability <span class="arithmatex">\(0.25\)</span></li>
+<li><span class="arithmatex">\(L_1\)</span>: uniform distribution <span class="arithmatex">\(U[0,1]\)</span></li>
+<li><span class="arithmatex">\(L_2\)</span>: <span class="arithmatex">\(0\)</span> with probability <span class="arithmatex">\(0.75\)</span> and <span class="arithmatex">\(1\)</span> with probability <span class="arithmatex">\(0.25\)</span></li>
 </ul>
 </li>
-<li>does voter <span class="arithmatex">\(v\)</span> prefer <span class="arithmatex">\(\text{lottery }1\)</span> or <span class="arithmatex">\(\text{lottery }2\)</span>?</li>
+<li>does voter <span class="arithmatex">\(v\)</span> prefer <span class="arithmatex">\(L_1\)</span> or <span class="arithmatex">\(L_2\)</span>?</li>
 </ul>
 <h2 id="from-preferences-to-expected-utility">From Preferences to Expected Utility</h2>
 <ul>
@@ -347,6 +353,19 @@
 </ul>
 </li>
 <li>maximizing expected utility = picking lottery with highest expected value</li>
+</ul>
+<h2 id="examples-of-expected-utility-politicians">Examples of Expected Utility: Politicians</h2>
+<ul>
+<li>set of outcomes: <span class="arithmatex">\(X = \{ A \text{ wins}, B \text{ wins} \}\)</span></li>
+<li><span class="arithmatex">\(A\)</span>'s utility function: <span class="arithmatex">\(u_A (A \text{ wins}) = 1\)</span> and <span class="arithmatex">\(u_A (B \text{ wins}) = 1\)</span></li>
+<li>what is <span class="arithmatex">\(A\)</span>'s expected utility if <span class="arithmatex">\(A\)</span> wins with probability 60%?
+  $$ L_1 = (0.6,0.4) \text{ so that } \mathbb{E}_1 [u_A (x)] = $$</li>
+</ul>
+<h2 id="examples-of-expected-utility-moderate-voter">Examples of Expected Utility: Moderate Voter</h2>
+<ul>
+<li>set of outcomes: <span class="arithmatex">\(X = [0,1]\)</span></li>
+<li><span class="arithmatex">\(v\)</span>'s utility function: <span class="arithmatex">\(u_v (x) = -|v-x|\)</span>, where <span class="arithmatex">\(v = 0.5\)</span></li>
+<li>what is <span class="arithmatex">\(v\)</span>'s expected utility if policy is <span class="arithmatex">\(0\)</span> w/ prob 60% and <span class="arithmatex">\(1\)</span> w/ prob 40%?</li>
 </ul>
               
             </div>

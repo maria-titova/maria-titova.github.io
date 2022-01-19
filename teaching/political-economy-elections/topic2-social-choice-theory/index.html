@@ -95,7 +95,27 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#examples-of-utility-functions-voters">Examples of Utility Functions: Voters</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#utility-maximization">Utility Maximization</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#uncertainty">Uncertainty</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#preferences-under-uncertainty">Preferences Under Uncertainty</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#preferences-under-uncertainty-binary-outcome-space">Preferences Under Uncertainty: Binary Outcome Space</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#preferences-under-uncertainty-continuous-outcome-space">Preferences Under Uncertainty: Continuous Outcome Space</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#from-preferences-to-expected-utility">From Preferences to Expected Utility</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#expected-utility-function">Expected Utility Function</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#examples-of-expected-utility-politicians">Examples of Expected Utility: Politicians</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#examples-of-expected-utility-moderate-voter">Examples of Expected Utility: Moderate Voter</a>
+    </li>
     </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../topic2-social-choice.md">None</a>
                   </li>
               </ul>
       </div>
@@ -122,6 +142,175 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="social-choice-theory">Social Choice Theory</h1>
+<h2 id="social-preference-aggregation">Social Preference Aggregation</h2>
+<ul>
+<li>different people may have different preferences over social outcomes<ul>
+<li>in the US, polarized issues include <em>gun control</em>, <em>immigration</em>, <em>civil rights</em>, etc</li>
+</ul>
+</li>
+<li><strong>big question</strong>: how do we aggregate individual preferences into <em>social</em> preferences?<ul>
+<li>which group's opinion is "correct"?</li>
+<li>when (and when not to) implement social change?</li>
+</ul>
+</li>
+</ul>
+<h2 id="social-choice-function">Social Choice Function</h2>
+<ul>
+<li>input:<ul>
+<li>society of <span class="arithmatex">\(N\)</span> people</li>
+<li>choice set <span class="arithmatex">\(X\)</span><ul>
+<li>example: <span class="arithmatex">\(X=\{ \text{Biden}, \text{Harris}, \text{Sanders} \}\)</span></li>
+</ul>
+</li>
+<li>each person has her own preference relation over <span class="arithmatex">\(X\)</span></li>
+</ul>
+</li>
+<li>output:<ul>
+<li>single element of <span class="arithmatex">\(X\)</span></li>
+</ul>
+</li>
+</ul>
+<h2 id="simple-majority-condorcet-paradox">Simple Majority: Condorcet Paradox</h2>
+<table>
+<thead>
+<tr>
+<th align="center">voter 1</th>
+<th align="center">voter 2</th>
+<th align="center">voter 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+<td align="center">Sanders</td>
+</tr>
+<tr>
+<td align="center">Harris</td>
+<td align="center">Sanders</td>
+<td align="center">Biden</td>
+</tr>
+<tr>
+<td align="center">Sanders</td>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+</tr>
+<tr>
+<td align="center">- how many voters think Biden <span class="arithmatex">\(\succ\)</span> Harris?</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">- how many people Harris <span class="arithmatex">\(\succ\)</span> Sanders?</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">- how many people Sanders <span class="arithmatex">\(\succ\)</span> Biden?</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="simple-majority-agenda-manipulation">Simple Majority: Agenda Manipulation</h2>
+<table>
+<thead>
+<tr>
+<th align="center">voter 1</th>
+<th align="center">voter 2</th>
+<th align="center">voter 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+<td align="center">Sanders</td>
+</tr>
+<tr>
+<td align="center">Harris</td>
+<td align="center">Sanders</td>
+<td align="center">Biden</td>
+</tr>
+<tr>
+<td align="center">Sanders</td>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+</tr>
+<tr>
+<td align="center">- problem: <strong>agenda manipulation</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ suppose agenda setter wants Biden to win</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ step 1: Sanders vs Harris</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ step 2: winner of step 1 vs Biden</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="simple-majority-strategic-voting">Simple Majority: Strategic Voting</h2>
+<table>
+<thead>
+<tr>
+<th align="center">voter 1</th>
+<th align="center">voter 2</th>
+<th align="center">voter 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+<td align="center">Sanders</td>
+</tr>
+<tr>
+<td align="center">Harris</td>
+<td align="center">Sanders</td>
+<td align="center">Biden</td>
+</tr>
+<tr>
+<td align="center">Sanders</td>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+</tr>
+<tr>
+<td align="center">- agenda is <span class="arithmatex">\(\text{Sanders vs Harris}\)</span>, then <span class="arithmatex">\(\text{winner vs Biden}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">- another problem: <strong>strategic voting</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ focus on voter 1 and her vote at step 1</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <em>sincere</em> voting:</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <em>strategic voting</em>:</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>

@@ -109,7 +109,13 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#expected-utility-function">Expected Utility Function</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#examples-of-expected-utility-politicians">Examples of Expected Utility: Politicians</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#examples-of-expected-utility-moderate-voter">Examples of Expected Utility: Moderate Voter</a>
+    </li>
     </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../topic2-social-choice.md">None</a>
                   </li>
               </ul>
       </div>
@@ -149,15 +155,15 @@
 <li><strong>voters</strong> prefer policies close to their bliss points (ideal policies)<ul>
 <li>set of policies is <span class="arithmatex">\(X = [0,1]\)</span>, where  <span class="arithmatex">\(0\)</span> is <strong>left</strong> (blue) and <span class="arithmatex">\(1\)</span> is <strong>right</strong> (red)</li>
 <li>voter has ideal position <span class="arithmatex">\(v\)</span></li>
-<li>utility of policy <span class="arithmatex">\(w \ne v\)</span> decreases with distance between <span class="arithmatex">\(w\)</span> and <span class="arithmatex">\(v\)</span></li>
-<li><span class="arithmatex">\(u_v(w) = - |v-w|\)</span></li>
+<li>utility of policy <span class="arithmatex">\(x \ne v\)</span> decreases with distance between <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(v\)</span></li>
+<li><span class="arithmatex">\(u_v(x) = - |v-x|\)</span></li>
 </ul>
 </li>
 </ul>
 <h2 id="utility-maximization">Utility Maximization</h2>
 <ul>
 <li>what does it mean to maximize utility?<ul>
-<li>utility assigns numbers to each element of choice set <span class="arithmatex">\(\Longrightarrow\)</span> pick element with the highest number</li>
+<li>choose element with the highest level of utility</li>
 </ul>
 </li>
 <li>actors are usually <strong>constrained</strong> in some way<ul>
@@ -182,7 +188,7 @@
 <li>instead of a choice set, we have a set of <strong>lotteries</strong><ul>
 <li>let <span class="arithmatex">\(X\)</span> be the set of outcomes </li>
 <li>let <span class="arithmatex">\(\Delta X\)</span> be the set of <em>all</em> probability distributions over <span class="arithmatex">\(X\)</span></li>
-<li>a <strong>lottery</strong> <span class="arithmatex">\(L\)</span> is a probability distribution over <span class="arithmatex">\(X\)</span>, or <span class="arithmatex">\(L \in \Delta X\)</span><ul>
+<li>a <strong>lottery</strong> <span class="arithmatex">\(L\)</span> is a probability distribution over <span class="arithmatex">\(X\)</span> (<span class="arithmatex">\(L \in \Delta X\)</span>)<ul>
 <li>each outcome is assigned a probability (possibly <span class="arithmatex">\(0\)</span>), probabilities sum up to <span class="arithmatex">\(1\)</span></li>
 </ul>
 </li>
@@ -195,27 +201,31 @@
 <li>
 <p>example: election with two candidates, set of outcomes <span class="arithmatex">\(X = \{ A \text{ wins}, B \text{ wins} \}\)</span></p>
 <ul>
-<li><span class="arithmatex">\(\text{lottery }1\)</span>: <span class="arithmatex">\((0.5, 0.5)\)</span> <span class="arithmatex">\(\longleftarrow\)</span> each candidate wins with probability <span class="arithmatex">\(1/2\)</span></li>
-<li><span class="arithmatex">\(\text{lottery }2\)</span>: <span class="arithmatex">\((1,0)\)</span> <span class="arithmatex">\(\longleftarrow\)</span> candidate <span class="arithmatex">\(A\)</span> wins for sure</li>
+<li><span class="arithmatex">\(L_1\)</span>: <span class="arithmatex">\((0.5, 0.5)\)</span> <span class="arithmatex">\(\longleftarrow\)</span> each candidate wins with probability <span class="arithmatex">\(1/2\)</span></li>
+<li><span class="arithmatex">\(L_2\)</span>: <span class="arithmatex">\((0,1)\)</span> <span class="arithmatex">\(\longleftarrow\)</span> candidate <span class="arithmatex">\(B\)</span> wins for sure</li>
 </ul>
 </li>
 <li>
-<p>does candidate <span class="arithmatex">\(B\)</span> prefer <span class="arithmatex">\(\text{lottery }1\)</span> or <span class="arithmatex">\(\text{lottery }2\)</span>?</p>
+<p>does candidate <span class="arithmatex">\(A\)</span> prefer <span class="arithmatex">\(L_1\)</span> or <span class="arithmatex">\(L_2\)</span>?</p>
 </li>
 </ul>
 <h2 id="preferences-under-uncertainty-continuous-outcome-space">Preferences Under Uncertainty: Continuous Outcome Space</h2>
 <ul>
 <li>set of outcomes <span class="arithmatex">\(X\)</span> could be continuous (as opposed to finite)<ul>
-<li>for example, <span class="arithmatex">\([0,1]\)</span> or <span class="arithmatex">\([0, + \infty)\)</span> or <span class="arithmatex">\((-\infty, +\infty)\)</span></li>
+<li>examples: <span class="arithmatex">\([0,1]\)</span>, <span class="arithmatex">\([0, + \infty)\)</span>, <span class="arithmatex">\((-\infty, +\infty)\)</span></li>
 <li>if <span class="arithmatex">\(X\)</span> is continuous, then a lottery could be a <em>continuous</em> distribution</li>
 </ul>
 </li>
 <li>example: <span class="arithmatex">\(X = [0,1]\)</span>, policy space from ultra-left to ultra-right<ul>
-<li><span class="arithmatex">\(\text{lottery }1\)</span>: uniform distribution <span class="arithmatex">\(U[0,1]\)</span></li>
-<li><span class="arithmatex">\(\text{lottery }2\)</span>: <span class="arithmatex">\(0\)</span> with probability <span class="arithmatex">\(0.75\)</span> and <span class="arithmatex">\(1\)</span> with probability <span class="arithmatex">\(0.25\)</span></li>
+<li><span class="arithmatex">\(L_1\)</span>: uniform distribution <span class="arithmatex">\(U[0,1]\)</span></li>
+<li><span class="arithmatex">\(L_2\)</span>: <span class="arithmatex">\(0\)</span> with probability <span class="arithmatex">\(0.75\)</span> and <span class="arithmatex">\(1\)</span> with probability <span class="arithmatex">\(0.25\)</span></li>
 </ul>
 </li>
-<li>does voter <span class="arithmatex">\(v\)</span> prefer <span class="arithmatex">\(\text{lottery }1\)</span> or <span class="arithmatex">\(\text{lottery }2\)</span>?</li>
+<li>does voter <span class="arithmatex">\(v\)</span> prefer <span class="arithmatex">\(L_1\)</span> or <span class="arithmatex">\(L_2\)</span>?</li>
+</ul>
+<h2 id="discrete-and-continuous-distributions-over-01">Discrete and Continuous Distributions over <span class="arithmatex">\([0,1]\)</span></h2>
+<ul>
+<li>let us compare <span class="arithmatex">\(L_1\)</span> (uniform over <span class="arithmatex">\([0,1]\)</span>) to <span class="arithmatex">\(L_2\)</span> (<span class="arithmatex">\(0\)</span> w/ prob <span class="arithmatex">\(0.75\)</span> and <span class="arithmatex">\(1\)</span> w/ prob <span class="arithmatex">\(0.25\)</span>)</li>
 </ul>
 <h2 id="from-preferences-to-expected-utility">From Preferences to Expected Utility</h2>
 <ul>
@@ -238,7 +248,190 @@
 </li>
 <li>maximizing expected utility = picking lottery with highest expected value</li>
 </ul>
+<h2 id="examples-of-expected-utility-politicians">Examples of Expected Utility: Politicians</h2>
+<ul>
+<li>set of outcomes: <span class="arithmatex">\(X = \{ A \text{ wins}, B \text{ wins} \}\)</span></li>
+<li><span class="arithmatex">\(A\)</span>'s utility function: <span class="arithmatex">\(u_A (A \text{ wins}) = 1\)</span> and <span class="arithmatex">\(u_A (B \text{ wins}) = 1\)</span></li>
+<li>what is <span class="arithmatex">\(A\)</span>'s expected utility if <span class="arithmatex">\(A\)</span> wins with probability 60%?
+  $$ L_1 = (0.6,0.4) \text{ so that } \mathbb{E}_1 [u_A (x)] = $$</li>
+</ul>
+<h2 id="examples-of-expected-utility-moderate-voter">Examples of Expected Utility: Moderate Voter</h2>
+<ul>
+<li>set of outcomes: <span class="arithmatex">\(X = [0,1]\)</span></li>
+<li><span class="arithmatex">\(v\)</span>'s utility function: <span class="arithmatex">\(u_v (x) = -|v-x|\)</span>, where <span class="arithmatex">\(v = 0.5\)</span></li>
+<li>what is <span class="arithmatex">\(v\)</span>'s expected utility if policy is <span class="arithmatex">\(0\)</span> w/ prob 60% and <span class="arithmatex">\(1\)</span> w/ prob 40%?</li>
+</ul>
 <h1 id="social-choice-theory">Social Choice Theory</h1>
+<h2 id="social-preference-aggregation">Social Preference Aggregation</h2>
+<ul>
+<li>different people may have different preferences over social outcomes<ul>
+<li>in the US, polarized issues include <em>gun control</em>, <em>immigration</em>, <em>civil rights</em>, etc</li>
+</ul>
+</li>
+<li><strong>big question</strong>: how do we aggregate individual preferences into <em>social</em> preferences?<ul>
+<li>which group's opinion is "correct"?</li>
+<li>when (and when not to) implement social change?</li>
+</ul>
+</li>
+</ul>
+<h2 id="social-choice-function">Social Choice Function</h2>
+<ul>
+<li>input:<ul>
+<li>society of <span class="arithmatex">\(N\)</span> people</li>
+<li>choice set <span class="arithmatex">\(X\)</span><ul>
+<li>example: <span class="arithmatex">\(X=\{ \text{Biden}, \text{Harris}, \text{Sanders} \}\)</span></li>
+</ul>
+</li>
+<li>each person has her own preference relation over <span class="arithmatex">\(X\)</span></li>
+</ul>
+</li>
+<li>output:<ul>
+<li>single element of <span class="arithmatex">\(X\)</span></li>
+</ul>
+</li>
+</ul>
+<h2 id="social-choice-function-visualization">Social Choice Function: Visualization</h2>
+<h2 id="simple-majority-condorcet-paradox">Simple Majority: Condorcet Paradox</h2>
+<table>
+<thead>
+<tr>
+<th align="center">voter 1</th>
+<th align="center">voter 2</th>
+<th align="center">voter 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+<td align="center">Sanders</td>
+</tr>
+<tr>
+<td align="center">Harris</td>
+<td align="center">Sanders</td>
+<td align="center">Biden</td>
+</tr>
+<tr>
+<td align="center">Sanders</td>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+</tr>
+<tr>
+<td align="center">- how many voters think Biden <span class="arithmatex">\(\succ\)</span> Harris?</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">- how many people Harris <span class="arithmatex">\(\succ\)</span> Sanders?</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">- how many people Sanders <span class="arithmatex">\(\succ\)</span> Biden?</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="simple-majority-agenda-manipulation">Simple Majority: Agenda Manipulation</h2>
+<table>
+<thead>
+<tr>
+<th align="center">voter 1</th>
+<th align="center">voter 2</th>
+<th align="center">voter 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+<td align="center">Sanders</td>
+</tr>
+<tr>
+<td align="center">Harris</td>
+<td align="center">Sanders</td>
+<td align="center">Biden</td>
+</tr>
+<tr>
+<td align="center">Sanders</td>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+</tr>
+<tr>
+<td align="center">- problem: <strong>agenda manipulation</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ suppose agenda setter wants Biden to win</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ step 1: Sanders vs Harris</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ step 2: winner of step 1 vs Biden</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="simple-majority-strategic-voting">Simple Majority: Strategic Voting</h2>
+<table>
+<thead>
+<tr>
+<th align="center">voter 1</th>
+<th align="center">voter 2</th>
+<th align="center">voter 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+<td align="center">Sanders</td>
+</tr>
+<tr>
+<td align="center">Harris</td>
+<td align="center">Sanders</td>
+<td align="center">Biden</td>
+</tr>
+<tr>
+<td align="center">Sanders</td>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+</tr>
+<tr>
+<td align="center">- agenda is <span class="arithmatex">\(\text{Sanders vs Harris}\)</span>, then <span class="arithmatex">\(\text{winner vs Biden}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">- another problem: <strong>strategic voting</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ focus on voter 1 and her vote at step 1</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <em>sincere</em> voting:</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <em>strategic voting</em>:</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>
