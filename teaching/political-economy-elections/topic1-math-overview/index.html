@@ -20,6 +20,14 @@
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
     <![endif]--> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98299021-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-98299021-1');
+      </script>
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -39,7 +47,7 @@
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption"><span class="caption-text">Lecture Notes</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../topic0-course-overview/">Political Economy of Elections: Course Overview</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic0-course-overview/">Political Economy of Elections</a>
     <ul>
     <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#this-course">This Course</a>
     </li>
@@ -55,6 +63,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#communication">Communication</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#your-grade">Your Grade</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#this-course-approach">This Course: Approach</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#theoretical-models-of-politics">Theoretical Models of Politics</a>
@@ -69,9 +79,9 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#review-of-set-theory">Review of Set Theory</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#choice-and-preferences-continued">Choice and Preferences, Continued</a>
-    </li>
     <li class="toctree-l2"><a class="reference internal" href="#choice-and-preferences">Choice and Preferences</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#choice-and-preferences-continued">Choice and Preferences, Continued</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#rationality-in-actions">Rationality (in Actions)</a>
     </li>
@@ -132,12 +142,14 @@
 </ul>
 </li>
 </ul>
-<h2 id="choice-and-preferences-continued">Choice and Preferences, Continued</h2>
+<h2 id="choice-and-preferences">Choice and Preferences</h2>
 <ul>
 <li><strong>choice set</strong> <span class="arithmatex">\(X\)</span> is a set of things to choose from<ul>
-<li>objects (pizza, hamburger, salad, other things to eat for lunch)</li>
+<li>objects (pizza, hamburger, salad, other things to eat for lunch)<ul>
 <li>actions (go to a bar, watch Netflix, study, other things to do on a Friday night)</li>
 <li>any time you make a decision, you pick an element of <em>some</em> choice set</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>agent's <strong>preference relation</strong> <span class="arithmatex">\(\succsim\)</span> over elements of <span class="arithmatex">\(X\)</span> ranks elements of <span class="arithmatex">\(X\)</span><ul>
@@ -149,7 +161,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="choice-and-preferences">Choice and Preferences</h2>
+<h2 id="choice-and-preferences-continued">Choice and Preferences, Continued</h2>
 <ul>
 <li><span class="arithmatex">\(\succsim\)</span> is similar to <span class="arithmatex">\(\geq\)</span>, but for individual's preferences<ul>
 <li>everyone agrees that <span class="arithmatex">\(5 \geq 4\)</span> but <span class="arithmatex">\(\text{pizza} \geq \text{salad}\)</span> is an opinion and not a fact</li>
@@ -157,7 +169,6 @@
 </ul>
 </li>
 <li>other relations:<ul>
-<li><span class="arithmatex">\(\succsim\)</span> denotes <em>weak preference</em> (similar to <span class="arithmatex">\(\geq\)</span>)</li>
 <li><span class="arithmatex">\(\succ\)</span> denotes <em>strict preference</em> (similar to <span class="arithmatex">\(&gt;\)</span>)</li>
 <li><span class="arithmatex">\(\sim\)</span> denotes <em>indifference</em> (similar to <span class="arithmatex">\(=\)</span>)</li>
 </ul>
@@ -166,7 +177,7 @@
 </ul>
 <h2 id="rationality-in-actions">Rationality (in Actions)</h2>
 <ul>
-<li>for <em>any</em> economic model, we need to assume <strong>rationality</strong> in actions and preferences<ul>
+<li>for <em>any</em> economic model, we need to assume <strong>rationality</strong> in a<em>ctions</em> and <em>preferences</em><ul>
 <li>economists get bad rap for assuming rationality <span class="arithmatex">\(\longleftarrow\)</span> <em>let's debunk this claim</em></li>
 </ul>
 </li>
@@ -191,7 +202,7 @@
 <li>if you asked them to compare two options, they never say <em>I don't know</em></li>
 </ul>
 </li>
-<li><strong>transitivity</strong>: given three options <span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(y\)</span>, and <span class="arithmatex">\(z\)</span> in <span class="arithmatex">\(X\)</span>, if <span class="arithmatex">\(x \succsim y\)</span> and <span class="arithmatex">\(y \succsim x\)</span>, then <span class="arithmatex">\(x \succsim y\)</span><ul>
+<li><strong>transitivity</strong>: given three options <span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(y\)</span>, and <span class="arithmatex">\(z\)</span> in <span class="arithmatex">\(X\)</span>, if <span class="arithmatex">\(x \succsim y\)</span> and <span class="arithmatex">\(y \succsim z\)</span>, then <span class="arithmatex">\(x \succsim z\)</span><ul>
 <li><em>transitive example</em>:  if <span class="arithmatex">\(A\)</span> is <span class="arithmatex">\(B\)</span>'s sibling and <span class="arithmatex">\(B\)</span> is <span class="arithmatex">\(C\)</span>'s sibling, then</li>
 <li><em>non-transitive example</em>: ``an enemy or my enemy is my friend""</li>
 </ul>
@@ -211,16 +222,16 @@
 <li>cup <span class="arithmatex">\(c_{1000}\)</span> has <span class="arithmatex">\(1000\)</span> drops of coffee replaced with water</li>
 </ul>
 </li>
-<li>unless one lost sense of taste, <span class="arithmatex">\(c_1 \sim c_2\)</span>, <span class="arithmatex">\(c_2 \sim c_3\)</span>, ..., <span class="arithmatex">\(c_{999}\sim c_{1000}\)</span><ul>
+<li>unless one has exceptional taste buds, <span class="arithmatex">\(c_1 \sim c_2\)</span>, <span class="arithmatex">\(c_2 \sim c_3\)</span>, ..., <span class="arithmatex">\(c_{999}\sim c_{1000}\)</span><ul>
 <li>transitivity implies that <span class="arithmatex">\(c_1 \sim c_{1000}\)</span> <span class="arithmatex">\(\longleftarrow\)</span> <em>do you think this is true for you?</em></li>
 </ul>
 </li>
 </ul>
 <h2 id="utility-function">Utility Function</h2>
 <ul>
-<li><strong>utility function</strong> <span class="arithmatex">\(u: X \to \mathbb{R}\)</span> represents preference relation <span class="arithmatex">\(\succsim\)</span> if <span class="arithmatex">\(x \succsim y \iff u(x) \geq u(y)\)</span></li>
+<li><strong>utility function</strong> <span class="arithmatex">\(u: X \to \mathbb{R}\)</span> represents preference relation <span class="arithmatex">\(\succsim\)</span> if <span class="arithmatex">\(x \succsim y \iff u(x) \geq u(y)\)</span>\vspace{10pt}</li>
 <li>if preference relation <span class="arithmatex">\(\succsim\)</span> is rational, then we can find utility function <span class="arithmatex">\(u\)</span> to represent it<ul>
-<li><strong>rationality</strong> (in actions and preferences) = <strong>maximizing utility</strong></li>
+<li><strong>rationality</strong> (in actions and preferences) = <strong>maximizing utility</strong>\vspace{10pt}</li>
 </ul>
 </li>
 <li>we will simply assume that all our actors have a utility function that they maximize</li>
@@ -237,7 +248,7 @@
 <h2 id="examples-of-utility-functions-voters">Examples of Utility Functions: Voters</h2>
 <ul>
 <li><strong>voters</strong> prefer policies close to their bliss points (ideal policies)<ul>
-<li>set of policies is <span class="arithmatex">\(X = [0,1]\)</span>, where  <span class="arithmatex">\(0\)</span> is <strong><span class="arithmatex">\(\color{blue}{\text{left}}\)</span></strong> and <span class="arithmatex">\(1\)</span> is <strong><span class="arithmatex">\(\color{red}{\text{right}}\)</span></strong></li>
+<li>set of policies is <span class="arithmatex">\(X = [0,1]\)</span>, where  <span class="arithmatex">\(0\)</span> is <strong>left</strong> (blue) and <span class="arithmatex">\(1\)</span> is <strong>right</strong> (red)\vspace{60pt}</li>
 <li>voter has ideal position <span class="arithmatex">\(v\)</span></li>
 <li>utility of policy <span class="arithmatex">\(w \ne v\)</span> decreases with distance between <span class="arithmatex">\(w\)</span> and <span class="arithmatex">\(v\)</span></li>
 <li><span class="arithmatex">\(u_v(w) = - |v-w|\)</span></li>
@@ -248,7 +259,7 @@
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../topic0-course-overview/" class="btn btn-neutral float-left" title="Political Economy of Elections: Course Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../topic0-course-overview/" class="btn btn-neutral float-left" title="Political Economy of Elections"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../topic2-social-choice-theory/" class="btn btn-neutral float-right" title="Social Choice Theory">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
