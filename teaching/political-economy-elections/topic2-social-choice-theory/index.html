@@ -127,6 +127,46 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#simple-majority-strategic-voting">Simple Majority: Strategic Voting</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#desirable-properties-of-scf-completeness">Desirable Properties of SCF: Completeness</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#desirable-properties-of-scf-transitivity">Desirable Properties of SCF: Transitivity</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#desirable-properties-of-scf-pareto">Desirable Properties of SCF: Pareto</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dictatorial-preferences">Dictatorial Preferences</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#desirable-properties-of-scf-no-dictator">Desirable Properties of SCF: No Dictator</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#logic-reference-necessity">(Logic Reference): Necessity</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#logic-reference-sufficiency">(Logic Reference): Sufficiency</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#back-to-desirable-properties-of-scf-iia">(Back to) Desirable Properties of SCF: IIA</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#independence-of-irrelevant-alternatives">Independence of Irrelevant Alternatives</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#why-iia">Why IIA?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#desirable-properties-of-scf-summary">Desirable Properties of SCF: Summary</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#example-of-scf-unanimity-rule-without-status-quo">Example of SCF: Unanimity Rule Without Status Quo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#borda-scoring-rule">Borda "Scoring" Rule</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#borda-rule-example">Borda Rule: Example</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#borda-rule-properties">Borda Rule: Properties</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#borda-rule-iia-fails">Borda Rule: IIA Fails</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#borda-rule-iia-fails_1">Borda Rule: IIA Fails</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#borda-rule-why-failure-of-iia-is-bad">Borda Rule: Why Failure of IIA is Bad</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#big-question-of-social-choice-theory">Big Question of Social Choice Theory</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#arrows-impossibility-theorem">Arrow's Impossibility Theorem</a>
+    </li>
     </ul>
                   </li>
               </ul>
@@ -187,6 +227,7 @@
 <table>
 <thead>
 <tr>
+<th align="center"></th>
 <th align="center">voter 1</th>
 <th align="center">voter 2</th>
 <th align="center">voter 3</th>
@@ -194,16 +235,19 @@
 </thead>
 <tbody>
 <tr>
+<td align="center"><em>most preferred</em></td>
 <td align="center">Biden</td>
 <td align="center">Harris</td>
 <td align="center">Sanders</td>
 </tr>
 <tr>
+<td align="center"><em>middle</em></td>
 <td align="center">Harris</td>
 <td align="center">Sanders</td>
 <td align="center">Biden</td>
 </tr>
 <tr>
+<td align="center"><em>least preferred</em></td>
 <td align="center">Sanders</td>
 <td align="center">Biden</td>
 <td align="center">Harris</td>
@@ -212,13 +256,14 @@
 </table>
 <ul>
 <li>how many voters think Biden <span class="arithmatex">\(\succ\)</span> Harris?</li>
-<li>how many people Harris <span class="arithmatex">\(\succ\)</span> Sanders?</li>
-<li>how many people Sanders <span class="arithmatex">\(\succ\)</span> Biden?</li>
+<li>how many people think Harris <span class="arithmatex">\(\succ\)</span> Sanders?</li>
+<li>how many people think Sanders <span class="arithmatex">\(\succ\)</span> Biden?</li>
 </ul>
 <h2 id="simple-majority-agenda-manipulation">Simple Majority: Agenda Manipulation</h2>
 <table>
 <thead>
 <tr>
+<th align="center"></th>
 <th align="center">voter 1</th>
 <th align="center">voter 2</th>
 <th align="center">voter 3</th>
@@ -226,16 +271,19 @@
 </thead>
 <tbody>
 <tr>
+<td align="center"><em>most preferred</em></td>
 <td align="center">Biden</td>
 <td align="center">Harris</td>
 <td align="center">Sanders</td>
 </tr>
 <tr>
+<td align="center"><em>middle</em></td>
 <td align="center">Harris</td>
 <td align="center">Sanders</td>
 <td align="center">Biden</td>
 </tr>
 <tr>
+<td align="center"><em>least preferred</em></td>
 <td align="center">Sanders</td>
 <td align="center">Biden</td>
 <td align="center">Harris</td>
@@ -256,6 +304,7 @@
 <table>
 <thead>
 <tr>
+<th align="center"></th>
 <th align="center">voter 1</th>
 <th align="center">voter 2</th>
 <th align="center">voter 3</th>
@@ -263,16 +312,19 @@
 </thead>
 <tbody>
 <tr>
+<td align="center"><em>most preferred</em></td>
 <td align="center">Biden</td>
 <td align="center">Harris</td>
 <td align="center">Sanders</td>
 </tr>
 <tr>
+<td align="center"><em>middle</em></td>
 <td align="center">Harris</td>
 <td align="center">Sanders</td>
 <td align="center">Biden</td>
 </tr>
 <tr>
+<td align="center"><em>least preferred</em></td>
 <td align="center">Sanders</td>
 <td align="center">Biden</td>
 <td align="center">Harris</td>
@@ -283,12 +335,469 @@
 <li>another problem: <strong>strategic voting</strong><ul>
 <li>agenda is <span class="arithmatex">\(\text{Sanders vs Harris}\)</span>, then <span class="arithmatex">\(\text{winner vs Biden}\)</span></li>
 <li>focus on voter 1 and her vote at step 1<ul>
-<li><em>sincere</em> voting: Harris wins step 1, Biden wins step 2</li>
-<li><em>strategic voting</em>: Sanders wins step 1, Sanders wins step 2</li>
+<li>vote <em>sincerely</em>: Harris wins step 1, Biden wins step 2</li>
+<li>vote <em>strategically</em>: Sanders wins step 1, <strong>Sanders wins step 2</strong> <span class="arithmatex">\(\leftarrow\)</span> voter 1 prefers this so she will vote for the "wrong" candidate at step 1</li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+<h2 id="desirable-properties-of-scf-completeness">Desirable Properties of SCF: Completeness</h2>
+<ul>
+<li>full domain / <strong>complete</strong> ranking (C):<ul>
+<li>returns a social preference for any <em>profile</em> <span class="arithmatex">\(\{ \succsim_1, \dots, \succsim_N \}\)</span> of individual preferences</li>
+</ul>
+</li>
+</ul>
+<h2 id="desirable-properties-of-scf-transitivity">Desirable Properties of SCF: Transitivity</h2>
+<ul>
+<li><strong>transitivity</strong> of social ranking / no cycles (T):<ul>
+<li>if <span class="arithmatex">\(x \succsim_S y\)</span> and <span class="arithmatex">\(y \succsim_S z\)</span>, then <span class="arithmatex">\(x \succsim_S z\)</span></li>
+</ul>
+</li>
+<li>Note: all individual preferences satisfy C and T. We don't want to miss these properties of <em>rationality</em> during aggregation</li>
+</ul>
+<h2 id="desirable-properties-of-scf-pareto">Desirable Properties of SCF: Pareto</h2>
+<ul>
+<li><strong>Pareto</strong> (P):<ul>
+<li>if every person agrees that <span class="arithmatex">\(x \succsim_i y\)</span> AND for at least one person <span class="arithmatex">\(x \succ_i y\)</span>, then <span class="arithmatex">\(x \succ_S y\)</span></li>
+</ul>
+</li>
+</ul>
+<h2 id="dictatorial-preferences">Dictatorial Preferences</h2>
+<ul>
+<li>so far we want social ranking to be <strong>complete</strong>, <strong>transitive</strong>, and <strong>Paretian</strong><ul>
+<li>"easy" way to satisfy all three is pick a <em>dictator</em><ul>
+<li>person <span class="arithmatex">\(i\)</span> is a dictator if <span class="arithmatex">\(x \succ_i y \Longrightarrow x \succ_S y\)</span><ul>
+<li>regardless of others' preferences, social ranking is same as dictator's</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="desirable-properties-of-scf-no-dictator">Desirable Properties of SCF: No Dictator</h2>
+<ul>
+<li><strong>no dictator</strong> (ND):<ul>
+<li>there is no dictator</li>
+</ul>
+</li>
+<li>minimum requirement for "democracy"<ul>
+<li><em>necessary, but not sufficient</em> for democracy</li>
+</ul>
+</li>
+</ul>
+<h2 id="logic-reference-necessity">(Logic Reference): Necessity</h2>
+<ul>
+<li>let <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> be two (logical) statements</li>
+<li><span class="arithmatex">\(A\)</span> is <strong>necessary</strong> for <span class="arithmatex">\(B\)</span> if <span class="arithmatex">\(\text{not } A \Longrightarrow \text{not } B\)</span> (same as <span class="arithmatex">\(B \Longrightarrow A\)</span>)</li>
+<li>example:<ul>
+<li><span class="arithmatex">\(A\)</span> is "there is no dictator" and <span class="arithmatex">\(B\)</span> is "society is a democracy"</li>
+<li><span class="arithmatex">\(\text{not } A \Longrightarrow \text{not } B\)</span>: "if not no dictator then not democracy"<ul>
+<li>same as <span class="arithmatex">\(B \Longrightarrow A\)</span>: "if democracy then no dictator"</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="logic-reference-sufficiency">(Logic Reference): Sufficiency</h2>
+<ul>
+<li><span class="arithmatex">\(A\)</span> is <strong>sufficient</strong> for <span class="arithmatex">\(B\)</span> if <span class="arithmatex">\(A \Longrightarrow B\)</span></li>
+<li>example:<ul>
+<li><span class="arithmatex">\(A\)</span> is "there is no dictator" and <span class="arithmatex">\(B\)</span> is "society is a democracy"</li>
+<li>"if no dictator then democracy"</li>
+</ul>
+</li>
+</ul>
+<h2 id="back-to-desirable-properties-of-scf-iia">(Back to) Desirable Properties of SCF: IIA</h2>
+<ul>
+<li><strong>independence of irrelevant alternatives</strong> (IIA):<ul>
+<li>social preferences between <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> depend only on the individual preferences between <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span>, <em>and not other alternatives</em></li>
+<li>let <span class="arithmatex">\(\{\succsim_1, \dots, \succsim_N\}\)</span> and <span class="arithmatex">\(\{\succsim_1', \dots, \succsim_N'\}\)</span> be two profiles of individual preferences<ul>
+<li>ranking of <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> is the same in both: <span class="arithmatex">\(x \succsim_i y \iff x \succsim_i' y\)</span> for every <span class="arithmatex">\(i = 1\dots N\)</span></li>
+<li><strong>IIA</strong>: social preference must be the same as well: <span class="arithmatex">\(x \succ_S y \iff x \succ_S' y\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="independence-of-irrelevant-alternatives">Independence of Irrelevant Alternatives</h2>
+<ul>
+<li>consider preference profiles <span class="arithmatex">\(\{ \succ_1,\succ_2,\succ_3 \}\)</span> and <span class="arithmatex">\(\{ \succ_1',\succ_2',\succ_3' \}\)</span>:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">voter 1</th>
+<th align="center">voter 2</th>
+<th align="center">voter 3</th>
+<th align="center"></th>
+<th align="center">voter 1</th>
+<th align="center">voter 2</th>
+<th align="center">voter 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>most preferred</em></td>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+<td align="center">Sanders</td>
+<td align="center"></td>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+<td align="center">Biden</td>
+</tr>
+<tr>
+<td align="center"><em>middle</em></td>
+<td align="center">Harris</td>
+<td align="center">Sanders</td>
+<td align="center">Biden</td>
+<td align="center"></td>
+<td align="center">Sanders</td>
+<td align="center">Sanders</td>
+<td align="center">Sanders</td>
+</tr>
+<tr>
+<td align="center"><em>least preferred</em></td>
+<td align="center">Sanders</td>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+<td align="center"></td>
+<td align="center">Harris</td>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>same individual rankings between <span class="arithmatex">\(\text{Biden}\)</span> and <span class="arithmatex">\(\text{Harris}\)</span><ul>
+<li><strong>IIA</strong>: social ranking between Biden and Harris should be the same. Is it?</li>
+</ul>
+</li>
+</ul>
+<h2 id="why-iia">Why IIA?</h2>
+<ul>
+<li>individual's <em>intensity of preferences</em> should not determine the social ranking<ul>
+<li>intensity of relative political preference is private info and can easily be misrepresented</li>
+</ul>
+</li>
+<li>a good SCF should be <em>stable</em> with respect to adding and removing of alternatives<ul>
+<li>ranking of <span class="arithmatex">\(\text{Biden}\)</span> vs <span class="arithmatex">\(\text{Harris}\)</span> should not depend on whether <span class="arithmatex">\(\text{Sanders}\)</span> is running</li>
+</ul>
+</li>
+</ul>
+<h2 id="desirable-properties-of-scf-summary">Desirable Properties of SCF: Summary</h2>
+<ul>
+<li>we would like our social choice function to satisfy<ul>
+<li><strong>completeness</strong> (C)</li>
+<li><strong>transitivity</strong> (T)</li>
+<li><strong>Pareto</strong> (P)</li>
+<li><strong>no dictator</strong> (ND)</li>
+<li><strong>independence of irrelevant alternatives</strong> (IIA)</li>
+</ul>
+</li>
+</ul>
+<h2 id="example-of-scf-unanimity-rule-without-status-quo">Example of SCF: Unanimity Rule Without Status Quo</h2>
+<div class="arithmatex">\[
+    x \succsim_S y \iff x \succsim_i y \text{ for every person } i = 1\dots N
+\]</div>
+<ul>
+<li>if everyone prefers <span class="arithmatex">\(x\)</span> to <span class="arithmatex">\(y\)</span>, then <span class="arithmatex">\(x\)</span> is socially preferred to <span class="arithmatex">\(y\)</span></li>
+<li>if everyone prefers <span class="arithmatex">\(y\)</span> to <span class="arithmatex">\(x\)</span>, then <span class="arithmatex">\(y\)</span> is socially referred to <span class="arithmatex">\(x\)</span></li>
+<li>if people do not unanimously agree that <span class="arithmatex">\(x\)</span> is better than <span class="arithmatex">\(y\)</span> or vice versa, SCF does not return a social preference</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">C</th>
+<th align="center">T</th>
+<th align="center">P</th>
+<th align="center">ND</th>
+<th align="center">IIA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">--</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="borda-scoring-rule">Borda "Scoring" Rule</h2>
+<ul>
+<li>every person provides a ranking of all alternatives, worst <span class="arithmatex">\(\to\)</span> best<ul>
+<li>worst choice receives <span class="arithmatex">\(1\)</span> point; second worst -- <span class="arithmatex">\(2\)</span> points, and so on</li>
+</ul>
+</li>
+<li>social score of an alternative is the sum of individual scores</li>
+<li>winner is the alternative with highest score</li>
+</ul>
+<h2 id="borda-rule-example">Borda Rule: Example</h2>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">voter 1</th>
+<th align="center">voter 2</th>
+<th align="center">voter 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>most preferred</em></td>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+<td align="center">Biden</td>
+</tr>
+<tr>
+<td align="center"><em>middle</em></td>
+<td align="center">Sanders</td>
+<td align="center">Sanders</td>
+<td align="center">Sanders</td>
+</tr>
+<tr>
+<td align="center"><em>least preferred</em></td>
+<td align="center">Harris</td>
+<td align="center">Biden</td>
+<td align="center">Harris</td>
+</tr>
+</tbody>
+</table>
+<h2 id="borda-rule-properties">Borda Rule: Properties</h2>
+<table>
+<thead>
+<tr>
+<th align="center">C</th>
+<th align="center">T</th>
+<th align="center">P</th>
+<th align="center">ND</th>
+<th align="center">IIA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">--</td>
+</tr>
+<tr>
+<td align="center">- <strong>C</strong>: we can calculate score for any alternatives and we can compare any pair of alternatives by comparing scores</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">- <strong>T</strong>: if <span class="arithmatex">\(x \succsim_S y\)</span> and <span class="arithmatex">\(y \succsim_S z\)</span>, then <span class="arithmatex">\(\text{score}(x) \geq \text{score}(y) \geq \text{score}(z)\)</span>, meaning that <span class="arithmatex">\(x \succsim_S z\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">- <strong>P</strong>: if <em>every</em> voter prefers <span class="arithmatex">\(x\)</span> to <span class="arithmatex">\(y\)</span>, then <span class="arithmatex">\(\text{score}(x) &gt; \text{score} (y)\)</span> and <span class="arithmatex">\(x \succsim_S y\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">- <strong>ND</strong>: social scores depend on all people's preferences so no individual is a dictator</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="borda-rule-iia-fails">Borda Rule: IIA Fails</h2>
+<ul>
+<li>consider preference profiles <span class="arithmatex">\(\{ \succ_1,\succ_2,\succ_3 \}\)</span> and <span class="arithmatex">\(\{ \succ_1',\succ_2',\succ_3' \}\)</span>:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">voter 1</th>
+<th align="center">voter 2</th>
+<th align="center">voter 3</th>
+<th align="center"></th>
+<th align="center">voter 1</th>
+<th align="center">voter 2</th>
+<th align="center">voter 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><span class="arithmatex">\(x\)</span></td>
+<td align="center"><span class="arithmatex">\(y\)</span></td>
+<td align="center"><span class="arithmatex">\(z\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="arithmatex">\(x\)</span></td>
+<td align="center"><span class="arithmatex">\(y\)</span></td>
+<td align="center"><span class="arithmatex">\(z\)</span></td>
+</tr>
+<tr>
+<td align="center"><span class="arithmatex">\(y\)</span></td>
+<td align="center"><span class="arithmatex">\(z\)</span></td>
+<td align="center"><span class="arithmatex">\(x\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="arithmatex">\(y\)</span></td>
+<td align="center"><span class="arithmatex">\(x\)</span></td>
+<td align="center"><span class="arithmatex">\(x\)</span></td>
+</tr>
+<tr>
+<td align="center"><span class="arithmatex">\(z\)</span></td>
+<td align="center"><span class="arithmatex">\(w\)</span></td>
+<td align="center"><span class="arithmatex">\(y\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="arithmatex">\(z\)</span></td>
+<td align="center"><span class="arithmatex">\(z\)</span></td>
+<td align="center"><span class="arithmatex">\(y\)</span></td>
+</tr>
+<tr>
+<td align="center"><span class="arithmatex">\(w\)</span></td>
+<td align="center"><span class="arithmatex">\(x\)</span></td>
+<td align="center"><span class="arithmatex">\(w\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="arithmatex">\(w\)</span></td>
+<td align="center"><span class="arithmatex">\(w\)</span></td>
+<td align="center"><span class="arithmatex">\(w\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>do all voters rank <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> the same way in <span class="arithmatex">\(\succ\)</span> and <span class="arithmatex">\(\succ'\)</span>?</li>
+<li>is social ranking of <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> the same for <span class="arithmatex">\(\succ\)</span> and <span class="arithmatex">\(\succ'\)</span>?</li>
+</ul>
+<h2 id="borda-rule-iia-fails_1">Borda Rule: IIA Fails</h2>
+<table>
+<thead>
+<tr>
+<th align="center">60 voters</th>
+<th align="center">40 voters</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center">60 voters</th>
+<th align="center">40 voters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Navalny</td>
+<td align="center">Ivanov</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Navalny</td>
+<td align="center">Ivanov</td>
+</tr>
+<tr>
+<td align="center">Medvedev</td>
+<td align="center">Medvedev</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Medvedev</td>
+<td align="center">Medvedev</td>
+</tr>
+<tr>
+<td align="center">Ivanov</td>
+<td align="center">Zuganov</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Ivanov</td>
+<td align="center">Navalny</td>
+</tr>
+<tr>
+<td align="center">Zuganov</td>
+<td align="center">Navalny</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>social score is<ul>
+<li>Navalny:</li>
+<li>Medvedev:</li>
+<li>Ivanov:</li>
+<li>Zuganov:</li>
+</ul>
+</li>
+</ul>
+<h2 id="borda-rule-why-failure-of-iia-is-bad">Borda Rule: Why Failure of IIA is Bad</h2>
+<table>
+<thead>
+<tr>
+<th align="center">60 voters</th>
+<th align="center">40 voters</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center">60 voters</th>
+<th align="center">40 voters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Navalny</td>
+<td align="center">Ivanov</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Navalny</td>
+<td align="center"><strong>Medvedev</strong></td>
+</tr>
+<tr>
+<td align="center">Medvedev</td>
+<td align="center">Medvedev</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Medvedev</td>
+<td align="center"><strong>Ivanov</strong></td>
+</tr>
+<tr>
+<td align="center">Ivanov</td>
+<td align="center">Navalny</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Ivanov</td>
+<td align="center">Navalny</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>social score is<ul>
+<li>Navalny:</li>
+<li>Medvedev:</li>
+<li>Ivanov:</li>
+</ul>
+</li>
+<li>Borda rule is subject to strategic manipulation: my misrepresenting their preferences, the 40-group elects their favorite candidate</li>
+</ul>
+<h2 id="big-question-of-social-choice-theory">Big Question of Social Choice Theory</h2>
+<ul>
+<li>so far, all our examples of social choice functions failed at least of desirable property</li>
+<li>is there any social choice function that satisfies <strong>C</strong>, <strong>T</strong>, <strong>P</strong>, <strong>ND</strong>, <strong>IIA</strong>?</li>
+</ul>
+<h2 id="arrows-impossibility-theorem">Arrow's Impossibility Theorem</h2>
+<ul>
+<li>for any social choice problem with at least three alternatives, there does not exist a social choice function that satisfies <strong>C</strong>, <strong>T</strong>, <strong>P</strong>, <strong>ND</strong>, <strong>IIA</strong></li>
 </ul>
               
             </div>
