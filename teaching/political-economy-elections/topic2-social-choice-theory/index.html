@@ -159,8 +159,6 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#borda-rule-iia-fails">Borda Rule: IIA Fails</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#borda-rule-iia-fails_1">Borda Rule: IIA Fails</a>
-    </li>
     <li class="toctree-l2"><a class="reference internal" href="#borda-rule-why-failure-of-iia-is-bad">Borda Rule: Why Failure of IIA is Bad</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#big-question-of-social-choice-theory">Big Question of Social Choice Theory</a>
@@ -355,7 +353,7 @@
 <li>if <span class="arithmatex">\(x \succsim_S y\)</span> and <span class="arithmatex">\(y \succsim_S z\)</span>, then <span class="arithmatex">\(x \succsim_S z\)</span></li>
 </ul>
 </li>
-<li>Note: all individual preferences satisfy C and T. We don't want to miss these properties of <em>rationality</em> during aggregation</li>
+<li><em>note</em>: all individual preferences satisfy C and T; we don't want to miss these properties of rationality during aggregation</li>
 </ul>
 <h2 id="desirable-properties-of-scf-pareto">Desirable Properties of SCF: Pareto</h2>
 <ul>
@@ -521,7 +519,7 @@
 </thead>
 <tbody>
 <tr>
-<td align="center">--</td>
+<td align="center">-</td>
 <td align="center">+</td>
 <td align="center">+</td>
 <td align="center">+</td>
@@ -586,38 +584,16 @@
 <td align="center">+</td>
 <td align="center">+</td>
 <td align="center">+</td>
-<td align="center">--</td>
-</tr>
-<tr>
-<td align="center">- <strong>C</strong>: we can calculate score for any alternatives and we can compare any pair of alternatives by comparing scores</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">- <strong>T</strong>: if <span class="arithmatex">\(x \succsim_S y\)</span> and <span class="arithmatex">\(y \succsim_S z\)</span>, then <span class="arithmatex">\(\text{score}(x) \geq \text{score}(y) \geq \text{score}(z)\)</span>, meaning that <span class="arithmatex">\(x \succsim_S z\)</span></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">- <strong>P</strong>: if <em>every</em> voter prefers <span class="arithmatex">\(x\)</span> to <span class="arithmatex">\(y\)</span>, then <span class="arithmatex">\(\text{score}(x) &gt; \text{score} (y)\)</span> and <span class="arithmatex">\(x \succsim_S y\)</span></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">- <strong>ND</strong>: social scores depend on all people's preferences so no individual is a dictator</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">-</td>
 </tr>
 </tbody>
 </table>
+<ul>
+<li><strong>C</strong>: we can calculate score for any alternatives and we can compare any pair of alternatives by comparing scores </li>
+<li><strong>T</strong>: if <span class="arithmatex">\(x \succsim_S y\)</span> and <span class="arithmatex">\(y \succsim_S z\)</span>, then <span class="arithmatex">\(\text{score}(x) \geq \text{score}(y) \geq \text{score}(z)\)</span>, meaning that <span class="arithmatex">\(x \succsim_S z\)</span></li>
+<li><strong>P</strong>: if <em>every</em> voter prefers <span class="arithmatex">\(x\)</span> to <span class="arithmatex">\(y\)</span>, then <span class="arithmatex">\(\text{score}(x) &gt; \text{score} (y)\)</span> and <span class="arithmatex">\(x \succsim_S y\)</span></li>
+<li><strong>ND</strong>: social scores depend on all people's preferences so no individual is a dictator</li>
+</ul>
 <h2 id="borda-rule-iia-fails">Borda Rule: IIA Fails</h2>
 <ul>
 <li>consider preference profiles <span class="arithmatex">\(\{ \succ_1,\succ_2,\succ_3 \}\)</span> and <span class="arithmatex">\(\{ \succ_1',\succ_2',\succ_3' \}\)</span>:</li>
@@ -677,7 +653,7 @@
 <li>do all voters rank <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> the same way in <span class="arithmatex">\(\succ\)</span> and <span class="arithmatex">\(\succ'\)</span>?</li>
 <li>is social ranking of <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> the same for <span class="arithmatex">\(\succ\)</span> and <span class="arithmatex">\(\succ'\)</span>?</li>
 </ul>
-<h2 id="borda-rule-iia-fails_1">Borda Rule: IIA Fails</h2>
+<h2 id="borda-rule-why-failure-of-iia-is-bad">Borda Rule: Why Failure of IIA is Bad</h2>
 <table>
 <thead>
 <tr>
@@ -737,58 +713,6 @@
 <li>Zuganov:</li>
 </ul>
 </li>
-</ul>
-<h2 id="borda-rule-why-failure-of-iia-is-bad">Borda Rule: Why Failure of IIA is Bad</h2>
-<table>
-<thead>
-<tr>
-<th align="center">60 voters</th>
-<th align="center">40 voters</th>
-<th align="center"></th>
-<th align="center"></th>
-<th align="center"></th>
-<th align="center">60 voters</th>
-<th align="center">40 voters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">Navalny</td>
-<td align="center">Ivanov</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">Navalny</td>
-<td align="center"><strong>Medvedev</strong></td>
-</tr>
-<tr>
-<td align="center">Medvedev</td>
-<td align="center">Medvedev</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">Medvedev</td>
-<td align="center"><strong>Ivanov</strong></td>
-</tr>
-<tr>
-<td align="center">Ivanov</td>
-<td align="center">Navalny</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">Ivanov</td>
-<td align="center">Navalny</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>social score is<ul>
-<li>Navalny:</li>
-<li>Medvedev:</li>
-<li>Ivanov:</li>
-</ul>
-</li>
-<li>Borda rule is subject to strategic manipulation: my misrepresenting their preferences, the 40-group elects their favorite candidate</li>
 </ul>
 <h2 id="big-question-of-social-choice-theory">Big Question of Social Choice Theory</h2>
 <ul>
