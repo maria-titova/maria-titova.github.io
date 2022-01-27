@@ -159,11 +159,21 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#borda-rule-iia-fails">Borda Rule: IIA Fails</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#borda-rule-iia-fails-another-example">Borda Rule: IIA Fails, Another Example</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#borda-rule-why-failure-of-iia-is-bad">Borda Rule: Why Failure of IIA is Bad</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#big-question-of-social-choice-theory">Big Question of Social Choice Theory</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#arrows-impossibility-theorem">Arrow's Impossibility Theorem</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#arrows-theorem-alternative-statement">Arrow's Theorem: Alternative Statement</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ait-interpretation">AIT: Interpretation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#are-axioms-too-demanding">Are Axioms Too Demanding?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#other-ways-around-ait">Other Ways Around AIT</a>
     </li>
     </ul>
                   </li>
@@ -658,7 +668,7 @@
 <li>do all voters rank <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> the same way in <span class="arithmatex">\(\succ\)</span> and <span class="arithmatex">\(\succ'\)</span>? <span class="arithmatex">\(\text{Yes}\)</span></li>
 <li>is social ranking of <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> the same for <span class="arithmatex">\(\succ\)</span> and <span class="arithmatex">\(\succ'\)</span>? <span class="arithmatex">\(\text{No}\)</span></li>
 </ul>
-<h2 id="borda-rule-why-failure-of-iia-is-bad">Borda Rule: Why Failure of IIA is Bad</h2>
+<h2 id="borda-rule-iia-fails-another-example">Borda Rule: IIA Fails, Another Example</h2>
 <table>
 <thead>
 <tr>
@@ -720,6 +730,62 @@
 </li>
 <li>IIA fails: Medvedev wins but when Zuganov drops out, Navalny wins</li>
 </ul>
+<h2 id="borda-rule-why-failure-of-iia-is-bad">Borda Rule: Why Failure of IIA is Bad</h2>
+<table>
+<thead>
+<tr>
+<th align="center">60 voters</th>
+<th align="center">40 voters</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center">60 voters</th>
+<th align="center">40 voters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Navalny</td>
+<td align="center">Ivanov</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Navalny</td>
+<td align="center"><strong>Medvedev</strong></td>
+</tr>
+<tr>
+<td align="center">Medvedev</td>
+<td align="center">Medvedev</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Medvedev</td>
+<td align="center"><strong>Ivanov</strong></td>
+</tr>
+<tr>
+<td align="center">Ivanov</td>
+<td align="center">Navalny</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Ivanov</td>
+<td align="center">Navalny</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>social score is</p>
+<ul>
+<li>Navalny: <span class="arithmatex">\(3\cdot 60+1\cdot 40=220^*\)</span> <span class="arithmatex">\(\longrightarrow\)</span> <span class="arithmatex">\(3\cdot 60 + 1\cdot 40 = 220\)</span></li>
+<li>Medvedev: <span class="arithmatex">\(2\cdot 60 + 2\cdot 40 = 200\)</span> <span class="arithmatex">\(\longrightarrow\)</span> <span class="arithmatex">\(2\cdot 60 + 3\cdot 40 = 240^*\)</span></li>
+<li>Ivanov: <span class="arithmatex">\(1\cdot 60 + 3\cdot 40 = 180\)</span> <span class="arithmatex">\(\longrightarrow\)</span> <span class="arithmatex">\(1\cdot 60+2\cdot 40 = 140\)</span></li>
+</ul>
+</li>
+<li>
+<p>Borda rule is subject to strategic manipulation: my misrepresenting their preferences, the 40-group elects their favorite candidate</p>
+</li>
+</ul>
 <h2 id="big-question-of-social-choice-theory">Big Question of Social Choice Theory</h2>
 <ul>
 <li>so far, all our examples of social choice functions failed at least of desirable property</li>
@@ -727,7 +793,45 @@
 </ul>
 <h2 id="arrows-impossibility-theorem">Arrow's Impossibility Theorem</h2>
 <ul>
-<li>for any social choice problem with at least three alternatives, there does not exist a social choice function that satisfies <strong>C</strong>, <strong>T</strong>, <strong>P</strong>, <strong>ND</strong>, <strong>IIA</strong></li>
+<li>for any social choice problem with at least three alternatives, there does not exist a social choice function that satisfies <strong>C</strong>, <strong>T</strong>, <strong>P</strong>, <strong>ND</strong>, <strong>IIA</strong><ul>
+<li>interpretation: groups of people do not have well-defined preferences, even if each person is rational</li>
+</ul>
+</li>
+</ul>
+<h2 id="arrows-theorem-alternative-statement">Arrow's Theorem: Alternative Statement</h2>
+<ul>
+<li>"for any social choice problem with at least three alternatives, if a SCF satisfies <strong>C</strong>, <strong>T</strong>, <strong>P</strong>, and <strong>IIA</strong>, then it must be dictatorial<ul>
+<li>resist the urge to interpret as "we need to have a dictator for society to be rational"</li>
+<li>AIT merely states that non-dictatorial SCFs have some problems</li>
+</ul>
+</li>
+</ul>
+<h2 id="ait-interpretation">AIT: Interpretation</h2>
+<ul>
+<li>no non-dictatorial SCF can satisfy all 5 axioms of social choice but many can satisfy <span class="arithmatex">\(4/5\)</span><ul>
+<li>unanimity rule without status quo: all but <strong>C</strong></li>
+<li>simple majority: all but <strong>T</strong></li>
+<li>Borda scoring rule: all but <strong>IIA</strong></li>
+<li>"constant rule" (constant social preferences, e.g. alphabetical ranking): all but <strong>P</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="are-axioms-too-demanding">Are Axioms Too Demanding?</h2>
+<ul>
+<li><strong>IIA</strong> has weakest <em>moral</em> basis; Borda rule satisfies all but <strong>IIA</strong> but has problems:<ul>
+<li>how to measure intensity of preferences?</li>
+<li>how to avoid strategic manipulation of social ranking by addition/removal of candidates?</li>
+</ul>
+</li>
+<li>"my rule is intended for honest men only": <em>Borda, probably</em></li>
+</ul>
+<h2 id="other-ways-around-ait">Other Ways Around AIT</h2>
+<ul>
+<li><strong>AIT</strong>: "or any social choice problem with <strong>at least three alternatives</strong>, there does not exist a social choice function that satisfies <strong>C</strong>, <strong>T</strong>, <strong>P</strong>, <strong>ND</strong>, <strong>IIA</strong>"<ul>
+<li>does not apply if choice is between two alternatives</li>
+<li>does not apply if we restrict preferences</li>
+</ul>
+</li>
 </ul>
               
             </div>
