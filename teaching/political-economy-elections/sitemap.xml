@@ -2,22 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://maria-titova.com/teaching/political-economy-elections/</loc>
-         <lastmod>2022-01-27</lastmod>
+         <lastmod>2022-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maria-titova.com/teaching/political-economy-elections/topic0-course-overview/</loc>
-         <lastmod>2022-01-27</lastmod>
+         <lastmod>2022-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maria-titova.com/teaching/political-economy-elections/topic1-math-overview/</loc>
-         <lastmod>2022-01-27</lastmod>
+         <lastmod>2022-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maria-titova.com/teaching/political-economy-elections/topic2-social-choice-theory/</loc>
-         <lastmod>2022-01-27</lastmod>
+         <lastmod>2022-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maria-titova.com/teaching/political-economy-elections/topic3-median-voter-theorem/</loc>
+         <lastmod>2022-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
