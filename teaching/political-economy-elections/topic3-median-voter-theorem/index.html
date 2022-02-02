@@ -253,7 +253,7 @@
 <li>
 <p>then,</p>
 <ul>
-<li>bliss point of the median voter is Condorcet winner<ul>
+<li>bliss point of the <strong>median voter</strong> is Condorcet winner<ul>
 <li>it beats all other options in pairwise comparisons via majority rule</li>
 </ul>
 </li>
@@ -262,6 +262,7 @@
 </ul>
 <h2 id="identifying-the-median-voter">Identifying the Median Voter</h2>
 <ul>
+<li><strong>median voter</strong> splits electorate in half: half of voters are to the left, half are to the right</li>
 <li>identity of median voter depends on the electorate<ul>
 <li>in conservative states, median voter is more conservative</li>
 <li>if poorer voters are less likely to vote, then median voter <span class="arithmatex">\(\ne\)</span> median citizen</li>
@@ -274,18 +275,72 @@
 </li>
 </ul>
 <h2 id="blacks-median-voter-theorem-interpretations">Black's Median Voter Theorem: Interpretations</h2>
-<pre><code>- policy closest to the median voter is going to win
-- if status quo is at the median voter's bliss point, then no challenging proposal will be accepted
-</code></pre>
+<ul>
+<li>policy closest to the median voter is going to win <em>against any other policy</em></li>
+<li><em>corollary</em>: if status quo is at the median voter's bliss point, then no challenging proposal will be accepted</li>
+</ul>
 <h2 id="when-mvt-doesnt-apply">When MVT Doesn't Apply</h2>
 <ul>
-<li>MVT only strictly holds if there is a single issue<ul>
+<li>MVT holds only if there is a single issue<ul>
 <li>if there are two or more issues that parties take stands on, but only one election, there is no guarantee that the median voter's preference will win on <em>any</em> issue</li>
 <li>even with single-peaked preferences, multiple dimensions make it possible for voting cycles to arise</li>
 </ul>
 </li>
 <li>is the MVT useless?<ul>
 <li>possibly so, but IRL platforms empirically boil down to a single dimension -- liberal-conservative spectrum in the US</li>
+</ul>
+</li>
+</ul>
+<h2 id="strategic-political-competition">Strategic Political Competition</h2>
+<ul>
+<li>no we know how to represent voters' ideology</li>
+<li>what if we had multiple political candidates competing in an election?<ul>
+<li>what platforms will they propose?</li>
+<li>will they moderate or go to extremes?</li>
+<li>will we see polarization?</li>
+</ul>
+</li>
+</ul>
+<h2 id="a-formal-model-of-political-competition">A Formal Model of Political Competition</h2>
+<ul>
+<li>key actors (<strong>players</strong>)</li>
+<li>what they can do (<strong>strategies</strong>)</li>
+<li>their goals (<strong>payoffs</strong>)</li>
+</ul>
+<h2 id="downsian-model-of-electoral-competition">Downsian Model of Electoral Competition</h2>
+<ul>
+<li>players: two candidates (parties) <strong>D</strong> and <strong>R</strong></li>
+<li>strategies: each candidate chooses a policy platform<ul>
+<li>a number on a real line</li>
+</ul>
+</li>
+<li>goals: winning the election under majority rule<ul>
+<li>payoff is <span class="arithmatex">\(1\)</span> for the winner, <span class="arithmatex">\(0\)</span> for the loser, <span class="arithmatex">\(0.5\)</span> if tied</li>
+<li>these are <strong>office-motivated</strong> candidates (they don't personally care about policy)</li>
+</ul>
+</li>
+</ul>
+<h2 id="downsian-model-of-electoral-competition-voting">Downsian Model of Electoral Competition: Voting</h2>
+<ul>
+<li>voters are technically also players of this game, but we already studied this part</li>
+<li>we assume we have an <strong>electorate</strong> of voters with <strong>single-peaked</strong> preferences<ul>
+<li>represented by bliss points on the same real line as candidates</li>
+</ul>
+</li>
+<li>each voter votes for the candidate whose policy is closest to her bliss point<ul>
+<li>if candidates are equidistant, then the vote is split evenly</li>
+</ul>
+</li>
+<li>outcome is determined via <strong>majority rule</strong></li>
+</ul>
+<h2 id="downsian-model-of-electoral-competition-result">Downsian Model of Electoral Competition: Result</h2>
+<ul>
+<li>for any electorate, both candidates propose the ideal policy of the median voter<ul>
+<li>AKA <strong>full convergence</strong></li>
+</ul>
+</li>
+<li>if you are interested in winning an election, you have no reason to polarize<ul>
+<li>to win, you need the majority <span class="arithmatex">\(\to\)</span> propose 'moderate' policies to convince more voters</li>
 </ul>
 </li>
 </ul>
