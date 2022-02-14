@@ -3,17 +3,17 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://maria-titova.com/teaching/political-economy-elections/topic3-median-voter-theorem/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://maria-titova.com/teaching/political-economy-elections/topic5-models-of-electoral-competition/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Median Voter Theorem - Political Economy of Elections</title>
+    <title>Models of Electoral Competition - Political Economy of Elections</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Median Voter Theorem";
-        var mkdocs_page_input_path = "topic3-median-voter-theorem.md";
-        var mkdocs_page_url = "/teaching/political-economy-elections/topic3-median-voter-theorem/";
+        var mkdocs_page_name = "Models of Electoral Competition";
+        var mkdocs_page_input_path = "topic5-models-of-electoral-competition.md";
+        var mkdocs_page_url = "/teaching/political-economy-elections/topic5-models-of-electoral-competition/";
       </script>
     
     <script src="../js/jquery-3.6.0.min.js" defer></script>
@@ -46,7 +46,7 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption"><span class="caption-text">Lecture Notes</span></p>
-              <ul class="current">
+              <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../topic0-course-overview/">Political Economy of Elections</a>
     <ul>
     <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#this-course">This Course</a>
@@ -177,15 +177,15 @@
     </li>
     </ul>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Median Voter Theorem</a>
-    <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../topic3-median-voter-theorem/">Median Voter Theorem</a>
+    <ul>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../topic4-intro-to-game-theory/">Introduction to Game Theory</a>
     <ul>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../topic5-models-of-electoral-competition">None</a>
+                  <li class="toctree-l1"><a class="" href=".">None</a>
                   </li>
               </ul>
       </div>
@@ -201,8 +201,7 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-          <li>Lecture Notes &raquo;</li><li>Median Voter Theorem</li>
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Models of Electoral Competition</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -212,151 +211,157 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="single-peaked-preferences">Single-Peaked Preferences</h2>
+                <h2 id="hotelling-1929-game">Hotelling (1929) Game</h2>
+<p>Two ice cream vendors are on a beach that stretches the 0-1 interval. Customers are uniformly distributed along that interval. The vendors simultaneously select a position. Customers go to the closest vendor and split themselves evenly if the vendors choose an identical position. Each vendor wants to maximize the number of customers. </p>
+<p>Where do the vendors locate?</p>
+<h2 id="hotelling-1929-game-formalized">Hotelling (1929) Game Formalized</h2>
 <ul>
-<li>consider one person's preferences over choice set <span class="arithmatex">\(X \subset \mathbb{R}\)</span></li>
-<li>her preferences are <em>single-peaked</em> if there exists option <span class="arithmatex">\(v \in X\)</span> such that<ul>
-<li><span class="arithmatex">\(v \succ x \succ y\)</span> whenever <span class="arithmatex">\(y&lt;x&lt;v\)</span> or <span class="arithmatex">\(y&gt;x&gt;v\)</span></li>
-<li><span class="arithmatex">\(v\)</span> is the <em>bliss point</em></li>
-<li><span class="arithmatex">\(!\)</span> this is a restriction on the set of considered preferences</li>
+<li><strong>players</strong>: 2 ice cream trucks</li>
+<li><strong>actions</strong>: <span class="arithmatex">\(x_i \in [0,1]\)</span>, location of the ice cream truck</li>
+<li><strong>payoffs</strong>: <span class="arithmatex">\(i\)</span> receives fraction of consumers who are closer to <span class="arithmatex">\(i\)</span>
+  $$ 
+    u_A (x_A,x_B) = \left{
+        \begin{aligned}
+          &amp; \frac{x_A + x_B}{2}, &amp; \text{ if } x_A &lt; x_B, \
+          &amp;1/2, &amp; \text{ if } x_A = x_B\
+          &amp; 1 - \frac{x_A + x_B}{2}, &amp; \text{ if } x_A &gt; x_B,\
+        \end{aligned}
+      \right.
+  $$</li>
 </ul>
-</li>
-</ul>
-<h2 id="single-peaked-preferences-nice-properties">Single-Peaked Preferences: Nice Properties</h2>
+<h2 id="hotelling-law">Hotelling Law</h2>
 <ul>
-<li>suppose we have <span class="arithmatex">\(N\)</span> (odd) individuals with single-peaked preferences</li>
-<li>then, <ul>
-<li>majority rule satisfies transitivity</li>
-<li>truthful reporting is a weakly dominant strategy*</li>
+<li>in <strong>many markets</strong> producers locate as close as possible</li>
 </ul>
-</li>
-</ul>
-<h2 id="single-peaked-preferences-hidden-assumptions">Single-Peaked Preferences: (Hidden) Assumptions</h2>
+<h2 id="hotelling-1929-to-downs-1957">Hotelling (1929) <span class="arithmatex">\(\to\)</span> Downs (1957)</h2>
 <ul>
-<li><strong>voters have single-peaked preferences if they have an ideal balance between the two directions of the ideological spectrum and if they dislike policies the farther away they are from their ideal point</strong><ul>
-<li>one dimension</li>
-<li>further = worse <ul>
-<li>cannot dislike candidates for any reason other than policy</li>
+<li>ice cream sellers <span class="arithmatex">\(\to\)</span> <strong>political parties</strong><ul>
+<li>maximize sales <span class="arithmatex">\(\to\)</span> maximize share of vote<ul>
+<li>OR win election via majority rule</li>
+<li><em>many other social choice functions lead to same conclusion</em></li>
 </ul>
 </li>
 </ul>
 </li>
+<li>customers <span class="arithmatex">\(\to\)</span> <strong>voters</strong><ul>
+<li>buy from closest vendor <span class="arithmatex">\(\to\)</span> vote for ideologically closest party</li>
 </ul>
-<h2 id="voters-ideology-as-single-peaked-preferences">Voters' Ideology as Single-Peaked Preferences</h2>
+</li>
+</ul>
+<h2 id="downsian-electoral-competition-list-of-ignored-things">(Downsian) Electoral Competition: List of Ignored Things</h2>
 <ul>
-<li>if we assume single-peaked preferences, every voter is characterized just by her bliss point</li>
-<li>we can place all voters' bliss points on the line</li>
-<li>call the collection of all voters' bliss points the <strong>electorate</strong></li>
+<li>parties are <em>office motivated</em> and <em>can commit to policies</em>:<ul>
+<li>are not policy-motivated</li>
+<li>cannot change policy after announcement</li>
+<li>cannot lie</li>
 </ul>
-<h2 id="blacks-median-voter-theorem">Black's Median Voter Theorem</h2>
+</li>
+<li>voters are <em>sincere</em> and have <em>spatial preferences</em><ul>
+<li>they do not strategize</li>
+<li>no valence</li>
+<li>no retrospective voting</li>
+</ul>
+</li>
+<li>complete information</li>
+</ul>
+<h2 id="downsian-competition-non-uniform-electorate">Downsian Competition: Non-Uniform Electorate</h2>
 <ul>
-<li>
-<p>suppose we have <span class="arithmatex">\(N\)</span> (odd) individuals with single-peaked preferences</p>
+<li>consider standard Downsian model:<ul>
+<li><span class="arithmatex">\([0,1]\)</span> political spectrum</li>
+<li>2 parties that compete via selecting policies</li>
+<li>majority rule</li>
+</ul>
+</li>
+<li>distribution of voters is <span class="arithmatex">\(F\)</span> with density <span class="arithmatex">\(f\)</span></li>
+</ul>
+<h2 id="median-voter-theorem">Median Voter Theorem</h2>
 <ul>
-<li>their bliss points are sorted in increasing order: <span class="arithmatex">\(v_1 \leq v_2 \leq \dots \leq v_N\)</span></li>
+<li>both parties select location of median voter<ul>
+<li><span class="arithmatex">\(x^M\)</span> such that <span class="arithmatex">\(F(x^M) = 1/2\)</span> (same as <span class="arithmatex">\(x^M = F^{-1}(x^M)\)</span>)</li>
 </ul>
 </li>
-<li>
-<p>then,</p>
+<li>can we prove this result without actually solving the game?</li>
+</ul>
+<h2 id="how-to-solve-a-game-without-solving-it">How to Solve a Game Without Solving It</h2>
 <ul>
-<li>bliss point of the <strong>median voter</strong> is Condorcet winner<ul>
-<li>it beats all other options in pairwise comparisons via majority rule</li>
+<li>oftentimes, solving (refer to slide 1) games is hard</li>
+<li>alternatives:<ul>
+<li><strong>guess and verify</strong></li>
+<li><strong>check there are no other NE</strong>, aka prove uniqueness</li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-<h2 id="identifying-the-median-voter">Identifying the Median Voter</h2>
+<h2 id="how-to-solve-a-game-without-solving-it_1">How to Solve a Game Without Solving It</h2>
 <ul>
-<li><strong>median voter</strong> splits electorate in half: half of voters are to the left, half are to the right</li>
-<li>identity of median voter depends on the electorate<ul>
-<li>in conservative states, median voter is more conservative</li>
-<li>if poorer voters are less likely to vote, then median voter <span class="arithmatex">\(\ne\)</span> median citizen</li>
-<li>many factors affect voter participation: age, education, what's on the ballot, weather, how the sports team is doing, etc</li>
-<li>franchise restrictions<ul>
-<li>voting rights for women, racial minorities, convicted felons, non-residents, etc</li>
+<li><strong>guess and verify</strong><ul>
+<li>(for whatever reason) you predict that a profile of strategies is an equilibrium</li>
+<li>for every player, prove that they do whatever you predict given predicted strategies of others</li>
+</ul>
+</li>
+<li><strong>check there are no other NE</strong> by contradiction<ul>
+<li>suppose that there is some other NE</li>
+<li>prove that it cannot be a NE</li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-<h2 id="blacks-median-voter-theorem-interpretations">Black's Median Voter Theorem: Interpretations</h2>
+<h2 id="downsian-competition-w-non-uniform-electorate-guess-and-verify">Downsian Competition w/ Non-Uniform Electorate: Guess and Verify</h2>
 <ul>
-<li>policy closest to the median voter is going to win <em>against any other policy</em></li>
-<li><em>corollary</em>: if status quo is at the median voter's bliss point, then no challenging proposal will be accepted</li>
+<li>we suspect that both parties select location of median voter<ul>
+<li>we guess: <span class="arithmatex">\(x_A^* = x_B^* = x^M\)</span></li>
+<li>we verify: <ul>
+<li>if <span class="arithmatex">\(x_B^* = x^M\)</span>, then $$ x_A^* = x^M $$</li>
+<li>if <span class="arithmatex">\(x_A^* = x^M\)</span>, then $$ x_B^* = x^M $$</li>
 </ul>
-<h2 id="when-mvt-doesnt-apply">When MVT Doesn't Apply</h2>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="downsian-competition-w-non-uniform-electorate-uniqueness">Downsian Competition w/ Non-Uniform Electorate: Uniqueness</h2>
 <ul>
-<li>MVT holds only if there is a single issue<ul>
-<li>if there are two or more issues that parties take stands on, but only one election, there is no guarantee that the median voter's preference will win on <em>any</em> issue</li>
-<li>even with single-peaked preferences, multiple dimensions make it possible for voting cycles to arise</li>
+<li>only one party at the median?<ul>
+<li>no</li>
 </ul>
 </li>
-<li>is the MVT useless?<ul>
-<li>possibly so, but IRL platforms empirically boil down to a single dimension -- liberal-conservative spectrum in the US</li>
+<li>both parties to the left of median?<ul>
+<li>no</li>
 </ul>
 </li>
+<li>both parties to the right of median?<ul>
+<li>no</li>
 </ul>
-<h2 id="strategic-political-competition">Strategic Political Competition</h2>
+</li>
+<li>one to the left, one to the right?<ul>
+<li>no</li>
+</ul>
+</li>
+<li>with all other options exhausted, both parties at the median is the <strong>unique NE</strong></li>
+</ul>
+<h2 id="median-voter-theorem-robustness">Median Voter Theorem: Robustness</h2>
 <ul>
-<li>no we know how to represent voters' ideology</li>
-<li>what if we had multiple political candidates competing in an election?<ul>
-<li>what platforms will they propose?</li>
-<li>will they moderate or go to extremes?</li>
-<li>will we see polarization?</li>
+<li>we made many assumptions to get to median voter theorem, let's start relaxing them</li>
+<li><strong>what if parties also care about policies</strong>?</li>
 </ul>
-</li>
-</ul>
-<h2 id="a-formal-model-of-political-competition">A Formal Model of Political Competition</h2>
+<h2 id="downsian-model-with-policy-motivated-candidates">Downsian Model with Policy-Motivated Candidates</h2>
 <ul>
-<li>key actors (<strong>players</strong>)</li>
-<li>what they can do (<strong>strategies</strong>)</li>
-<li>their goals (<strong>payoffs</strong>)</li>
+<li>suppose that parties are ideological:<ul>
+<li>party <span class="arithmatex">\(A\)</span> is <em>democratic</em>, has ideal policy <span class="arithmatex">\(x_D\)</span></li>
+<li>party <span class="arithmatex">\(B\)</span> is <em>republican</em>, has ideal policy <span class="arithmatex">\(x_R\)</span></li>
+<li><em>each party wants the elected policy to be closest to its bliss point</em></li>
 </ul>
-<h2 id="downsian-model-of-electoral-competition">Downsian Model of Electoral Competition</h2>
+</li>
+<li>still majority rule and electorate is <span class="arithmatex">\(F\)</span></li>
+</ul>
+<h2 id="downsian-model-with-policy-motivated-candidates-trade-off">Downsian Model with Policy-Motivated Candidates: Trade-Off</h2>
 <ul>
-<li>players: two candidates (parties) <strong>D</strong> and <strong>R</strong></li>
-<li>strategies: each candidate chooses a policy platform<ul>
-<li>a number on a real line</li>
-</ul>
-</li>
-<li>goals: winning the election under majority rule<ul>
-<li>payoff is <span class="arithmatex">\(1\)</span> for the winner, <span class="arithmatex">\(0\)</span> for the loser, <span class="arithmatex">\(0.5\)</span> if tied</li>
-<li>these are <strong>office-motivated</strong> candidates (they don't personally care about policy)</li>
-</ul>
-</li>
-</ul>
-<h2 id="downsian-model-of-electoral-competition-voting">Downsian Model of Electoral Competition: Voting</h2>
-<ul>
-<li>voters are technically also players of this game, but we already studied this part</li>
-<li>we assume we have an <strong>electorate</strong> of voters with <strong>single-peaked</strong> preferences<ul>
-<li>represented by bliss points on the same real line as candidates</li>
-</ul>
-</li>
-<li>each voter votes for the candidate whose policy is closest to her bliss point<ul>
-<li>if candidates are equidistant, then the vote is split evenly</li>
-</ul>
-</li>
-<li>outcome is determined via <strong>majority rule</strong></li>
-</ul>
-<h2 id="downsian-model-of-electoral-competition-result">Downsian Model of Electoral Competition: Result</h2>
-<ul>
-<li>for any electorate, both candidates propose the ideal policy of the median voter<ul>
-<li>AKA <strong>full convergence</strong></li>
-</ul>
-</li>
-<li>if you are interested in winning an election, you have no reason to polarize<ul>
-<li>to win, you need the majority <span class="arithmatex">\(\to\)</span> propose 'moderate' policies to convince more voters</li>
+<li>now there is a <strong>trade-off</strong>:<ul>
+<li>placing at <span class="arithmatex">\(x^M\)</span> is good because it maximizes chances of winning</li>
+<li>placing at <span class="arithmatex">\(x^M\)</span> is not great because it's not the party's ideal policy</li>
 </ul>
 </li>
 </ul>
               
             </div>
           </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../topic2-social-choice-theory/" class="btn btn-neutral float-left" title="Social Choice Theory"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../topic4-intro-to-game-theory/" class="btn btn-neutral float-right" title="Introduction to Game Theory">Next <span class="icon icon-circle-arrow-right"></span></a>
-    </div>
 
   <hr/>
 
@@ -378,10 +383,6 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../topic2-social-choice-theory/" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../topic4-intro-to-game-theory/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
