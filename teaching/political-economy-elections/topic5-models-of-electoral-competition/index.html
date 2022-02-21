@@ -222,13 +222,15 @@
 <li><strong>players</strong>: 2 ice cream trucks</li>
 <li><strong>actions</strong>: <span class="arithmatex">\(x_i \in [0,1]\)</span>, location of the ice cream truck</li>
 <li><strong>payoffs</strong>: <span class="arithmatex">\(i\)</span> receives fraction of consumers who are closer to <span class="arithmatex">\(i\)</span>:
-  <span class="arithmatex">\(u_A (x_A,x_B) = \left\{
+  $$
+    u_A (x_A,x_B) = \left{
         \begin{aligned}
-          &amp; \frac{x_A + x_B}{2}, &amp; \text{ if } x_A &lt; x_B, \\
-          &amp;1/2, &amp; \text{ if } x_A = x_B\\
-          &amp; 1 - \frac{x_A + x_B}{2}, &amp; \text{ if } x_A &gt; x_B,\\
+          &amp; \frac{x_A + x_B}{2}, &amp; \text{ if } x_A &lt; x_B, \
+          &amp;1/2, &amp; \text{ if } x_A = x_B\
+          &amp; 1 - \frac{x_A + x_B}{2}, &amp; \text{ if } x_A &gt; x_B,\
         \end{aligned}
-      \right.\)</span></li>
+      \right.
+  $$</li>
 </ul>
 <h2 id="hotelling-law">Hotelling Law</h2>
 <ul>
@@ -357,6 +359,102 @@
 <li>now there is a <strong>trade-off</strong>:<ul>
 <li>placing at <span class="arithmatex">\(x^M\)</span> is good because it maximizes chances of winning</li>
 <li>placing at <span class="arithmatex">\(x^M\)</span> is not great because it's not the party's ideal policy</li>
+</ul>
+</li>
+</ul>
+<h2 id="policy-motivated-candidates-solution">Policy-Motivated Candidates: Solution</h2>
+<ul>
+<li>suppose chosen positions are <span class="arithmatex">\(x_D &lt; x^M &lt; x_R\)</span><ul>
+<li>then, this cannot be an equilibrium<ul>
+<li>suppose <span class="arithmatex">\(D\)</span> is the losing party. Then, <span class="arithmatex">\(D\)</span> can deviate to <span class="arithmatex">\(x^M\)</span> and win the election. Since <span class="arithmatex">\(x^M\)</span> (new winning policy) is closer to <span class="arithmatex">\(0\)</span> (bliss point of <span class="arithmatex">\(D\)</span>) than <span class="arithmatex">\(x_R\)</span> (old winning policy), this is a profitable deviation for <span class="arithmatex">\(D\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="downsian-model-extentions">Downsian Model: Extentions</h2>
+<ul>
+<li>we saw that MVT holds for office- and policy-motivated candidates</li>
+<li>one big assumption we made so far is complete information<ul>
+<li>let us introduce some uncertainty</li>
+</ul>
+</li>
+</ul>
+<h2 id="current-model-downsian-w-uncertainty-about-median-voter">Current Model: Downsian w/ Uncertainty about Median Voter</h2>
+<ul>
+<li><strong>candidates</strong>: 2 <em>office-motivated</em> parties, <span class="arithmatex">\(D\)</span> and <span class="arithmatex">\(R\)</span>, choosing positions <span class="arithmatex">\(x_D\)</span> and <span class="arithmatex">\(x_R\)</span><ul>
+<li>like before, parties' bliss points are <span class="arithmatex">\(\bm{\tilde{x}_D}=0\)</span> and <span class="arithmatex">\(\bm{\tilde{x}_D}=1\)</span></li>
+</ul>
+</li>
+<li><strong>electorate</strong>: median voter's position is unknown<ul>
+<li>candidates think that <span class="arithmatex">\(x^M\)</span> is uniform on <span class="arithmatex">\(\left[\frac{1}{2}-\frac{1}{2b},\frac{1}{2}+\frac{1}{2b}\right]\)</span><ul>
+<li>what is <span class="arithmatex">\(b\)</span>? -- measure of uncertainty about the position of the median voter</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="current-model-expected-utility">Current Model: Expected Utility</h2>
+<ul>
+<li>expected utility of party <span class="arithmatex">\(D\)</span> is
+  $$
+    u_D(x_D,x_R) = -\text{prob(<em>D wins</em>)} \cdot |x_D - 0| - \text{prob(<em>R wins</em>)} \cdot |x_R - 0|
+  $$</li>
+</ul>
+<h2 id="current-model-probability-of-winning">Current Model: Probability of Winning</h2>
+<ul>
+<li>given chosen positions <span class="arithmatex">\(x_D &lt; x_R\)</span>, probability that <span class="arithmatex">\(D\)</span> wins is
+  $$
+    p_D(x_D,x_R) = \left{\begin{aligned}
+        0, \text{ if } \frac{x_D+x_R}{2} &amp;&lt; \frac{1}{2} - \frac{1}{2b},\
+        \frac{b(x_D + x_R - 1)+1}{2}, \text{ if } \frac{x_D+x_R}{2} &amp;\in \left[\frac{1}{2} - \frac{1}{2b},\frac{1}{2} + \frac{1}{2b}\right]\
+        1, \text{ if } \frac{x_D+x_R}{2} &amp;&gt; \frac{1}{2} + \frac{1}{2b},\
+      \end{aligned}\right.
+  $$</li>
+</ul>
+<h2 id="current-model-utility-maximization">Current Model: Utility Maximization</h2>
+<ul>
+<li>recall that expected utility is
+      $$
+          u_D(x_D,x_R) = -p_D(x_D,x_R) \cdot x_D - (1-p_D(x_D,x_R)) \cdot x_R
+      $$</li>
+<li>best response logic: given <span class="arithmatex">\(x_R\)</span>, how does <span class="arithmatex">\(D\)</span> choose <span class="arithmatex">\(x_D\)</span> to maximize his expected utility?</li>
+</ul>
+<h2 id="current-model-first-order-conditions">Current Model: First Order Conditions</h2>
+<ul>
+<li>we (hopefully) got
+  $$
+    \frac{\partial u_D}{\partial x_D} = -\frac{b x_D}{2} + \frac{b-1}{2} &lt; 0
+  $$<ul>
+<li>negative derivative: lower (lefter) <span class="arithmatex">\(x_D\)</span> <span class="arithmatex">\(\to\)</span> higher expected utility</li>
+<li><span class="arithmatex">\(D\)</span> should pick <span class="arithmatex">\(x_D\)</span> as left as possible<ul>
+<li><strong>how left?</strong> -- to <span class="arithmatex">\(\frac{1}{2} - \frac{1}{2b}\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="current-model-equilibrium">Current Model: Equilibrium</h2>
+<ul>
+<li>in (unique) equilibrium,
+  $$
+    x_D^<em> = \frac{1}{2} - \frac{1}{2b} \text{ and } x_R^</em> = \frac{1}{2} + \frac{1}{2b}
+  $$ </li>
+</ul>
+<h2 id="current-model-conclusion">Current Model: Conclusion</h2>
+<ul>
+<li>for the first time, we get <strong>polarization</strong>:<ul>
+<li>polarization = distance between positions announced by candidates, <span class="arithmatex">\(x_R^* - x_D^* = \frac{1}{b}\)</span></li>
+</ul>
+</li>
+<li>polarization is high when there is a lot of uncertainty about position of median voter<ul>
+<li>if median voter could be anywhere (<span class="arithmatex">\(b = 1\)</span>), polarization is highest and <span class="arithmatex">\(x_D^* = 0\)</span>, <span class="arithmatex">\(x_R^* = 1\)</span></li>
+<li><em>politicians announce their favorite policies when they have no idea what voters want</em></li>
+</ul>
+</li>
+<li>polarization is low when there is little uncertainty about median voter<ul>
+<li>if median voter is at <span class="arithmatex">\(\frac{1}{2}\)</span> (<span class="arithmatex">\(b \to \infty\)</span>), polarization is lowest and <span class="arithmatex">\(x_D^* = \frac{1}{2}\)</span>, <span class="arithmatex">\(x_R^* = \frac{1}{2}\)</span></li>
+<li><em>MVT holds when there is little uncertainty about position of median voter</em></li>
 </ul>
 </li>
 </ul>
