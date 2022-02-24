@@ -222,15 +222,15 @@
 <li><strong>players</strong>: 2 ice cream trucks</li>
 <li><strong>actions</strong>: <span class="arithmatex">\(x_i \in [0,1]\)</span>, location of the ice cream truck</li>
 <li><strong>payoffs</strong>: <span class="arithmatex">\(i\)</span> receives fraction of consumers who are closer to <span class="arithmatex">\(i\)</span>:
-  $$
-    u_A (x_A,x_B) = \left{
+  <span class="arithmatex">\(
+    u_A (x_A,x_B) = \left\{
         \begin{aligned}
-          &amp; \frac{x_A + x_B}{2}, &amp; \text{ if } x_A &lt; x_B, \
-          &amp;1/2, &amp; \text{ if } x_A = x_B\
-          &amp; 1 - \frac{x_A + x_B}{2}, &amp; \text{ if } x_A &gt; x_B,\
+          &amp; \frac{x_A + x_B}{2}, &amp; \text{ if } x_A &lt; x_B, \\
+          &amp;1/2, &amp; \text{ if } x_A = x_B\\
+          &amp; 1 - \frac{x_A + x_B}{2}, &amp; \text{ if } x_A &gt; x_B,\\
         \end{aligned}
       \right.
-  $$</li>
+  \)</span></li>
 </ul>
 <h2 id="hotelling-law">Hotelling Law</h2>
 <ul>
@@ -280,7 +280,7 @@
 <h2 id="median-voter-theorem">Median Voter Theorem</h2>
 <ul>
 <li>both parties select location of median voter<ul>
-<li><span class="arithmatex">\(x^M\)</span> such that <span class="arithmatex">\(F(x^M) = 1/2\)</span> (same as <span class="arithmatex">\(x^M = F^{-1}(x^M)\)</span>)</li>
+<li><span class="arithmatex">\(x^M\)</span> such that <span class="arithmatex">\(F(x^M) = 1/2\)</span></li>
 </ul>
 </li>
 <li>can we prove this result without actually solving the game?</li>
@@ -303,8 +303,8 @@
 <li>we suspect that both parties select location of median voter<ul>
 <li>we guess: <span class="arithmatex">\(x_A^* = x_B^* = x^M\)</span></li>
 <li>we verify: <ul>
-<li>if <span class="arithmatex">\(x_B^* = x^M\)</span>, then $$ x_A^* =  $$</li>
-<li>if <span class="arithmatex">\(x_A^* = x^M\)</span>, then $$ x_B^* =  $$</li>
+<li>if <span class="arithmatex">\(x_B^* = x^M\)</span>, then <span class="arithmatex">\(x_A^* = x_B^*\)</span></li>
+<li>if <span class="arithmatex">\(x_A^* = x^M\)</span>, then <span class="arithmatex">\(x_B^* = x_A^*\)</span></li>
 </ul>
 </li>
 </ul>
@@ -313,19 +313,19 @@
 <h2 id="downsian-competition-w-non-uniform-electorate-uniqueness">Downsian Competition w/ Non-Uniform Electorate: Uniqueness</h2>
 <ul>
 <li>only one party at the median?<ul>
-<li>no:</li>
+<li>no</li>
 </ul>
 </li>
 <li>both parties to the left of median?<ul>
-<li>no:</li>
+<li>no</li>
 </ul>
 </li>
 <li>both parties to the right of median?<ul>
-<li>no:</li>
+<li>no</li>
 </ul>
 </li>
 <li>one to the left, one to the right?<ul>
-<li>no:</li>
+<li>no</li>
 </ul>
 </li>
 <li>with all other options exhausted, both parties at the median is the <strong>unique NE</strong></li>
@@ -333,16 +333,13 @@
 <h2 id="median-voter-theorem-robustness">Median Voter Theorem: Robustness</h2>
 <ul>
 <li>we made many assumptions to get to median voter theorem, let's start relaxing them</li>
-<li><strong>what if parties also care about policies</strong>?<ul>
-<li>...</li>
-</ul>
-</li>
+<li><strong>what if parties also care about policies</strong>?</li>
 </ul>
 <h2 id="downsian-model-with-policy-motivated-candidates">Downsian Model with Policy-Motivated Candidates</h2>
 <ul>
 <li>suppose that parties are ideological:<ul>
-<li>party <span class="arithmatex">\(D\)</span> is <em>democratic</em>, has ideal policy <span class="arithmatex">\(\bm{\tilde{x}_D}=0\)</span></li>
-<li>party <span class="arithmatex">\(R\)</span> is <em>republican</em>, has ideal policy <span class="arithmatex">\(\bm{\tilde{x}_R}=1\)</span></li>
+<li>party <span class="arithmatex">\(D\)</span> is <em>democratic</em>, has ideal policy <span class="arithmatex">\(\tilde{x}_D=0\)</span></li>
+<li>party <span class="arithmatex">\(R\)</span> is <em>republican</em>, has ideal policy <span class="arithmatex">\(\tilde{x}_R=1\)</span></li>
 <li><em>each party wants the elected policy to be closest to its bliss point</em></li>
 </ul>
 </li>
@@ -377,7 +374,7 @@
 <h2 id="current-model-downsian-w-uncertainty-about-median-voter">Current Model: Downsian w/ Uncertainty about Median Voter</h2>
 <ul>
 <li><strong>candidates</strong>: 2 <em>office-motivated</em> parties, <span class="arithmatex">\(D\)</span> and <span class="arithmatex">\(R\)</span>, choosing positions <span class="arithmatex">\(x_D\)</span> and <span class="arithmatex">\(x_R\)</span><ul>
-<li>like before, parties' bliss points are <span class="arithmatex">\(\bm{\tilde{x}_D}=0\)</span> and <span class="arithmatex">\(\bm{\tilde{x}_D}=1\)</span></li>
+<li>like before, parties' bliss points are <span class="arithmatex">\(\tilde{x}_D=0\)</span> and <span class="arithmatex">\(\tilde{x}_D=1\)</span></li>
 </ul>
 </li>
 <li><strong>electorate</strong>: median voter's position is unknown<ul>
@@ -391,35 +388,35 @@
 <h2 id="current-model-expected-utility">Current Model: Expected Utility</h2>
 <ul>
 <li>expected utility of party <span class="arithmatex">\(D\)</span> is
-  $$
-    u_D(x_D,x_R) = -\text{prob(<em>D wins</em>)} \cdot |x_D - 0| - \text{prob(<em>R wins</em>)} \cdot |x_R - 0|
-  $$</li>
+  <span class="arithmatex">\(
+    u_D(x_D,x_R) = -\text{prob(*D wins*)} \cdot |x_D - 0| - \text{prob(*R wins*)} \cdot |x_R - 0|
+  \)</span></li>
 </ul>
 <h2 id="current-model-probability-of-winning">Current Model: Probability of Winning</h2>
 <ul>
 <li>given chosen positions <span class="arithmatex">\(x_D &lt; x_R\)</span>, probability that <span class="arithmatex">\(D\)</span> wins is
-  $$
-    p_D(x_D,x_R) = \left{\begin{aligned}
-        0, \text{ if } \frac{x_D+x_R}{2} &amp;&lt; \frac{1}{2} - \frac{1}{2b},\
-        \frac{b(x_D + x_R - 1)+1}{2}, \text{ if } \frac{x_D+x_R}{2} &amp;\in \left[\frac{1}{2} - \frac{1}{2b},\frac{1}{2} + \frac{1}{2b}\right]\
-        1, \text{ if } \frac{x_D+x_R}{2} &amp;&gt; \frac{1}{2} + \frac{1}{2b},\
+  <span class="arithmatex">\(
+    p_D(x_D,x_R) = \left\{\begin{aligned}
+        0, \text{ if } \frac{x_D+x_R}{2} &amp;&lt; \frac{1}{2} - \frac{1}{2b},\\
+        \frac{b(x_D + x_R - 1)+1}{2}, \text{ if } \frac{x_D+x_R}{2} &amp;\in \left[\frac{1}{2} - \frac{1}{2b},\frac{1}{2} + \frac{1}{2b}\right]\\
+        1, \text{ if } \frac{x_D+x_R}{2} &amp;&gt; \frac{1}{2} + \frac{1}{2b},\\
       \end{aligned}\right.
-  $$</li>
+  \)</span></li>
 </ul>
 <h2 id="current-model-utility-maximization">Current Model: Utility Maximization</h2>
 <ul>
 <li>recall that expected utility is
-      $$
+      <span class="arithmatex">\(
           u_D(x_D,x_R) = -p_D(x_D,x_R) \cdot x_D - (1-p_D(x_D,x_R)) \cdot x_R
-      $$</li>
+      \)</span></li>
 <li>best response logic: given <span class="arithmatex">\(x_R\)</span>, how does <span class="arithmatex">\(D\)</span> choose <span class="arithmatex">\(x_D\)</span> to maximize his expected utility?</li>
 </ul>
 <h2 id="current-model-first-order-conditions">Current Model: First Order Conditions</h2>
 <ul>
 <li>we get
-  $$
+  <span class="arithmatex">\(
     \frac{\partial u_D}{\partial x_D} = -\frac{b x_D}{2} + \frac{b-1}{2} &lt; 0
-  $$<ul>
+  \)</span><ul>
 <li>negative derivative: lower (lefter) <span class="arithmatex">\(x_D\)</span> <span class="arithmatex">\(\to\)</span> higher expected utility</li>
 <li><span class="arithmatex">\(D\)</span> should pick <span class="arithmatex">\(x_D\)</span> as left as possible<ul>
 <li><strong>how left?</strong> -- to <span class="arithmatex">\(\frac{1}{2} - \frac{1}{2b}\)</span></li>
@@ -431,9 +428,9 @@
 <h2 id="current-model-equilibrium">Current Model: Equilibrium</h2>
 <ul>
 <li>in (unique) equilibrium,
-  $$
-    x_D^<em> = \frac{1}{2} - \frac{1}{2b} \text{ and } x_R^</em> = \frac{1}{2} + \frac{1}{2b}
-  $$ </li>
+  <span class="arithmatex">\(
+    x_D^* = \frac{1}{2} - \frac{1}{2b} \text{ and } x_R^* = \frac{1}{2} + \frac{1}{2b}
+  \)</span></li>
 </ul>
 <h2 id="current-model-conclusion">Current Model: Conclusion</h2>
 <ul>
