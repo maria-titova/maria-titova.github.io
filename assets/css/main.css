@@ -17,7 +17,9 @@ body.fixed-top-nav { padding-top: 56px; }
 
 .container { max-width: 800px; }
 
-.profile img { width: 100%; }
+.profile { text-align: center; }
+.profile img { align: center; width: 100%; max-width: 300px; }
+.profile .afterpic_content { margin-top: 1.50rem; text-align: left; }
 
 /****************************************************************************** Publications *****************************************************************************/
 /*****************************************************************************
@@ -31,9 +33,6 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 .equation { margin-bottom: 1rem; text-align: center; }
 
 .caption { font-size: 0.875rem; margin-top: 0.75rem; margin-bottom: 1.5rem; text-align: center; }
-
-.profile .address { font-family: monospace; font-size: 1.2rem; }
-.profile .address p { margin: 0; }
 
 .navbar { box-shadow: none; border-bottom: 1px solid #e8e8e8; opacity: 0.95; }
 
@@ -56,11 +55,11 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .news table td { font-size: 1rem; }
 
-.name { margin-top: 0.5rem; margin-bottom: 0.25rem; text-align: right; font-size: 1.25em; }
+.name { margin-top: 0.5rem; margin-bottom: 0.25rem; text-align: center; font-size: 1.25em; }
 
-.affiliation { margin-top: 0.5rem; margin-bottom: 0.25rem; text-align: right; font-size: 0.95em; }
+.affiliation { margin-top: 0.5rem; margin-bottom: 0.25rem; text-align: center; font-size: 0.95em; }
 
-.social { margin-top: 0.5rem; margin-bottom: 0.25rem; text-align: right; font-size: 0.95em; }
+.social { margin-top: 0.5rem; margin-bottom: 0.25rem; text-align: center; font-size: 0.95em; }
 
 .distill a:hover { border-bottom-color: #B509AC; text-decoration: none; }
 
