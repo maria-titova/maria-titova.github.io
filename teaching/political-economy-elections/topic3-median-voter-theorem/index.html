@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://maria-titova.com/teaching/political-economy-elections/topic3-median-voter-theorem/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Median Voter Theorem - Political Economy of Elections</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Median Voter Theorem";
+        var mkdocs_page_input_path = "topic3-median-voter-theorem.md";
+        var mkdocs_page_url = "/teaching/political-economy-elections/topic3-median-voter-theorem/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]--> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98299021-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-98299021-1');
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Political Economy of Elections
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Lecture Notes</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../topic0-course-overview/">Political Economy of Elections</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#this-course">This Course</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#our-goals">Our Goals</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#tentative-course-outline">Tentative Course Outline</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#who-is-the-instructor">Who is the Instructor?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#who-is-the-ta">Who is the TA?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#how-to-do-well-in-this-course">How To Do Well in This Course</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#communication">Communication</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#your-grade">Your Grade</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#this-course-approach">This Course: Approach</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#theoretical-models-of-politics">Theoretical Models of Politics</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#tools-we-will-use">Tools We Will Use</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#elements-of-game-theoretic-modeling">Elements of Game-Theoretic Modeling</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic1-math-overview/">Crash Course in Decision Theory</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#review-of-set-theory">Review of Set Theory</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#choice-and-preferences">Choice and Preferences</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#choice-and-preferences-continued">Choice and Preferences, Continued</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#rationality-in-actions">Rationality (in Actions)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#rationality-in-preferences">Rationality (in Preferences)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#transitivity">Transitivity</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#utility-function">Utility Function</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#examples-of-utility-functions-politicians">Examples of Utility Functions: Politicians</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#examples-of-utility-functions-voters">Examples of Utility Functions: Voters</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#utility-maximization">Utility Maximization</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#uncertainty">Uncertainty</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#preferences-under-uncertainty">Preferences Under Uncertainty</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#preferences-under-uncertainty-binary-outcome-space">Preferences Under Uncertainty: Binary Outcome Space</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#preferences-under-uncertainty-continuous-outcome-space">Preferences Under Uncertainty: Continuous Outcome Space</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#from-preferences-to-expected-utility">From Preferences to Expected Utility</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#expected-utility-function">Expected Utility Function</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#examples-of-expected-utility-politicians">Examples of Expected Utility: Politicians</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#examples-of-expected-utility-moderate-voter">Examples of Expected Utility: Moderate Voter</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic2-social-choice-theory/">Social Choice Theory</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#social-preference-aggregation">Social Preference Aggregation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#social-choice-function">Social Choice Function</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#simple-majority-condorcet-paradox">Simple Majority: Condorcet Paradox</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#simple-majority-agenda-manipulation">Simple Majority: Agenda Manipulation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#simple-majority-strategic-voting">Simple Majority: Strategic Voting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-completeness">Desirable Properties of SCF: Completeness</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-transitivity">Desirable Properties of SCF: Transitivity</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-pareto">Desirable Properties of SCF: Pareto</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#dictatorial-preferences">Dictatorial Preferences</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-no-dictator">Desirable Properties of SCF: No Dictator</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#logic-reference-necessity">(Logic Reference): Necessity</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#logic-reference-sufficiency">(Logic Reference): Sufficiency</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#back-to-desirable-properties-of-scf-iia">(Back to) Desirable Properties of SCF: IIA</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#independence-of-irrelevant-alternatives">Independence of Irrelevant Alternatives</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#why-iia">Why IIA?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-summary">Desirable Properties of SCF: Summary</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#example-of-scf-unanimity-rule-without-status-quo">Example of SCF: Unanimity Rule Without Status Quo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-scoring-rule">Borda "Scoring" Rule</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-example">Borda Rule: Example</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-properties">Borda Rule: Properties</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-iia-fails">Borda Rule: IIA Fails</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-iia-fails-another-example">Borda Rule: IIA Fails, Another Example</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-why-failure-of-iia-is-bad">Borda Rule: Why Failure of IIA is Bad</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#big-question-of-social-choice-theory">Big Question of Social Choice Theory</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#arrows-impossibility-theorem">Arrow's Impossibility Theorem</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#arrows-theorem-alternative-statement">Arrow's Theorem: Alternative Statement</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#ait-interpretation">AIT: Interpretation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#are-axioms-too-demanding">Are Axioms Too Demanding?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#other-ways-around-ait">Other Ways Around AIT</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Median Voter Theorem</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic4-intro-to-game-theory/">Introduction to Game Theory</a>
+    <ul>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic5-models-of-electoral-competition/">Models of Electoral Competition</a>
+    <ul>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic6-info-aggregation-elections/">Information Aggregation in Elections</a>
+    <ul>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Political Economy of Elections</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Lecture Notes &raquo;</li><li>Median Voter Theorem</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="single-peaked-preferences">Single-Peaked Preferences</h2>
+<ul>
+<li>consider one person's preferences over choice set <span class="arithmatex">\(X \subset \mathbb{R}\)</span></li>
+<li>her preferences are <em>single-peaked</em> if there exists option <span class="arithmatex">\(v \in X\)</span> such that<ul>
+<li><span class="arithmatex">\(v \succ x \succ y\)</span> whenever <span class="arithmatex">\(y&lt;x&lt;v\)</span> or <span class="arithmatex">\(y&gt;x&gt;v\)</span></li>
+<li><span class="arithmatex">\(v\)</span> is the <em>bliss point</em></li>
+<li><span class="arithmatex">\(!\)</span> this is a restriction on the set of considered preferences</li>
+</ul>
+</li>
+</ul>
+<h2 id="single-peaked-preferences-nice-properties">Single-Peaked Preferences: Nice Properties</h2>
+<ul>
+<li>suppose we have <span class="arithmatex">\(N\)</span> (odd) individuals with single-peaked preferences</li>
+<li>then, <ul>
+<li>majority rule satisfies transitivity</li>
+<li>truthful reporting is a weakly dominant strategy*</li>
+</ul>
+</li>
+</ul>
+<h2 id="single-peaked-preferences-hidden-assumptions">Single-Peaked Preferences: (Hidden) Assumptions</h2>
+<ul>
+<li><strong>voters have single-peaked preferences if they have an ideal balance between the two directions of the ideological spectrum and if they dislike policies the farther away they are from their ideal point</strong><ul>
+<li>one dimension</li>
+<li>further = worse <ul>
+<li>cannot dislike candidates for any reason other than policy</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="voters-ideology-as-single-peaked-preferences">Voters' Ideology as Single-Peaked Preferences</h2>
+<ul>
+<li>if we assume single-peaked preferences, every voter is characterized just by her bliss point</li>
+<li>we can place all voters' bliss points on the line</li>
+<li>call the collection of all voters' bliss points the <strong>electorate</strong></li>
+</ul>
+<h2 id="blacks-median-voter-theorem">Black's Median Voter Theorem</h2>
+<ul>
+<li>
+<p>suppose we have <span class="arithmatex">\(N\)</span> (odd) individuals with single-peaked preferences</p>
+<ul>
+<li>their bliss points are sorted in increasing order: <span class="arithmatex">\(v_1 \leq v_2 \leq \dots \leq v_N\)</span></li>
+</ul>
+</li>
+<li>
+<p>then,</p>
+<ul>
+<li>bliss point of the <strong>median voter</strong> is Condorcet winner<ul>
+<li>it beats all other options in pairwise comparisons via majority rule</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="identifying-the-median-voter">Identifying the Median Voter</h2>
+<ul>
+<li><strong>median voter</strong> splits electorate in half: half of voters are to the left, half are to the right</li>
+<li>identity of median voter depends on the electorate<ul>
+<li>in conservative states, median voter is more conservative</li>
+<li>if poorer voters are less likely to vote, then median voter <span class="arithmatex">\(\ne\)</span> median citizen</li>
+<li>many factors affect voter participation: age, education, what's on the ballot, weather, how the sports team is doing, etc</li>
+<li>franchise restrictions<ul>
+<li>voting rights for women, racial minorities, convicted felons, non-residents, etc</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="blacks-median-voter-theorem-interpretations">Black's Median Voter Theorem: Interpretations</h2>
+<ul>
+<li>policy closest to the median voter is going to win <em>against any other policy</em></li>
+<li><em>corollary</em>: if status quo is at the median voter's bliss point, then no challenging proposal will be accepted</li>
+</ul>
+<h2 id="when-mvt-doesnt-apply">When MVT Doesn't Apply</h2>
+<ul>
+<li>MVT holds only if there is a single issue<ul>
+<li>if there are two or more issues that parties take stands on, but only one election, there is no guarantee that the median voter's preference will win on <em>any</em> issue</li>
+<li>even with single-peaked preferences, multiple dimensions make it possible for voting cycles to arise</li>
+</ul>
+</li>
+<li>is the MVT useless?<ul>
+<li>possibly so, but IRL platforms empirically boil down to a single dimension -- liberal-conservative spectrum in the US</li>
+</ul>
+</li>
+</ul>
+<h2 id="strategic-political-competition">Strategic Political Competition</h2>
+<ul>
+<li>no we know how to represent voters' ideology</li>
+<li>what if we had multiple political candidates competing in an election?<ul>
+<li>what platforms will they propose?</li>
+<li>will they moderate or go to extremes?</li>
+<li>will we see polarization?</li>
+</ul>
+</li>
+</ul>
+<h2 id="a-formal-model-of-political-competition">A Formal Model of Political Competition</h2>
+<ul>
+<li>key actors (<strong>players</strong>)</li>
+<li>what they can do (<strong>strategies</strong>)</li>
+<li>their goals (<strong>payoffs</strong>)</li>
+</ul>
+<h2 id="downsian-model-of-electoral-competition">Downsian Model of Electoral Competition</h2>
+<ul>
+<li>players: two candidates (parties) <strong>D</strong> and <strong>R</strong></li>
+<li>strategies: each candidate chooses a policy platform<ul>
+<li>a number on a real line</li>
+</ul>
+</li>
+<li>goals: winning the election under majority rule<ul>
+<li>payoff is <span class="arithmatex">\(1\)</span> for the winner, <span class="arithmatex">\(0\)</span> for the loser, <span class="arithmatex">\(0.5\)</span> if tied</li>
+<li>these are <strong>office-motivated</strong> candidates (they don't personally care about policy)</li>
+</ul>
+</li>
+</ul>
+<h2 id="downsian-model-of-electoral-competition-voting">Downsian Model of Electoral Competition: Voting</h2>
+<ul>
+<li>voters are technically also players of this game, but we already studied this part</li>
+<li>we assume we have an <strong>electorate</strong> of voters with <strong>single-peaked</strong> preferences<ul>
+<li>represented by bliss points on the same real line as candidates</li>
+</ul>
+</li>
+<li>each voter votes for the candidate whose policy is closest to her bliss point<ul>
+<li>if candidates are equidistant, then the vote is split evenly</li>
+</ul>
+</li>
+<li>outcome is determined via <strong>majority rule</strong></li>
+</ul>
+<h2 id="downsian-model-of-electoral-competition-result">Downsian Model of Electoral Competition: Result</h2>
+<ul>
+<li>for any electorate, both candidates propose the ideal policy of the median voter<ul>
+<li>AKA <strong>full convergence</strong></li>
+</ul>
+</li>
+<li>if you are interested in winning an election, you have no reason to polarize<ul>
+<li>to win, you need the majority <span class="arithmatex">\(\to\)</span> propose 'moderate' policies to convince more voters</li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../topic2-social-choice-theory/" class="btn btn-neutral float-left" title="Social Choice Theory"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../topic4-intro-to-game-theory/" class="btn btn-neutral float-right" title="Introduction to Game Theory">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../topic2-social-choice-theory/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../topic4-intro-to-game-theory/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

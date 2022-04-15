@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://maria-titova.com/teaching/political-economy-elections/topic1-math-overview/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Crash Course in Decision Theory - Political Economy of Elections</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Crash Course in Decision Theory";
+        var mkdocs_page_input_path = "topic1-math-overview.md";
+        var mkdocs_page_url = "/teaching/political-economy-elections/topic1-math-overview/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]--> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98299021-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-98299021-1');
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Political Economy of Elections
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Lecture Notes</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../topic0-course-overview/">Political Economy of Elections</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#this-course">This Course</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#our-goals">Our Goals</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#tentative-course-outline">Tentative Course Outline</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#who-is-the-instructor">Who is the Instructor?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#who-is-the-ta">Who is the TA?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#how-to-do-well-in-this-course">How To Do Well in This Course</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#communication">Communication</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#your-grade">Your Grade</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#this-course-approach">This Course: Approach</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#theoretical-models-of-politics">Theoretical Models of Politics</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#tools-we-will-use">Tools We Will Use</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#elements-of-game-theoretic-modeling">Elements of Game-Theoretic Modeling</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Crash Course in Decision Theory</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#review-of-set-theory">Review of Set Theory</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#choice-and-preferences">Choice and Preferences</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#choice-and-preferences-continued">Choice and Preferences, Continued</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rationality-in-actions">Rationality (in Actions)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rationality-in-preferences">Rationality (in Preferences)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#transitivity">Transitivity</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#utility-function">Utility Function</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#examples-of-utility-functions-politicians">Examples of Utility Functions: Politicians</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#examples-of-utility-functions-voters">Examples of Utility Functions: Voters</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#utility-maximization">Utility Maximization</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#uncertainty">Uncertainty</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preferences-under-uncertainty">Preferences Under Uncertainty</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preferences-under-uncertainty-binary-outcome-space">Preferences Under Uncertainty: Binary Outcome Space</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preferences-under-uncertainty-continuous-outcome-space">Preferences Under Uncertainty: Continuous Outcome Space</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#from-preferences-to-expected-utility">From Preferences to Expected Utility</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#expected-utility-function">Expected Utility Function</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#examples-of-expected-utility-politicians">Examples of Expected Utility: Politicians</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#examples-of-expected-utility-moderate-voter">Examples of Expected Utility: Moderate Voter</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic2-social-choice-theory/">Social Choice Theory</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#social-preference-aggregation">Social Preference Aggregation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#social-choice-function">Social Choice Function</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#simple-majority-condorcet-paradox">Simple Majority: Condorcet Paradox</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#simple-majority-agenda-manipulation">Simple Majority: Agenda Manipulation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#simple-majority-strategic-voting">Simple Majority: Strategic Voting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-completeness">Desirable Properties of SCF: Completeness</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-transitivity">Desirable Properties of SCF: Transitivity</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-pareto">Desirable Properties of SCF: Pareto</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#dictatorial-preferences">Dictatorial Preferences</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-no-dictator">Desirable Properties of SCF: No Dictator</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#logic-reference-necessity">(Logic Reference): Necessity</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#logic-reference-sufficiency">(Logic Reference): Sufficiency</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#back-to-desirable-properties-of-scf-iia">(Back to) Desirable Properties of SCF: IIA</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#independence-of-irrelevant-alternatives">Independence of Irrelevant Alternatives</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#why-iia">Why IIA?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-summary">Desirable Properties of SCF: Summary</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#example-of-scf-unanimity-rule-without-status-quo">Example of SCF: Unanimity Rule Without Status Quo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-scoring-rule">Borda "Scoring" Rule</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-example">Borda Rule: Example</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-properties">Borda Rule: Properties</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-iia-fails">Borda Rule: IIA Fails</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-iia-fails-another-example">Borda Rule: IIA Fails, Another Example</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-why-failure-of-iia-is-bad">Borda Rule: Why Failure of IIA is Bad</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#big-question-of-social-choice-theory">Big Question of Social Choice Theory</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#arrows-impossibility-theorem">Arrow's Impossibility Theorem</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#arrows-theorem-alternative-statement">Arrow's Theorem: Alternative Statement</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#ait-interpretation">AIT: Interpretation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#are-axioms-too-demanding">Are Axioms Too Demanding?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#other-ways-around-ait">Other Ways Around AIT</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic3-median-voter-theorem/">Median Voter Theorem</a>
+    <ul>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic4-intro-to-game-theory/">Introduction to Game Theory</a>
+    <ul>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic5-models-of-electoral-competition/">Models of Electoral Competition</a>
+    <ul>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic6-info-aggregation-elections/">Information Aggregation in Elections</a>
+    <ul>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Political Economy of Elections</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Lecture Notes &raquo;</li><li>Crash Course in Decision Theory</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="crash-course-in-decision-theory">Crash Course in Decision Theory</h1>
+<h2 id="review-of-set-theory">Review of Set Theory</h2>
+<ul>
+<li>a <strong>set</strong> is a collection of distinct objects<ul>
+<li><span class="arithmatex">\(A = \{1,2,3,4,5\}\)</span> (numbers)</li>
+<li><span class="arithmatex">\(B = \{ pizza, hamburger, soda \}\)</span> (food items)</li>
+<li><span class="arithmatex">\(C = \{ \text{vote for incumbent}, \text{vote for challenger} \}\)</span> (strategies)</li>
+<li><span class="arithmatex">\(D = [0,1]\)</span> (points on a unit interval)</li>
+</ul>
+</li>
+<li>we say <span class="arithmatex">\(x \in X\)</span> if <span class="arithmatex">\(x\)</span> is an element of set <span class="arithmatex">\(X\)</span>, and <span class="arithmatex">\(y \notin X\)</span> is <span class="arithmatex">\(y\)</span> is not an element of <span class="arithmatex">\(X\)</span><ul>
+<li><span class="arithmatex">\(1 \in A\)</span> but <span class="arithmatex">\(6 \notin A\)</span></li>
+<li><span class="arithmatex">\(0.67 \in D\)</span> but <span class="arithmatex">\(1.1 \notin D\)</span></li>
+</ul>
+</li>
+</ul>
+<h2 id="choice-and-preferences">Choice and Preferences</h2>
+<ul>
+<li><strong>choice set</strong> <span class="arithmatex">\(X\)</span> is a set of things to choose from<ul>
+<li>objects (pizza, hamburger, salad, other things to eat for lunch)<ul>
+<li>actions (go to a bar, watch Netflix, study, other things to do on a Friday night)</li>
+<li>any time you make a decision, you pick an element of <em>some</em> choice set</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>agent's <strong>preference relation</strong> <span class="arithmatex">\(\succsim\)</span> over elements of <span class="arithmatex">\(X\)</span> ranks elements of <span class="arithmatex">\(X\)</span><ul>
+<li>if <span class="arithmatex">\(x,y \in X\)</span>, then <span class="arithmatex">\(x \succsim y\)</span> means that agent weakly prefers <span class="arithmatex">\(x\)</span> to <span class="arithmatex">\(y\)</span><ul>
+<li>``<span class="arithmatex">\(\text{pizza} \succsim \text{salad}\)</span>" = you'd rather eat salad than pizza</li>
+<li>``<span class="arithmatex">\(\text{watch Netflix} \succsim \text{study}\)</span>" = you'd rather watch Netflix than study</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="choice-and-preferences-continued">Choice and Preferences, Continued</h2>
+<ul>
+<li><span class="arithmatex">\(\succsim\)</span> is similar to <span class="arithmatex">\(\geq\)</span>, but for individual's preferences<ul>
+<li>everyone agrees that <span class="arithmatex">\(5 \geq 4\)</span> but <span class="arithmatex">\(\text{pizza} \geq \text{salad}\)</span> is an opinion and not a fact</li>
+<li>hence we use <span class="arithmatex">\(\text{pizza} \succsim \text{salad}\)</span> -- in this person's opinion, pizza is better than salad   </li>
+</ul>
+</li>
+<li>other relations:<ul>
+<li><span class="arithmatex">\(\succ\)</span> denotes <em>strict preference</em> (similar to <span class="arithmatex">\(&gt;\)</span>)</li>
+<li><span class="arithmatex">\(\sim\)</span> denotes <em>indifference</em> (similar to <span class="arithmatex">\(=\)</span>)</li>
+</ul>
+</li>
+<li>natural connection: <span class="arithmatex">\(x \succsim y\)</span> implies <span class="arithmatex">\(x \succ y\)</span> or <span class="arithmatex">\(x \sim y\)</span></li>
+</ul>
+<h2 id="rationality-in-actions">Rationality (in Actions)</h2>
+<ul>
+<li>for <em>any</em> economic model, we need to assume <strong>rationality</strong> in a<em>ctions</em> and <em>preferences</em><ul>
+<li>economists get bad rap for assuming rationality <span class="arithmatex">\(\longleftarrow\)</span> <em>let's debunk this claim</em></li>
+</ul>
+</li>
+<li><strong>rationality in actions</strong><ul>
+<li><strong>what it means</strong>: agents choose the best action out of available options</li>
+</ul>
+</li>
+<li>rationality in actions imposes NO conditions on preferences<ul>
+<li>agents can be selfish, narcissistic, altruistic, greedy, hateful, etc</li>
+</ul>
+</li>
+<li>in practice, we usually make simplifying assumptions about agent's preferences<ul>
+<li>politicians want to win elections, voters want to elect their favorites, etc</li>
+</ul>
+</li>
+</ul>
+<h2 id="rationality-in-preferences">Rationality (in Preferences)</h2>
+<ul>
+<li>preference relation <span class="arithmatex">\(\succsim\)</span> is <strong>rational</strong> if it is <strong>complete</strong>, <strong>transitive</strong>, and <strong>reflexive</strong><ul>
+<li><strong>completeness</strong>: agent can compare any two options in choice set <span class="arithmatex">\(X\)</span><ul>
+<li>for any <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> in <span class="arithmatex">\(X\)</span>, either <span class="arithmatex">\(x \succsim y\)</span> or <span class="arithmatex">\(y \succsim x\)</span></li>
+<li>if you asked them to compare two options, they never say <em>I don't know</em></li>
+</ul>
+</li>
+<li><strong>transitivity</strong>: given three options <span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(y\)</span>, and <span class="arithmatex">\(z\)</span> in <span class="arithmatex">\(X\)</span>, if <span class="arithmatex">\(x \succsim y\)</span> and <span class="arithmatex">\(y \succsim z\)</span>, then <span class="arithmatex">\(x \succsim z\)</span><ul>
+<li><em>transitive example</em>:  if <span class="arithmatex">\(A\)</span> is <span class="arithmatex">\(B\)</span>'s sibling and <span class="arithmatex">\(B\)</span> is <span class="arithmatex">\(C\)</span>'s sibling, then</li>
+<li><em>non-transitive example</em>: ``an enemy or my enemy is my friend""</li>
+</ul>
+</li>
+<li><strong>reflexivity</strong> says that <span class="arithmatex">\(x \succsim x\)</span> and assumed to always be true</li>
+</ul>
+</li>
+<li>if <span class="arithmatex">\(\succsim\)</span> is rational, then so are <span class="arithmatex">\(\succ\)</span> and <span class="arithmatex">\(\sim\)</span></li>
+</ul>
+<h2 id="transitivity">Transitivity</h2>
+<ul>
+<li>transitivity may seem innocuous, but it may be violated even by reasonable preferences</li>
+<li>suppose <span class="arithmatex">\(X\)</span> is a (choice) set of <span class="arithmatex">\(1000\)</span> cups of coffee<ul>
+<li>cup <span class="arithmatex">\(c_1\)</span> has <span class="arithmatex">\(1\)</span> drop of coffee replaced with water</li>
+<li>cup <span class="arithmatex">\(c_2\)</span> has <span class="arithmatex">\(2\)</span> drops of coffee replaced with water</li>
+<li>...</li>
+<li>cup <span class="arithmatex">\(c_{1000}\)</span> has <span class="arithmatex">\(1000\)</span> drops of coffee replaced with water</li>
+</ul>
+</li>
+<li>unless one has exceptional taste buds, <span class="arithmatex">\(c_1 \sim c_2\)</span>, <span class="arithmatex">\(c_2 \sim c_3\)</span>, ..., <span class="arithmatex">\(c_{999}\sim c_{1000}\)</span><ul>
+<li>transitivity implies that <span class="arithmatex">\(c_1 \sim c_{1000}\)</span> <span class="arithmatex">\(\longleftarrow\)</span> <em>do you think this is true for you?</em></li>
+</ul>
+</li>
+</ul>
+<h2 id="utility-function">Utility Function</h2>
+<ul>
+<li><strong>utility function</strong> <span class="arithmatex">\(u: X \to \mathbb{R}\)</span> represents preference relation <span class="arithmatex">\(\succsim\)</span> if <span class="arithmatex">\(x \succsim y \iff u(x) \geq u(y)\)</span></li>
+<li>if preference relation <span class="arithmatex">\(\succsim\)</span> is rational, then we can find utility function <span class="arithmatex">\(u\)</span> to represent it<ul>
+<li><strong>rationality</strong> (in actions and preferences) = <strong>maximizing utility</strong></li>
+</ul>
+</li>
+<li>we will simply assume that all our actors have a utility function that they maximize</li>
+</ul>
+<h2 id="examples-of-utility-functions-politicians">Examples of Utility Functions: Politicians</h2>
+<ul>
+<li><strong>politicians</strong> prefer to win the elections<ul>
+<li>set of outcomes is <span class="arithmatex">\(X = \{ A \text{ wins}, B \text{ wins} \}\)</span></li>
+<li>candidate <span class="arithmatex">\(A\)</span> receives utility of <span class="arithmatex">\(1\)</span> if she wins and utility of <span class="arithmatex">\(0\)</span> if she loses (<span class="arithmatex">\(B\)</span> wins)</li>
+<li><span class="arithmatex">\(u_A(A \text{ wins}) = 1\)</span> and <span class="arithmatex">\(u_A(B \text{ wins}) = 0\)</span></li>
+</ul>
+</li>
+</ul>
+<h2 id="examples-of-utility-functions-voters">Examples of Utility Functions: Voters</h2>
+<ul>
+<li><strong>voters</strong> prefer policies close to their bliss points (ideal policies)<ul>
+<li>set of policies is <span class="arithmatex">\(X = [0,1]\)</span>, where  <span class="arithmatex">\(0\)</span> is <strong>left</strong> (blue) and <span class="arithmatex">\(1\)</span> is <strong>right</strong> (red)</li>
+<li>voter has ideal position <span class="arithmatex">\(v\)</span></li>
+<li>utility of policy <span class="arithmatex">\(x \ne v\)</span> decreases with distance between <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(v\)</span></li>
+<li><span class="arithmatex">\(u_v(x) = - |v-x|\)</span></li>
+</ul>
+</li>
+</ul>
+<h2 id="utility-maximization">Utility Maximization</h2>
+<ul>
+<li>what does it mean to maximize utility?<ul>
+<li>choose element with the highest level of utility</li>
+</ul>
+</li>
+<li>actors are usually <strong>constrained</strong> in some way<ul>
+<li>micro: consumers pick best bundle given budget constraint</li>
+<li>micro: firms minimize cost given technology constraint</li>
+<li>labor economics: people decide between work and leisure given 24 hours in a day</li>
+</ul>
+</li>
+<li>what are the possible constraints that agents face in elections?</li>
+</ul>
+<h2 id="uncertainty">Uncertainty</h2>
+<ul>
+<li>we often deal with situations involving <strong>risk</strong> (= <strong>uncertainty</strong>)<ul>
+<li><em>exogenous</em>: what is the probability that it rains on election day</li>
+<li><em>endogenous AKA strategic</em>: what is the probability that government is overthrown a month after election?</li>
+</ul>
+</li>
+</ul>
+<h2 id="preferences-under-uncertainty">Preferences Under Uncertainty</h2>
+<ul>
+<li>instead of a choice set, we have a set of <strong>lotteries</strong><ul>
+<li>let <span class="arithmatex">\(X\)</span> be the set of outcomes </li>
+<li>let <span class="arithmatex">\(\Delta X\)</span> be the set of <em>all</em> probability distributions over <span class="arithmatex">\(X\)</span></li>
+<li>a <strong>lottery</strong> <span class="arithmatex">\(L\)</span> is a probability distribution over <span class="arithmatex">\(X\)</span> (<span class="arithmatex">\(L \in \Delta X\)</span>)<ul>
+<li>each outcome is assigned a probability (possibly <span class="arithmatex">\(0\)</span>), probabilities sum up to <span class="arithmatex">\(1\)</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>preferences under uncertainty = preferences over lotteries</li>
+</ul>
+<h2 id="preferences-under-uncertainty-binary-outcome-space">Preferences Under Uncertainty: Binary Outcome Space</h2>
+<ul>
+<li>
+<p>example: election with two candidates, set of outcomes <span class="arithmatex">\(X = \{ A \text{ wins}, B \text{ wins} \}\)</span></p>
+<ul>
+<li><span class="arithmatex">\(L_1\)</span>: <span class="arithmatex">\((0.5, 0.5)\)</span> <span class="arithmatex">\(\longleftarrow\)</span> each candidate wins with probability <span class="arithmatex">\(1/2\)</span></li>
+<li><span class="arithmatex">\(L_2\)</span>: <span class="arithmatex">\((0,1)\)</span> <span class="arithmatex">\(\longleftarrow\)</span> candidate <span class="arithmatex">\(B\)</span> wins for sure</li>
+</ul>
+</li>
+<li>
+<p>does candidate <span class="arithmatex">\(A\)</span> prefer <span class="arithmatex">\(L_1\)</span> or <span class="arithmatex">\(L_2\)</span>?</p>
+</li>
+</ul>
+<h2 id="preferences-under-uncertainty-continuous-outcome-space">Preferences Under Uncertainty: Continuous Outcome Space</h2>
+<ul>
+<li>set of outcomes <span class="arithmatex">\(X\)</span> could be continuous (as opposed to finite)<ul>
+<li>examples: <span class="arithmatex">\([0,1]\)</span>, <span class="arithmatex">\([0, + \infty)\)</span>, <span class="arithmatex">\((-\infty, +\infty)\)</span></li>
+<li>if <span class="arithmatex">\(X\)</span> is continuous, then a lottery could be a <em>continuous</em> distribution</li>
+</ul>
+</li>
+<li>example: <span class="arithmatex">\(X = [0,1]\)</span>, policy space from ultra-left to ultra-right<ul>
+<li><span class="arithmatex">\(L_1\)</span>: uniform distribution <span class="arithmatex">\(U[0,1]\)</span></li>
+<li><span class="arithmatex">\(L_2\)</span>: <span class="arithmatex">\(0\)</span> with probability <span class="arithmatex">\(0.75\)</span> and <span class="arithmatex">\(1\)</span> with probability <span class="arithmatex">\(0.25\)</span></li>
+</ul>
+</li>
+<li>does voter <span class="arithmatex">\(v\)</span> prefer <span class="arithmatex">\(L_1\)</span> or <span class="arithmatex">\(L_2\)</span>?</li>
+</ul>
+<h2 id="from-preferences-to-expected-utility">From Preferences to Expected Utility</h2>
+<ul>
+<li>if preference relation over lotteries satisfies <em>rationality conditions</em>, we can find an <strong>expected utility function</strong><ul>
+<li>rationality conditions (for your reference): complete, transitive, continuous, independent<ul>
+<li><em>completeness</em> and <em>transitivity</em> are same as without uncertainty</li>
+<li><em>continuity</em>: if you change a lottery by a little, the ranking should stay the same</li>
+<li><em>independence</em>: your ranking of two lotteries should not depend on a third lottery</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="expected-utility-function">Expected Utility Function</h2>
+<ul>
+<li><strong>expected utility function</strong> <span class="arithmatex">\(u: X \to \mathbb{R}\)</span> represents preference relation <span class="arithmatex">\(\succsim\)</span> if<ul>
+<li><span class="arithmatex">\(L_1 \succsim L_2\)</span> is equivalent to <span class="arithmatex">\(\mathbb{E}_1 [u(x)] \geq \mathbb{E}_2 [u(x)]\)</span>, where</li>
+<li><span class="arithmatex">\(\mathbb{E}_i [u(x)]\)</span> is expected value of <span class="arithmatex">\(u(x)\)</span> under distribution <span class="arithmatex">\(L_i\)</span></li>
+</ul>
+</li>
+<li>maximizing expected utility = picking lottery with highest expected value</li>
+</ul>
+<h2 id="examples-of-expected-utility-politicians">Examples of Expected Utility: Politicians</h2>
+<ul>
+<li>set of outcomes: <span class="arithmatex">\(X = \{ A \text{ wins}, B \text{ wins} \}\)</span></li>
+<li><span class="arithmatex">\(A\)</span>'s utility function: <span class="arithmatex">\(u_A (A \text{ wins}) = 1\)</span> and <span class="arithmatex">\(u_A (B \text{ wins}) = 1\)</span></li>
+<li>what is <span class="arithmatex">\(A\)</span>'s expected utility if <span class="arithmatex">\(A\)</span> wins with probability 60%?
+  $$ L_1 = (0.6,0.4) \text{ so that } \mathbb{E}_1 [u_A (x)] = $$</li>
+</ul>
+<h2 id="examples-of-expected-utility-moderate-voter">Examples of Expected Utility: Moderate Voter</h2>
+<ul>
+<li>set of outcomes: <span class="arithmatex">\(X = [0,1]\)</span></li>
+<li><span class="arithmatex">\(v\)</span>'s utility function: <span class="arithmatex">\(u_v (x) = -|v-x|\)</span>, where <span class="arithmatex">\(v = 0.5\)</span></li>
+<li>what is <span class="arithmatex">\(v\)</span>'s expected utility if policy is <span class="arithmatex">\(0\)</span> w/ prob 60% and <span class="arithmatex">\(1\)</span> w/ prob 40%?</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../topic0-course-overview/" class="btn btn-neutral float-left" title="Political Economy of Elections"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../topic2-social-choice-theory/" class="btn btn-neutral float-right" title="Social Choice Theory">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../topic0-course-overview/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../topic2-social-choice-theory/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

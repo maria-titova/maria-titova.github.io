@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://maria-titova.com/teaching/political-economy-elections/topic4-intro-to-game-theory/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Introduction to Game Theory - Political Economy of Elections</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Introduction to Game Theory";
+        var mkdocs_page_input_path = "topic4-intro-to-game-theory.md";
+        var mkdocs_page_url = "/teaching/political-economy-elections/topic4-intro-to-game-theory/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]--> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98299021-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-98299021-1');
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Political Economy of Elections
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Lecture Notes</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../topic0-course-overview/">Political Economy of Elections</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#this-course">This Course</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#our-goals">Our Goals</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#tentative-course-outline">Tentative Course Outline</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#who-is-the-instructor">Who is the Instructor?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#who-is-the-ta">Who is the TA?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#how-to-do-well-in-this-course">How To Do Well in This Course</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#communication">Communication</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#your-grade">Your Grade</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#this-course-approach">This Course: Approach</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#theoretical-models-of-politics">Theoretical Models of Politics</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#tools-we-will-use">Tools We Will Use</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#elements-of-game-theoretic-modeling">Elements of Game-Theoretic Modeling</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic1-math-overview/">Crash Course in Decision Theory</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#review-of-set-theory">Review of Set Theory</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#choice-and-preferences">Choice and Preferences</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#choice-and-preferences-continued">Choice and Preferences, Continued</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#rationality-in-actions">Rationality (in Actions)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#rationality-in-preferences">Rationality (in Preferences)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#transitivity">Transitivity</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#utility-function">Utility Function</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#examples-of-utility-functions-politicians">Examples of Utility Functions: Politicians</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#examples-of-utility-functions-voters">Examples of Utility Functions: Voters</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#utility-maximization">Utility Maximization</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#uncertainty">Uncertainty</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#preferences-under-uncertainty">Preferences Under Uncertainty</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#preferences-under-uncertainty-binary-outcome-space">Preferences Under Uncertainty: Binary Outcome Space</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#preferences-under-uncertainty-continuous-outcome-space">Preferences Under Uncertainty: Continuous Outcome Space</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#from-preferences-to-expected-utility">From Preferences to Expected Utility</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#expected-utility-function">Expected Utility Function</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#examples-of-expected-utility-politicians">Examples of Expected Utility: Politicians</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic1-math-overview/#examples-of-expected-utility-moderate-voter">Examples of Expected Utility: Moderate Voter</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic2-social-choice-theory/">Social Choice Theory</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#social-preference-aggregation">Social Preference Aggregation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#social-choice-function">Social Choice Function</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#simple-majority-condorcet-paradox">Simple Majority: Condorcet Paradox</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#simple-majority-agenda-manipulation">Simple Majority: Agenda Manipulation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#simple-majority-strategic-voting">Simple Majority: Strategic Voting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-completeness">Desirable Properties of SCF: Completeness</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-transitivity">Desirable Properties of SCF: Transitivity</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-pareto">Desirable Properties of SCF: Pareto</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#dictatorial-preferences">Dictatorial Preferences</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-no-dictator">Desirable Properties of SCF: No Dictator</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#logic-reference-necessity">(Logic Reference): Necessity</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#logic-reference-sufficiency">(Logic Reference): Sufficiency</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#back-to-desirable-properties-of-scf-iia">(Back to) Desirable Properties of SCF: IIA</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#independence-of-irrelevant-alternatives">Independence of Irrelevant Alternatives</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#why-iia">Why IIA?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-summary">Desirable Properties of SCF: Summary</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#example-of-scf-unanimity-rule-without-status-quo">Example of SCF: Unanimity Rule Without Status Quo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-scoring-rule">Borda "Scoring" Rule</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-example">Borda Rule: Example</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-properties">Borda Rule: Properties</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-iia-fails">Borda Rule: IIA Fails</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-iia-fails-another-example">Borda Rule: IIA Fails, Another Example</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-why-failure-of-iia-is-bad">Borda Rule: Why Failure of IIA is Bad</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#big-question-of-social-choice-theory">Big Question of Social Choice Theory</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#arrows-impossibility-theorem">Arrow's Impossibility Theorem</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#arrows-theorem-alternative-statement">Arrow's Theorem: Alternative Statement</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#ait-interpretation">AIT: Interpretation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#are-axioms-too-demanding">Are Axioms Too Demanding?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#other-ways-around-ait">Other Ways Around AIT</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic3-median-voter-theorem/">Median Voter Theorem</a>
+    <ul>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Introduction to Game Theory</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic5-models-of-electoral-competition/">Models of Electoral Competition</a>
+    <ul>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../topic6-info-aggregation-elections/">Information Aggregation in Elections</a>
+    <ul>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Political Economy of Elections</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Lecture Notes &raquo;</li><li>Introduction to Game Theory</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="playing-games">Playing Games</h2>
+<ul>
+<li>last time, we saw a <strong>game</strong>: Downsian model of competition<ul>
+<li>assumptions: who are key actors + what they can do + what their goals are</li>
+<li>conclusion: prediction about what is going to happen</li>
+</ul>
+</li>
+<li>game theory is a set of tools to get from assumptions to conclusions</li>
+</ul>
+<h2 id="what-is-game-theory">What is Game Theory?</h2>
+<ul>
+<li><strong>Roger Myerson</strong><ul>
+<li>game theory can be defined as the study of mathematical models of <strong>conflict</strong> and <strong>cooperation</strong> between intelligent <strong>rational decision-makers</strong></li>
+<li>game Theory provides general mathematical techniques for analyzing situations in which two or more rational individuals make decisions that will influence one another's welfare<ul>
+<li>rationality: actors maximize own welfare (utility)</li>
+<li>strategic interaction: actors' utility depends on what others do</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="elements-of-a-game">Elements of a Game</h2>
+<ul>
+<li><strong>players</strong>: <span class="arithmatex">\(N = \{1,\dots, n\}\)</span> (<span class="arithmatex">\(i \in N\)</span> is individual player)</li>
+<li><strong>actions</strong>: player <span class="arithmatex">\(i\)</span> chooses action <span class="arithmatex">\(a_i \in A_i\)</span> (<span class="arithmatex">\(A_i\)</span> is set of her actions)<ul>
+<li><em>profile of actions</em> is <span class="arithmatex">\((a_1, \dots, a_n)\)</span> specifies every player's action</li>
+</ul>
+</li>
+<li><strong>payoffs</strong>: utility of player <span class="arithmatex">\(i\)</span> is given by <span class="arithmatex">\(u_i(a_i,a_{-i})\)</span></li>
+</ul>
+<h2 id="elements-of-a-game-advanced">Elements of a Game: Advanced</h2>
+<ul>
+<li><strong>timing</strong><ul>
+<li><em>static</em>: all players move at the same time</li>
+<li><em>dynamic</em>: players move sequentially / in some order</li>
+</ul>
+</li>
+<li><strong>information</strong><ul>
+<li><em>complete</em>: everything about the game is common knowledge</li>
+<li><em>incomplete or imperfect</em>: some players uninformed about payoffs or identities of other players, possible strategies, outcomes, knowledge, etc</li>
+</ul>
+</li>
+</ul>
+<h2 id="game-example-fighting-countries">Game Example: Fighting Countries</h2>
+<ul>
+<li>Consider two countries <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> involved in a territorial dispute (e.g., over Antarctic territory). <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> must decide whether to fight. If both decide to fight, a war breaks out and the cost of war is greater than the value of the territory. We assume that in this case, both countries get a utility loss of <span class="arithmatex">\(-1\)</span>. If only one country decides to fight, it gets the territory. The payoff of obtaining the territory is <span class="arithmatex">\(2\)</span> for country <span class="arithmatex">\(B\)</span> and <span class="arithmatex">\(3\)</span> for country <span class="arithmatex">\(A\)</span>. A country which does not fight always get <span class="arithmatex">\(0\)</span>. Suppose that both countries make their decision simultaneously.</li>
+</ul>
+<h2 id="nash-equilibrium-definition">Nash Equilibrium: Definition</h2>
+<ul>
+<li>
+<p><strong>Nash Equilibrium</strong> is a system of <strong>best responses</strong></p>
+<ul>
+<li>each player maximizes utility <em>given what other players do</em></li>
+</ul>
+</li>
+<li>
+<p>formal definition: consider a simultaneous game with <span class="arithmatex">\(N\)</span> players. Profile of actions <span class="arithmatex">\((a_1^*,\dots, a_n^*)\)</span> is a <strong>NE</strong> if for every player <span class="arithmatex">\(i \in N\)</span>,</p>
+</li>
+</ul>
+<p><span class="arithmatex">\(u_i (a_i^*,a_{-i}^*) \geq u_i (a_i,a_{-i}^*), \text{ for every other action } a_i \ne a_i^*\)</span></p>
+<h2 id="solving-fighting-countries">Solving Fighting Countries</h2>
+<ul>
+<li>static games of complete information with finite sets of actions <span class="arithmatex">\(\to\)</span> <strong>matrix form</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center">Country B</th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Fight</td>
+<td align="center">Not Fight</td>
+</tr>
+<tr>
+<td align="center">Country A</td>
+<td align="center">Fight</td>
+<td align="center"><span class="arithmatex">\(-1,-1\)</span></td>
+<td align="center"><span class="arithmatex">\(3,0\)</span></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Not Fight</td>
+<td align="center"><span class="arithmatex">\(0,2\)</span></td>
+<td align="center"><span class="arithmatex">\(0,0\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Nash equilibrium</strong> (intersection of <strong>best responses</strong>): <ul>
+<li>(Not Fight, Fight) and (Fight, Not Fight)</li>
+</ul>
+</li>
+</ul>
+<h2 id="another-example-political-factions">Another Example: Political Factions</h2>
+<ul>
+<li>two factions (<span class="arithmatex">\(L\)</span> and <span class="arithmatex">\(R\)</span>) within the same party decide whether to support <span class="arithmatex">\(\text{left candidate}\)</span> or <span class="arithmatex">\(\text{right candidate}\)</span></li>
+<li>if both factions support the same candidate, the candidate wins primary and general election (factions receive payoffs of <span class="arithmatex">\(2\)</span>)</li>
+<li>factions prefer different candidates:<ul>
+<li>faction <span class="arithmatex">\(L\)</span> prefers <span class="arithmatex">\(\text{left candidate}\)</span> and receives <span class="arithmatex">\(+8\)</span> utility if <span class="arithmatex">\(L\)</span> wins general election</li>
+<li>faction <span class="arithmatex">\(R\)</span> prefers <span class="arithmatex">\(\text{right candidate}\)</span> and receives <span class="arithmatex">\(+8\)</span> utility if <span class="arithmatex">\(R\)</span> wins general election</li>
+</ul>
+</li>
+<li>if factions support different candidate, general election is lost, and factions receive <span class="arithmatex">\(0\)</span></li>
+</ul>
+<h2 id="solving-factions-game">Solving Factions Game</h2>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center">Faction <span class="arithmatex">\(R\)</span></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="arithmatex">\(\text{candidate L}\)</span></td>
+<td align="center"><span class="arithmatex">\(\text{candidate R}\)</span></td>
+</tr>
+<tr>
+<td align="center">Faction <span class="arithmatex">\(L\)</span></td>
+<td align="center"><span class="arithmatex">\(\text{candidate L}\)</span></td>
+<td align="center"><span class="arithmatex">\(10,2\)</span></td>
+<td align="center"><span class="arithmatex">\(0,0\)</span></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"><span class="arithmatex">\(\text{candidate R}\)</span></td>
+<td align="center"><span class="arithmatex">\(0,0\)</span></td>
+<td align="center"><span class="arithmatex">\(2,10\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Nash equilibrium: (<span class="arithmatex">\(\text{candidate L}\)</span>,\ <span class="arithmatex">\(\text{candidate L}\)</span>) and (<span class="arithmatex">\(\text{candidate R}\)</span>,\ <span class="arithmatex">\(\text{candidate R}\)</span>)</li>
+</ul>
+<h2 id="example-more-than-2-actions">Example: More than <span class="arithmatex">\(2\)</span> Actions</h2>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">left</th>
+<th align="center">middle</th>
+<th align="center">right</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">top</td>
+<td align="center"><span class="arithmatex">\(2,0\)</span></td>
+<td align="center"><span class="arithmatex">\(1,1\)</span></td>
+<td align="center"><span class="arithmatex">\(4,2\)</span></td>
+</tr>
+<tr>
+<td align="center">center</td>
+<td align="center"><span class="arithmatex">\(3,4\)</span></td>
+<td align="center"><span class="arithmatex">\(1,2\)</span></td>
+<td align="center"><span class="arithmatex">\(2,3\)</span></td>
+</tr>
+<tr>
+<td align="center">bottom</td>
+<td align="center"><span class="arithmatex">\(1,3\)</span></td>
+<td align="center"><span class="arithmatex">\(0,2\)</span></td>
+<td align="center"><span class="arithmatex">\(3,0\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Nash equilibrium: (center, left) and (top, right)</li>
+</ul>
+<h2 id="example-stag-hunt">Example: Stag Hunt</h2>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center">hunter <span class="arithmatex">\(B\)</span></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">stag</td>
+<td align="center">rabbit</td>
+</tr>
+<tr>
+<td align="center">hunter <span class="arithmatex">\(A\)</span></td>
+<td align="center">stag</td>
+<td align="center"><span class="arithmatex">\(2,2\)</span></td>
+<td align="center"><span class="arithmatex">\(0,1\)</span></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">rabbit</td>
+<td align="center"><span class="arithmatex">\(1,0\)</span></td>
+<td align="center"><span class="arithmatex">\(1,1\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Nash equilibrium: (stag, stag) and (rabbit, rabbit)</li>
+</ul>
+<h2 id="example-matching-pennies">Example: Matching Pennies</h2>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center">player <span class="arithmatex">\(B\)</span></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">heads</td>
+<td align="center">tails</td>
+</tr>
+<tr>
+<td align="center">player <span class="arithmatex">\(A\)</span></td>
+<td align="center">heads</td>
+<td align="center"><span class="arithmatex">\(-1,1\)</span></td>
+<td align="center"><span class="arithmatex">\(1,-1\)</span></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">tail</td>
+<td align="center"><span class="arithmatex">\(1,-1\)</span></td>
+<td align="center"><span class="arithmatex">\(-1,1\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Nash equilibrium: <em>cannot find one using the tools we have so far</em></li>
+</ul>
+<h2 id="nash-equilibrium-the-good-and-the-bad">Nash Equilibrium: the Good and the Bad</h2>
+<ul>
+<li>
+<p>self-enforcing prediction</p>
+<ul>
+<li>if each player conjectures what others are playing...</li>
+<li>and each player is correct...</li>
+<li>then rationality predicts Nash equilibrium</li>
+</ul>
+</li>
+<li>
+<p><strong>some issues</strong>:</p>
+<ul>
+<li>if multiple NE then unclear which one is better prediction</li>
+<li>no story behind HOW players get to NE</li>
+</ul>
+</li>
+</ul>
+<h2 id="continuous-action-spaces">Continuous Action Spaces</h2>
+<ul>
+<li>interesting games usually have more than 2 players who have more than 2 actions<ul>
+<li>if 2 players, more than 2 actions each <span class="arithmatex">\(\to\)</span> bigger matrix</li>
+</ul>
+</li>
+<li>many situations are naturally continuous<ul>
+<li>firms choosing price</li>
+<li>workers choosing hours</li>
+<li>politicians choosing policy platforms</li>
+</ul>
+</li>
+<li>if some player's action space is <em>continuous</em>, we cannot represent it in matrix form<ul>
+<li>solution is still NE, but solving technique is quite different</li>
+</ul>
+</li>
+</ul>
+<h2 id="example-public-goods-game">Example: Public Goods Game</h2>
+<ul>
+<li><strong>players</strong>: person <span class="arithmatex">\(A\)</span> and person <span class="arithmatex">\(B\)</span>, each has budget <span class="arithmatex">\(\$20\)</span></li>
+<li><strong>action</strong>: person <span class="arithmatex">\(i\)</span> chooses contribution <span class="arithmatex">\(x_i \in [0,20]\)</span> to the <em>public good</em><ul>
+<li>consumes the remaining balance of <span class="arithmatex">\(\$20-x_i\)</span> <em>privately</em></li>
+</ul>
+</li>
+<li><strong>payoff</strong> of person <span class="arithmatex">\(i\)</span> is</li>
+</ul>
+<p><span class="arithmatex">\(u_i(x_A,x_B) = (20-x_i) + 1.5 \times \left( \frac{x_A + x_B}{2} \right)\)</span></p>
+<h2 id="algorithm-for-solving-static-games-of-complete-information">Algorithm for Solving Static Games of Complete Information</h2>
+<ul>
+<li><strong>step 0</strong>: identify players, actions, payoffs</li>
+<li><strong>step 1</strong>: identify best responses <span class="arithmatex">\(a_i^* (a_{-i})\)</span><ul>
+<li>depending on everyone else's actions <span class="arithmatex">\(a_{-i}\)</span>, what should <span class="arithmatex">\(i\)</span> do?</li>
+<li>finite/matrix games: fix a column, pick action with highest payoff for row player; fix row, pick best action for column player</li>
+<li>continuous actions: <span class="arithmatex">\(i\)</span>'s best response is a function of <span class="arithmatex">\(a_{-i}\)</span></li>
+</ul>
+</li>
+<li><strong>step 2</strong>: NE is <em>intersection of best responses</em></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../topic3-median-voter-theorem/" class="btn btn-neutral float-left" title="Median Voter Theorem"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../topic5-models-of-electoral-competition/" class="btn btn-neutral float-right" title="Models of Electoral Competition">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../topic3-median-voter-theorem/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../topic5-models-of-electoral-competition/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>
