@@ -224,6 +224,7 @@
 <li>assume that everyone else votes <span class="arithmatex">\(D\)</span> with prob. <span class="arithmatex">\(1/2\)</span> and <span class="arithmatex">\(R\)</span> with prob. <span class="arithmatex">\(1/2\)</span></li>
 <li><strong>how likely is it that your vote matters?</strong><ul>
 <li>if <span class="arithmatex">\(N = 3\)</span>, the possible vote outcomes for 2 other voters are</li>
+<li>your vote is decisive if there's a tie ( others voted DR or RD), which happens with probability <span class="arithmatex">\(\frac{1}{2}\)</span></li>
 </ul>
 </li>
 </ul>
@@ -247,8 +248,6 @@
 </tr>
 </tbody>
 </table>
-<pre><code>  - your vote is decisive if there's a tie ( others voted DR or RD), which happens with probability $\frac{1}{2}$
-</code></pre>
 <h1 id="does-one-vote-matter_1">Does One Vote Matter?</h1>
 <ul>
 <li>suppose there are <span class="arithmatex">\(2\)</span> candidates, <span class="arithmatex">\(N\)</span> (odd) voters, simple majority</li>
@@ -288,13 +287,15 @@
 </ul>
 <h1 id="learning-from-signals">Learning from Signals</h1>
 <ul>
-<li>if you get signal <span class="arithmatex">\(g\)</span>, what is probability that (defendant is) <span class="arithmatex">\(Guilty\)</span>?</li>
+<li>
+<p>if you get signal <span class="arithmatex">\(g\)</span>, what is probability that (defendant is) <span class="arithmatex">\(Guilty\)</span>?
+  <span class="arithmatex">\(prob(Guilty | g) = \frac{prob(Guilty) \cdot prob(g | Guilty) }{prob(g)} = \frac{\frac{1}{2}p}{\frac{1}{2}p + \frac{1}{2}(1-p)} = p\)</span></p>
+</li>
+<li>
+<p>if you get signal <span class="arithmatex">\(i\)</span>, what is probability that (defendant is) <span class="arithmatex">\(Guilty\)</span>?
+  <span class="arithmatex">\(prob(Guilty | i) = \frac{prob(Guilty) \cdot prob(i | Guilty) }{prob(i)} = \frac{\frac{1}{2}(1-p)}{\frac{1}{2}(1-p) + \frac{1}{2}p} = 1-p\)</span></p>
+</li>
 </ul>
-<p><span class="arithmatex">\(<span class="arithmatex">\(prob(Guilty | g) = \frac{prob(Guilty) \cdot prob(g | Guilty) }{prob(g)} = \frac{\frac{1}{2}p}{\frac{1}{2}p + \frac{1}{2}(1-p)} = p\)</span>\)</span></p>
-<ul>
-<li>if you get signal <span class="arithmatex">\(i\)</span>, what is probability that (defendant is) <span class="arithmatex">\(Guilty\)</span>?</li>
-</ul>
-<p><span class="arithmatex">\(<span class="arithmatex">\(prob(Guilty | i) = \frac{prob(Guilty) \cdot prob(i | Guilty) }{prob(i)} = \frac{\frac{1}{2}(1-p)}{\frac{1}{2}(1-p) + \frac{1}{2}p} = 1-p\)</span>\)</span></p>
 <h1 id="jury">Jury</h1>
 <ul>
 <li>each juror receives <em>correct</em> signal with prob. <span class="arithmatex">\(p&gt;\frac{1}{2}\)</span></li>
@@ -303,49 +304,26 @@
 <li>if you (a juror) receive signal <span class="arithmatex">\(i\)</span>, you vote ACQUIT <span class="arithmatex">\(p&gt;\frac{1}{2}\)</span></li>
 <li>note that here we assume that juror vote <em>sincerely</em> (according to their signal only)</li>
 </ul>
-<h1 id="probability-of-correct-decision-n1-dictator">Probability of Correct Decision: <span class="arithmatex">\(N=1\)</span> (Dictator)</h1>
-<ul>
-<li>let us list all possible outcomes:\vspace{10cm}</li>
-</ul>
-<h1 id="probability-of-correct-decision-n3-simple-majority">Probability of Correct Decision: <span class="arithmatex">\(N=3\)</span> (Simple Majority)</h1>
-<ul>
-<li>let us list all possible outcomes:\vspace{10cm}</li>
-</ul>
-<h1 id="information-aggregation-in-elections_1">Information Aggregation in Elections</h1>
-<ul>
-<li>we assumed:<ul>
-<li>probability of correct signal is <span class="arithmatex">\(p &gt; \frac{1}{2}\)</span></li>
-<li>every juror votes according to signal\vspace{1cm}</li>
-</ul>
-</li>
-<li>we got:</li>
-</ul>
 <h1 id="condorcet-jury-theorem">Condorcet Jury Theorem</h1>
 <ul>
 <li><span class="arithmatex">\(N\)</span> jurors, simple majority, signal precision <span class="arithmatex">\(p\)</span>; <span class="arithmatex">\(Q(N,p)\)</span> is probability of correct decision</li>
 <li><strong>Condorcet Jury Theorem</strong>: for any odd <span class="arithmatex">\(N\)</span> and any <span class="arithmatex">\(p &gt; \frac{1}{2}\)</span><ul>
-<li><span class="arithmatex">\(Q(N,p) &gt; p\)</span>\vspace{1cm}</li>
-<li><span class="arithmatex">\(Q(N+2,p) &gt; Q(N,p)\)</span>\vspace{1cm}</li>
-<li><span class="arithmatex">\(Q(N,p) \to 1\)</span> as <span class="arithmatex">\(N \to +\infty\)</span>\vspace{1cm}</li>
+<li><span class="arithmatex">\(Q(N,p) &gt; p\)</span></li>
+<li><span class="arithmatex">\(Q(N+2,p) &gt; Q(N,p)\)</span></li>
+<li><span class="arithmatex">\(Q(N,p) \to 1\)</span> as <span class="arithmatex">\(N \to +\infty\)</span></li>
 </ul>
 </li>
 </ul>
 <h1 id="unanimity-rule">Unanimity Rule</h1>
 <ul>
-<li>we looked at simple majority rule, how about unanimity rule?\vspace{10cm}</li>
+<li>we looked at simple majority rule, how about unanimity rule?</li>
 </ul>
 <h1 id="best-social-choice-function">Best Social Choice Function</h1>
 <ul>
-<li><strong>Condorcet</strong>: simple majority is <em>most efficient</em> because it minimizes (across all SCF) total probability of an error\vspace{0.5cm}</li>
+<li><strong>Condorcet</strong>: simple majority is <em>most efficient</em> because it minimizes (across all SCF) total probability of an error</li>
 <li>he's not wrong, simple majority does minimize total prob. of error:<ul>
-<li>simple majority:
-  $$
-      3p^2 - 2p^3
-  $$</li>
-<li>unanimity:
-  $$
-      \frac{1}{2}\Big[ 1-(1-p)^3 \Big] + \frac{1}{2} p^3
-  $$</li>
+<li>simple majority: <span class="arithmatex">\(3p^2 - 2p^3\)</span></li>
+<li>unanimity: <span class="arithmatex">\(\frac{1}{2}\Big[ 1-(1-p)^3 \Big] + \frac{1}{2} p^3\)</span></li>
 </ul>
 </li>
 </ul>
@@ -373,16 +351,15 @@
 </ul>
 </li>
 <li>majority rule has lower <strong>total probability of error</strong><ul>
-<li><span class="arithmatex">\(\frac{1}{2} \text{Type I error} + \frac{1}{2} \text{Type II error}\)</span> (35.2% vs 42.6% when <span class="arithmatex">\(p = 0.6\)</span>)
-  \vspace{1cm}</li>
+<li><span class="arithmatex">\(\frac{1}{2} \text{Type I error} + \frac{1}{2} \text{Type II error}\)</span> (35.2% vs 42.6% when <span class="arithmatex">\(p = 0.6\)</span>)</li>
 </ul>
 </li>
 <li>which rule is best?</li>
 </ul>
 <h1 id="assumption-we-made">Assumption we Made</h1>
 <ul>
-<li>unknown state of the world (<span class="arithmatex">\(innocent\)</span> or <span class="arithmatex">\(guilty\)</span>)\vspace{1cm}</li>
-<li>each juror receives private signal\vspace{1cm}</li>
+<li>unknown state of the world (<span class="arithmatex">\(innocent\)</span> or <span class="arithmatex">\(guilty\)</span>)</li>
+<li>each juror receives private signal</li>
 <li>each juror votes according to signal</li>
 </ul>
 <h1 id="strategic-voting-simple-majority">Strategic Voting: Simple Majority</h1>
@@ -391,7 +368,7 @@
 <li>you are the "smartest person in the room"<ul>
 <li>you know other 2 jurors are not sophisticated enough to strategize and just vote according to their signal</li>
 <li>you receive signal <span class="arithmatex">\(i\)</span></li>
-<li>what is your thought process?\vspace{6cm}</li>
+<li>what is your thought process?</li>
 </ul>
 </li>
 </ul>
@@ -401,7 +378,7 @@
 <li>you are the "smartest person in the room"<ul>
 <li>you know other 2 jurors are not sophisticated enough to strategize and just vote according to their signal</li>
 <li>you receive signal <span class="arithmatex">\(i\)</span></li>
-<li>what is your thought process?\vspace{6cm}</li>
+<li>what is your thought process?</li>
 </ul>
 </li>
 </ul>
@@ -426,7 +403,7 @@
 <ul>
 <li>imagine you are in auction competing with two more people for an object<ul>
 <li>object's value is unknown but similar to every bidder</li>
-<li><strong>you win</strong>, how do you feel about it?\vspace{3cm}</li>
+<li><strong>you win</strong>, how do you feel about it?</li>
 </ul>
 </li>
 </ul>
