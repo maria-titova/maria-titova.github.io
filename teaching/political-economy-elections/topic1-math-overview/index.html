@@ -246,8 +246,8 @@
 </li>
 <li>agent's <strong>preference relation</strong> <span class="arithmatex">\(\succsim\)</span> over elements of <span class="arithmatex">\(X\)</span> ranks elements of <span class="arithmatex">\(X\)</span><ul>
 <li>if <span class="arithmatex">\(x,y \in X\)</span>, then <span class="arithmatex">\(x \succsim y\)</span> means that agent weakly prefers <span class="arithmatex">\(x\)</span> to <span class="arithmatex">\(y\)</span><ul>
-<li>``<span class="arithmatex">\(\text{pizza} \succsim \text{salad}\)</span>" = you'd rather eat pizza than salad</li>
-<li>``<span class="arithmatex">\(\text{watch Netflix} \succsim \text{study}\)</span>" = you'd rather watch Netflix than study</li>
+<li><span class="arithmatex">\(\text{pizza} \succsim \text{salad}\)</span> = you'd rather eat pizza than salad</li>
+<li><span class="arithmatex">\(\text{watch Netflix} \succsim \text{study}\)</span> = you'd rather watch Netflix than study</li>
 </ul>
 </li>
 </ul>
@@ -296,7 +296,7 @@
 </li>
 <li><strong>transitivity</strong>: given three options <span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(y\)</span>, and <span class="arithmatex">\(z\)</span> in <span class="arithmatex">\(X\)</span>, if <span class="arithmatex">\(x \succsim y\)</span> and <span class="arithmatex">\(y \succsim z\)</span>, then <span class="arithmatex">\(x \succsim z\)</span><ul>
 <li><em>transitive example</em>:  if <span class="arithmatex">\(A\)</span> is <span class="arithmatex">\(B\)</span>'s sibling and <span class="arithmatex">\(B\)</span> is <span class="arithmatex">\(C\)</span>'s sibling, then</li>
-<li><em>non-transitive example</em>: ``an enemy or my enemy is my friend""</li>
+<li><em>non-transitive example</em>: an enemy or my enemy is my friend</li>
 </ul>
 </li>
 <li><strong>reflexivity</strong> says that <span class="arithmatex">\(x \succsim x\)</span> and assumed to always be true</li>
@@ -341,7 +341,7 @@
 <ul>
 <li><strong>voters</strong> prefer policies close to their bliss points (ideal policies)<ul>
 <li>set of policies is <span class="arithmatex">\(X = [0,1]\)</span>, where  <span class="arithmatex">\(0\)</span> is <strong>left</strong> (blue) and <span class="arithmatex">\(1\)</span> is <strong>right</strong> (red)</li>
-<li>voter has ideal position <span class="arithmatex">\(v\)</span></li>
+<li>voter has ideal position <span class="arithmatex">\(v \in X\)</span></li>
 <li>utility of policy <span class="arithmatex">\(x \ne v\)</span> decreases with distance between <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(v\)</span></li>
 <li><span class="arithmatex">\(u_v(x) = - |v-x|\)</span></li>
 </ul>
@@ -384,16 +384,12 @@
 </ul>
 <h2 id="preferences-under-uncertainty-binary-outcome-space">Preferences Under Uncertainty: Binary Outcome Space</h2>
 <ul>
-<li>
-<p>example: election with two candidates, set of outcomes <span class="arithmatex">\(X = \{ A \text{ wins}, B \text{ wins} \}\)</span></p>
-<ul>
+<li>example: election with two candidates, set of outcomes <span class="arithmatex">\(X = \{ A \text{ wins}, B \text{ wins} \}\)</span><ul>
 <li><span class="arithmatex">\(L_1\)</span>: <span class="arithmatex">\((0.5, 0.5)\)</span> <span class="arithmatex">\(\longleftarrow\)</span> each candidate wins with probability <span class="arithmatex">\(1/2\)</span></li>
 <li><span class="arithmatex">\(L_2\)</span>: <span class="arithmatex">\((0,1)\)</span> <span class="arithmatex">\(\longleftarrow\)</span> candidate <span class="arithmatex">\(B\)</span> wins for sure</li>
 </ul>
 </li>
-<li>
-<p>does candidate <span class="arithmatex">\(A\)</span> prefer <span class="arithmatex">\(L_1\)</span> or <span class="arithmatex">\(L_2\)</span>?</p>
-</li>
+<li>does candidate <span class="arithmatex">\(A\)</span> prefer <span class="arithmatex">\(L_1\)</span> or <span class="arithmatex">\(L_2\)</span>?</li>
 </ul>
 <h2 id="preferences-under-uncertainty-continuous-outcome-space">Preferences Under Uncertainty: Continuous Outcome Space</h2>
 <ul>
@@ -428,14 +424,19 @@
 <li><span class="arithmatex">\(\mathbb{E}_i [u(x)]\)</span> is expected value of <span class="arithmatex">\(u(x)\)</span> under distribution <span class="arithmatex">\(L_i\)</span></li>
 </ul>
 </li>
-<li>maximizing expected utility = picking lottery with highest expected value</li>
+<li>maximizing expected utility = picking lottery with highest expected utility<ul>
+<li>not the same as picking lottery with highest expected value</li>
+</ul>
+</li>
 </ul>
 <h2 id="examples-of-expected-utility-politicians">Examples of Expected Utility: Politicians</h2>
 <ul>
 <li>set of outcomes (results of election): <span class="arithmatex">\(X = \{ A \text{ wins}, B \text{ wins} \}\)</span></li>
 <li><span class="arithmatex">\(A\)</span>'s utility function: <span class="arithmatex">\(u_A (A \text{ wins}) = 1\)</span> and <span class="arithmatex">\(u_A (B \text{ wins}) = 0\)</span></li>
-<li>what is <span class="arithmatex">\(A\)</span>'s expected utility if <span class="arithmatex">\(A\)</span> wins with probability 60%?
-  $$ L_1 = (0.6,0.4) \text{ so that } \mathbb{E}_1 [u_A (x)] = $$</li>
+<li>what is <span class="arithmatex">\(A\)</span>'s expected utility if <span class="arithmatex">\(A\)</span> wins with probability 60%?<ul>
+<li><span class="arithmatex">\(L_1 = (0.6,0.4)\)</span> so that <span class="arithmatex">\(\mathbb{E}_1[u_A(x)]=\)</span></li>
+</ul>
+</li>
 </ul>
 <h2 id="examples-of-expected-utility-moderate-voter">Examples of Expected Utility: Moderate Voter</h2>
 <ul>
