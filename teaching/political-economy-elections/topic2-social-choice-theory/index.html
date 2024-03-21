@@ -119,12 +119,6 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#social-choice-function">Social Choice Function</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#social-choice-function-visualization">Social Choice Function: Visualization</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#examples-of-social-choice-functions">Examples of Social Choice Functions</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#example-society-with-3-voters-and-3-candidates">Example: Society with 3 Voters and 3 Candidates</a>
-    </li>
     <li class="toctree-l2"><a class="reference internal" href="#simple-majority-condorcet-paradox">Simple Majority: Condorcet Paradox</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#simple-majority-agenda-manipulation">Simple Majority: Agenda Manipulation</a>
@@ -153,7 +147,7 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#borda-rule-properties">Borda Rule: Properties</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#borda-rule-iia-fails-another-example">Borda Rule: IIA Fails, Another Example</a>
+    <li class="toctree-l2"><a class="reference internal" href="#borda-rule-iia-fails-example">Borda Rule: IIA Fails, Example</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#borda-rule-why-failure-of-iia-is-bad">Borda Rule: Why Failure of IIA is Bad</a>
     </li>
@@ -241,39 +235,6 @@
 </ul>
 </li>
 </ul>
-<h2 id="social-choice-function-visualization">Social Choice Function: Visualization</h2>
-<h2 id="examples-of-social-choice-functions">Examples of Social Choice Functions</h2>
-<h2 id="example-society-with-3-voters-and-3-candidates">Example: Society with 3 Voters and 3 Candidates</h2>
-<table>
-<thead>
-<tr>
-<th align="center"></th>
-<th align="center">voter 1</th>
-<th align="center">voter 2</th>
-<th align="center">voter 3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><em>most preferred</em></td>
-<td align="center">Biden</td>
-<td align="center">Harris</td>
-<td align="center">Sanders</td>
-</tr>
-<tr>
-<td align="center"><em>middle</em></td>
-<td align="center">Harris</td>
-<td align="center">Sanders</td>
-<td align="center">Biden</td>
-</tr>
-<tr>
-<td align="center"><em>least preferred</em></td>
-<td align="center">Sanders</td>
-<td align="center">Biden</td>
-<td align="center">Harris</td>
-</tr>
-</tbody>
-</table>
 <h2 id="simple-majority-condorcet-paradox">Simple Majority: Condorcet Paradox</h2>
 <table>
 <thead>
@@ -306,9 +267,9 @@
 </tbody>
 </table>
 <ul>
-<li>how many voters think Biden <span class="arithmatex">\(\succ\)</span> Harris?</li>
-<li>how many people think Harris <span class="arithmatex">\(\succ\)</span> Sanders?</li>
-<li>how many people think Sanders <span class="arithmatex">\(\succ\)</span> Biden?</li>
+<li>how many voters think Biden <span class="arithmatex">\(\succ\)</span> Harris? <span class="arithmatex">\(\to\)</span> 2 out of 3</li>
+<li>how many people think Harris <span class="arithmatex">\(\succ\)</span> Sanders? <span class="arithmatex">\(\to\)</span> 2 out of 3</li>
+<li>how many people think Sanders <span class="arithmatex">\(\succ\)</span> Biden? <span class="arithmatex">\(\to\)</span> 2 out of 3</li>
 </ul>
 <h2 id="simple-majority-agenda-manipulation">Simple Majority: Agenda Manipulation</h2>
 <table>
@@ -344,10 +305,11 @@
 <ul>
 <li>problem: <strong>agenda manipulation</strong><ul>
 <li>suppose agenda setter wants Biden to win<ul>
-<li>step 1: <span class="arithmatex">\(\text{Sanders vs Harris}\)</span></li>
-<li>step 2: <span class="arithmatex">\(\text{winner of step 1 vs Biden}\)</span></li>
+<li>step 1: <span class="arithmatex">\(\text{Sanders vs Harris}\)</span> <span class="arithmatex">\(\to\)</span> Harris wins</li>
+<li>step 2: <span class="arithmatex">\(\text{winner of step 1 vs Biden}\)</span> <span class="arithmatex">\(\to\)</span> Biden wins</li>
 </ul>
 </li>
+<li>different winner if different agenda</li>
 </ul>
 </li>
 </ul>
@@ -386,8 +348,8 @@
 <li>another problem: <strong>strategic voting</strong><ul>
 <li>agenda is <span class="arithmatex">\(\text{Sanders vs Harris}\)</span>, then <span class="arithmatex">\(\text{winner vs Biden}\)</span></li>
 <li>focus on voter 2 and her vote at step 1<ul>
-<li>vote <em>sincerely</em>: </li>
-<li>vote <em>strategically</em>: </li>
+<li>vote <em>sincerely</em>: Harris beats Sanders, Biden beats Harris</li>
+<li>vote <em>strategically</em>: vote Sanders, Sanders wins at step 1, then Sanders beats Biden at step 2</li>
 </ul>
 </li>
 </ul>
@@ -480,11 +442,11 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">-</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
 </tr>
 </tbody>
 </table>
@@ -526,10 +488,10 @@
 </table>
 <ul>
 <li>social score is<ul>
-<li>Navalny: </li>
-<li>Medvedev: </li>
-<li>Ivanov: </li>
-<li>Zuganov:</li>
+<li>Navalny: <span class="arithmatex">\(4 \cdot 60 + 1\cdot 40 = 280\)</span></li>
+<li>Medvedev: <span class="arithmatex">\(3 \cdot 60 + 3\cdot 40 = 300^*\)</span></li>
+<li>Ivanov: <span class="arithmatex">\(2 \cdot 60 + 4\cdot 40 = 280\)</span></li>
+<li>Zuganov: <span class="arithmatex">\(1 \cdot 60 + 2\cdot 40 = 140\)</span></li>
 </ul>
 </li>
 </ul>
@@ -546,21 +508,15 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">-</td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li><strong>C</strong>: </li>
-<li><strong>T</strong>: </li>
-<li><strong>P</strong>: </li>
-<li><strong>ND</strong>: </li>
-</ul>
-<h2 id="borda-rule-iia-fails-another-example">Borda Rule: IIA Fails, Another Example</h2>
+<h2 id="borda-rule-iia-fails-example">Borda Rule: IIA Fails, Example</h2>
 <table>
 <thead>
 <tr>
@@ -614,12 +570,13 @@
 </table>
 <ul>
 <li>social score is<ul>
-<li>Navalny: </li>
-<li>Medvedev: </li>
-<li>Ivanov: </li>
-<li>Zuganov:</li>
+<li>Navalny: <span class="arithmatex">\(4 \cdot 60 + 1\cdot 40 = 280 \to 3 \cdot 60 + 1\cdot 40 = 220^*\)</span></li>
+<li>Medvedev: <span class="arithmatex">\(3 \cdot 60 + 3\cdot 40 = 300^* \to 2\cdot 60 + 2\cdot 40 = 200\)</span></li>
+<li>Ivanov: <span class="arithmatex">\(2 \cdot 60 + 4\cdot 40 = 280 \to 1\cdot 60 + 3 \cdot 40 = 180\)</span></li>
+<li>Zuganov: <span class="arithmatex">\(1 \cdot 60 + 2\cdot 40 = 140 \to\)</span> not participating</li>
 </ul>
 </li>
+<li>IIA failt: medvedev wins if Zuganov runs, Navalny wins if Zuganov does not run</li>
 </ul>
 <h2 id="borda-rule-why-failure-of-iia-is-bad">Borda Rule: Why Failure of IIA is Bad</h2>
 <table>
@@ -668,9 +625,9 @@
 <li>
 <p>social score is</p>
 <ul>
-<li>Navalny:</li>
-<li>Medvedev:</li>
-<li>Ivanov:</li>
+<li>Navalny: <span class="arithmatex">\(3 \cdot 60 + 1\cdot 40 = 220^* \to 3 \cdot 60 + 1\cdot 40 = 220\)</span></li>
+<li>Medvedev: <span class="arithmatex">\(2\cdot 60 + 2\cdot 40 = 200 \to 2\cdot 60 + 3\cdot 40 = 240^*\)</span></li>
+<li>Ivanov: <span class="arithmatex">\(1\cdot 60 + 3 \cdot 40 = 180 \to 1\cdot 60 + 2 \cdot 40 = 140\)</span></li>
 </ul>
 </li>
 <li>
