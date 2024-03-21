@@ -71,8 +71,6 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#tools-we-will-use">Tools We Will Use</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="../topic0-course-overview/#elements-of-game-theoretic-modeling">Elements of Game-Theoretic Modeling</a>
-    </li>
     </ul>
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Crash Course in Decision Theory</a>
@@ -121,6 +119,12 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#social-choice-function">Social Choice Function</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#social-choice-function-visualization">Social Choice Function: Visualization</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#examples-of-social-choice-functions">Examples of Social Choice Functions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#example-society-with-3-voters-and-3-candidates">Example: Society with 3 Voters and 3 Candidates</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#simple-majority-condorcet-paradox">Simple Majority: Condorcet Paradox</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#simple-majority-agenda-manipulation">Simple Majority: Agenda Manipulation</a>
@@ -135,15 +139,7 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#dictatorial-preferences">Dictatorial Preferences</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-no-dictator">Desirable Properties of SCF: No Dictator</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#logic-reference-necessity">(Logic Reference): Necessity</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#logic-reference-sufficiency">(Logic Reference): Sufficiency</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#back-to-desirable-properties-of-scf-iia">(Back to) Desirable Properties of SCF: IIA</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#independence-of-irrelevant-alternatives">Independence of Irrelevant Alternatives</a>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-iia">Desirable Properties of SCF: IIA</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#why-iia">Why IIA?</a>
     </li>
@@ -156,8 +152,6 @@
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-example">Borda Rule: Example</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-properties">Borda Rule: Properties</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-iia-fails">Borda Rule: IIA Fails</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-iia-fails-another-example">Borda Rule: IIA Fails, Another Example</a>
     </li>
@@ -246,8 +240,8 @@
 </li>
 <li>agent's <strong>preference relation</strong> <span class="arithmatex">\(\succsim\)</span> over elements of <span class="arithmatex">\(X\)</span> ranks elements of <span class="arithmatex">\(X\)</span><ul>
 <li>if <span class="arithmatex">\(x,y \in X\)</span>, then <span class="arithmatex">\(x \succsim y\)</span> means that agent weakly prefers <span class="arithmatex">\(x\)</span> to <span class="arithmatex">\(y\)</span><ul>
-<li><span class="arithmatex">\(\text{pizza} \succsim \text{salad}\)</span> = you'd rather eat pizza than salad</li>
-<li><span class="arithmatex">\(\text{watch Netflix} \succsim \text{study}\)</span> = you'd rather watch Netflix than study</li>
+<li>``<span class="arithmatex">\(\text{pizza} \succsim \text{salad}\)</span>" = you'd rather eat pizza than salad</li>
+<li>``<span class="arithmatex">\(\text{watch Netflix} \succsim \text{study}\)</span>" = you'd rather watch Netflix than study</li>
 </ul>
 </li>
 </ul>
@@ -270,7 +264,7 @@
 <h2 id="rationality-in-actions">Rationality (in Actions)</h2>
 <ul>
 <li>for <em>any</em> economic model, we need to assume <strong>rationality</strong> in <em>actions</em> and <em>preferences</em><ul>
-<li>economists get bad rap for assuming rationality <span class="arithmatex">\(\longleftarrow\)</span> <em>let's debunk this claim</em></li>
+<li>economists get bad rep for assuming rationality <span class="arithmatex">\(\longleftarrow\)</span> <em>let's debunk this claim</em></li>
 </ul>
 </li>
 <li><strong>rationality in actions</strong><ul>
@@ -296,7 +290,7 @@
 </li>
 <li><strong>transitivity</strong>: given three options <span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(y\)</span>, and <span class="arithmatex">\(z\)</span> in <span class="arithmatex">\(X\)</span>, if <span class="arithmatex">\(x \succsim y\)</span> and <span class="arithmatex">\(y \succsim z\)</span>, then <span class="arithmatex">\(x \succsim z\)</span><ul>
 <li><em>transitive example</em>:  if <span class="arithmatex">\(A\)</span> is <span class="arithmatex">\(B\)</span>'s sibling and <span class="arithmatex">\(B\)</span> is <span class="arithmatex">\(C\)</span>'s sibling, then</li>
-<li><em>non-transitive example</em>: an enemy or my enemy is my friend</li>
+<li><em>non-transitive example</em>: ``an enemy or my enemy is my friend""</li>
 </ul>
 </li>
 <li><strong>reflexivity</strong> says that <span class="arithmatex">\(x \succsim x\)</span> and assumed to always be true</li>
@@ -384,12 +378,16 @@
 </ul>
 <h2 id="preferences-under-uncertainty-binary-outcome-space">Preferences Under Uncertainty: Binary Outcome Space</h2>
 <ul>
-<li>example: election with two candidates, set of outcomes <span class="arithmatex">\(X = \{ A \text{ wins}, B \text{ wins} \}\)</span><ul>
+<li>
+<p>example: election with two candidates, set of outcomes <span class="arithmatex">\(X = \{ A \text{ wins}, B \text{ wins} \}\)</span></p>
+<ul>
 <li><span class="arithmatex">\(L_1\)</span>: <span class="arithmatex">\((0.5, 0.5)\)</span> <span class="arithmatex">\(\longleftarrow\)</span> each candidate wins with probability <span class="arithmatex">\(1/2\)</span></li>
 <li><span class="arithmatex">\(L_2\)</span>: <span class="arithmatex">\((0,1)\)</span> <span class="arithmatex">\(\longleftarrow\)</span> candidate <span class="arithmatex">\(B\)</span> wins for sure</li>
 </ul>
 </li>
-<li>does candidate <span class="arithmatex">\(A\)</span> prefer <span class="arithmatex">\(L_1\)</span> or <span class="arithmatex">\(L_2\)</span>?</li>
+<li>
+<p>does candidate <span class="arithmatex">\(A\)</span> prefer <span class="arithmatex">\(L_1\)</span> or <span class="arithmatex">\(L_2\)</span>?</p>
+</li>
 </ul>
 <h2 id="preferences-under-uncertainty-continuous-outcome-space">Preferences Under Uncertainty: Continuous Outcome Space</h2>
 <ul>

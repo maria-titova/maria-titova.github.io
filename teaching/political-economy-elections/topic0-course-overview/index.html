@@ -71,8 +71,6 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#tools-we-will-use">Tools We Will Use</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#elements-of-game-theoretic-modeling">Elements of Game-Theoretic Modeling</a>
-    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../topic1-math-overview/">Crash Course in Decision Theory</a>
@@ -121,6 +119,12 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#social-choice-function">Social Choice Function</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#social-choice-function-visualization">Social Choice Function: Visualization</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#examples-of-social-choice-functions">Examples of Social Choice Functions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#example-society-with-3-voters-and-3-candidates">Example: Society with 3 Voters and 3 Candidates</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#simple-majority-condorcet-paradox">Simple Majority: Condorcet Paradox</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#simple-majority-agenda-manipulation">Simple Majority: Agenda Manipulation</a>
@@ -135,15 +139,7 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#dictatorial-preferences">Dictatorial Preferences</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-no-dictator">Desirable Properties of SCF: No Dictator</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#logic-reference-necessity">(Logic Reference): Necessity</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#logic-reference-sufficiency">(Logic Reference): Sufficiency</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#back-to-desirable-properties-of-scf-iia">(Back to) Desirable Properties of SCF: IIA</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#independence-of-irrelevant-alternatives">Independence of Irrelevant Alternatives</a>
+    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#desirable-properties-of-scf-iia">Desirable Properties of SCF: IIA</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#why-iia">Why IIA?</a>
     </li>
@@ -156,8 +152,6 @@
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-example">Borda Rule: Example</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-properties">Borda Rule: Properties</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-iia-fails">Borda Rule: IIA Fails</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../topic2-social-choice-theory/#borda-rule-iia-fails-another-example">Borda Rule: IIA Fails, Another Example</a>
     </li>
@@ -271,7 +265,7 @@
 </ul>
 </li>
 <li>
-<p>this is my second year at Vanderbilt</p>
+<p>this is my third year at Vanderbilt</p>
 </li>
 <li>
 <p>my background:</p>
@@ -284,13 +278,13 @@
 </ul>
 <h2 id="who-is-the-ta">Who is the TA?</h2>
 <ul>
-<li><strong>Steven Hamilton</strong>, PhD student in Economics<ul>
+<li><strong>Katherine Parslow</strong>, PhD student in Economics<ul>
 <li>specialize in <strong>political economy</strong>, <strong>communication</strong>, and <strong>information</strong></li>
 </ul>
 </li>
 <li>this is my second year at Vanderbilt</li>
 <li>my background:<ul>
-<li>BA in Economics (mathematics minor) from Temple University (Philadelphia, PA)</li>
+<li>[2021] BSc in economics from Auburn University</li>
 </ul>
 </li>
 </ul>
@@ -310,11 +304,11 @@
 <li>come to lectures</li>
 <li>if you have questions<ul>
 <li>instructor: <span class="arithmatex">\(\text{maria.titova@vanderbilt.edu}\)</span><ul>
-<li>office hours: 3-4pm Tuesday in Calhoun 419 or remote</li>
+<li>office hours: 12:30-1:30pm Tuesday in Calhoun 419 or remote</li>
 </ul>
 </li>
-<li>TA: <span class="arithmatex">\(\text{steven.d.hamilton@vanderbilt.edu}\)</span><ul>
-<li>office hours: 12-2pm Monday/Wednesday in Calhoun 209</li>
+<li>TA: <span class="arithmatex">\(\text{katherine.r.parslow@vanderbilt.edu}\)</span><ul>
+<li>office hours: 1-12:30pm Monday/Wednesday in Calhoun 413b</li>
 </ul>
 </li>
 </ul>
@@ -325,10 +319,10 @@
 <h2 id="your-grade">Your Grade</h2>
 <ul>
 <li>5% attendance</li>
-<li>20% Midterm 1 on February 9 (exam review in class on February 7)</li>
-<li>20% Midterm 2 on March 9 (exam review in class on March 7)</li>
+<li>20% Midterm 1 on February 8 (exam review in class on February 8)</li>
+<li>20% Midterm 2 on March 7 (exam review in class on March 5)</li>
 <li>20% group presentation (last 2 weeks)</li>
-<li>35% Final Exam, date in syllabus (exam review in class on April 13)</li>
+<li>35% Final Exam, date in syllabus (exam review in class on April 18)</li>
 </ul>
 <h2 id="this-course-approach">This Course: Approach</h2>
 <ul>
@@ -359,169 +353,6 @@
 </ul>
 </li>
 </ul>
-<h2 id="elements-of-game-theoretic-modeling">Elements of Game-Theoretic Modeling</h2>
-<ul>
-<li>who are the players?</li>
-<li>what can they do?</li>
-<li>what is the timing of the interaction?</li>
-<li>what are agents' preferences over the outcomes?</li>
-<li>what do agents know?</li>
-</ul>
-<p><em>let us review some things before we can formalize answers to these questions</em>---
-title: "Political Economy of Elections"
-author: "Maria Titova"
-date: "Spring 2023"</p>
-<hr />
-<h1 id="course-overview_1">Course Overview</h1>
-<h2 id="this-course_1">This Course</h2>
-<ul>
-<li>
-<p>political economy of elections</p>
-<ul>
-<li><strong>political economy</strong> = <strong>economics</strong> + <strong>political science</strong>: analyzing politics using tools borrowed from economics</li>
-</ul>
-</li>
-<li>
-<p>in this course, we will look at <strong>models (theories) of elections</strong></p>
-<ul>
-<li>models: (very) simplified description of reality</li>
-<li>tools: decision theory and game theory (math / econ theory)</li>
-</ul>
-</li>
-</ul>
-<h2 id="our-goals_1">Our Goals</h2>
-<ul>
-<li>
-<p>gather understanding of electoral politics</p>
-<ul>
-<li>we will do that <strong>in theory</strong></li>
-</ul>
-</li>
-<li>
-<p>some questions which we will try to answer</p>
-<ul>
-<li>how do politicians improve odds of getting elected?</li>
-<li>when does your vote matter and who should you vote for?</li>
-<li><strong>big picture</strong>: are the current election "rules" good for the society?</li>
-</ul>
-</li>
-</ul>
-<h2 id="tentative-course-outline_1">Tentative Course Outline</h2>
-<ul>
-<li>Weeks 1-2: theory of decisions and social choice</li>
-<li>Weeks 3-4: median voter theorem, game theory</li>
-<li>Week 6: game-theoretic models of electoral (policy) competition</li>
-<li>Weeks 7-8: how voters learn and why they vote</li>
-<li>Week 10: non-democracies</li>
-<li>Weeks 10-12: political advertising campaigns</li>
-<li>Weeks 13-14: student presentations</li>
-</ul>
-<h2 id="who-is-the-instructor_1">Who is the Instructor?</h2>
-<ul>
-<li>
-<p><strong>Maria Titova</strong>, Assistant Professor of Economics and Political Science</p>
-<ul>
-<li>specialize in <strong>political economy</strong> and <strong>information economics</strong></li>
-</ul>
-</li>
-<li>
-<p>this is my second year at Vanderbilt</p>
-</li>
-<li>
-<p>my background:</p>
-<ul>
-<li>[2013] BSc in Applied Math and Computer Science from HSE Moscow, Russia</li>
-<li>[2015] MSc in Financial Economics from HSE Moscow, Russia</li>
-<li>[2021] PhD in Economics from UC San Diego</li>
-</ul>
-</li>
-</ul>
-<h2 id="who-is-the-ta_1">Who is the TA?</h2>
-<ul>
-<li><strong>Steven Hamilton</strong>, PhD student in Economics<ul>
-<li>specialize in <strong>political economy</strong>, <strong>communication</strong>, and <strong>information</strong></li>
-</ul>
-</li>
-<li>this is my second year at Vanderbilt</li>
-<li>my background:<ul>
-<li>BA in Economics (mathematics minor) from Temple University (Philadelphia, PA)</li>
-</ul>
-</li>
-</ul>
-<h2 id="how-to-do-well-in-this-course_1">How To Do Well in This Course</h2>
-<ul>
-<li>attend lectures and ask questions<ul>
-<li>lectures are <strong>self-contained</strong>: we learn the tools we need</li>
-<li>after lectures I will upload <strong>lecture notes</strong> <span class="arithmatex">\(\longleftarrow\)</span> make sure you understand <em>everything</em></li>
-</ul>
-</li>
-<li>come to office hours</li>
-<li>solve practice problems</li>
-<li>read the book (not required but very useful)</li>
-</ul>
-<h2 id="communication_1">Communication</h2>
-<ul>
-<li>come to lectures</li>
-<li>if you have questions<ul>
-<li>instructor: <span class="arithmatex">\(\text{maria.titova@vanderbilt.edu}\)</span><ul>
-<li>office hours: 3-4pm Tuesday in Calhoun 419 or remote</li>
-</ul>
-</li>
-<li>TA: <span class="arithmatex">\(\text{steven.d.hamilton@vanderbilt.edu}\)</span><ul>
-<li>office hours: 12-2pm Monday/Wednesday in Calhoun 209</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>everything you need will be posted on brightspace</li>
-<li><strong>the instructional team is here for you</strong></li>
-</ul>
-<h2 id="your-grade_1">Your Grade</h2>
-<ul>
-<li>5% attendance</li>
-<li>20% Midterm 1 on February 9 (exam review in class on February 7)</li>
-<li>20% Midterm 2 on March 9 (exam review in class on March 7)</li>
-<li>20% group presentation (last 2 weeks)</li>
-<li>35% Final Exam, date in syllabus (exam review in class on April 13)</li>
-</ul>
-<h2 id="this-course-approach_1">This Course: Approach</h2>
-<ul>
-<li><strong>goal</strong>: understanding politics (causes and mechanisms)</li>
-<li><strong>issue</strong>: political world is complicated; how to begin to understand what is going on?</li>
-<li><strong>solution</strong>: theoretical models of politics<ul>
-<li>represent reality in a simplified way, and focus on the most relevant elements and features of the phenomenon</li>
-</ul>
-</li>
-</ul>
-<h2 id="theoretical-models-of-politics_1">Theoretical Models of Politics</h2>
-<ul>
-<li>models cannot give a full picture of reality because in reality too much is going on</li>
-<li>models identify <strong>key ingredients</strong> of political phenomena<ul>
-<li>key actors involved</li>
-<li>their objectives</li>
-<li>strategic choices they are faced with</li>
-</ul>
-</li>
-<li>model <strong>assumptions</strong> lead to <strong>conclusions</strong> about how/why/when political actors behave </li>
-</ul>
-<h2 id="tools-we-will-use_1">Tools We Will Use</h2>
-<ul>
-<li><strong>decision theory</strong>: how <em>individuals</em> make <em>isolated choices</em></li>
-<li><strong>game theory</strong>: how individuals make strategic/interconnected choices<ul>
-<li>games have 2+ players</li>
-<li>choices and outcomes depend on other people's choices</li>
-</ul>
-</li>
-</ul>
-<h2 id="elements-of-game-theoretic-modeling_1">Elements of Game-Theoretic Modeling</h2>
-<ul>
-<li>who are the players?</li>
-<li>what can they do?</li>
-<li>what is the timing of the interaction?</li>
-<li>what are agents' preferences over the outcomes?</li>
-<li>what do agents know?</li>
-</ul>
-<p><em>let us review some things before we can formalize answers to these questions</em></p>
               
             </div>
           </div><footer>
