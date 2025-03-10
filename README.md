@@ -235,3 +235,145 @@ The theme is available as open source under the terms of the [MIT License](https
 
 Originally, **al-folio** was based on the [\*folio theme](https://github.com/bogoli/-folio) (published by [Lia Bogoev](http://liabogoev.com) and under the MIT license).
 Since then, it got a full re-write of the styles and many additional cool features.
+
+```
+maria-titova.com
+├─ .jekyll-cache
+│  └─ Jekyll
+│     └─ Cache
+│        ├─ Jekyll--Cache
+│        │  └─ b7
+│        │     └─ 9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910
+│        └─ Jekyll--Converters--Markdown
+│           ├─ 2a
+│           │  └─ 8a869ed7dba5f03a3c072bc9527738c61c064fdc56f61890109d4e1efc687e
+│           ├─ 2c
+│           │  └─ 2f8632d4f5a59a6633505efc978bec15c23934834a0f432b21fee648b93184
+│           ├─ 36
+│           │  └─ ba460db730af61292b7661bcf4f91cba9abc8a9c3a99887f34f1f18c2a65ef
+│           ├─ 3e
+│           │  └─ 1f63b21be34da4fe5520b112471fab308628f4def465f6b0849b8a4dcb20fa
+│           ├─ 4c
+│           │  └─ e01385548275df9305b5a541334fd10b2cc31a71339674080890f56c8d7028
+│           ├─ 50
+│           │  └─ a4766de7a9d0e29a3d4447320a421fe5555f0a4df6c2d0143a93d78f710695
+│           ├─ 55
+│           │  └─ 18da572f9007dbe12f346a27280ecf27a72898633ca731af7054af80d3e7ae
+│           ├─ 69
+│           │  └─ 0d58a9628a9a20924104807d0333c3ef9b89697beda42d96ad625da832d153
+│           ├─ 78
+│           │  └─ d508009032b2cbe2c6e17a3c5bc4c38a6403d62c8a080fa23aa1f98019f948
+│           ├─ 8f
+│           │  └─ ad1389e6e296f6697eab68d41d6f6ce997d09bc698f9973fe6a7f7b9913a6f
+│           ├─ bd
+│           │  └─ a12236f9780b1a0ab6660dcdcc695c72accadc52b42d0b43ec4482626bc399
+│           ├─ cd
+│           │  └─ d092b9c8f5db2ac1ab93c48b04be417a0824f7b8d94736a7f73e59a9032102
+│           └─ de
+│              └─ f2bbd6f8041c0b8be3d0c37a0a1fa77a0018be13030f3a5d25c2ec691fc63d
+├─ .travis.yml
+├─ assets
+│  ├─ bibliography
+│  ├─ css
+│  │  ├─ main.aux
+│  │  ├─ main.fdb_latexmk
+│  │  ├─ main.fls
+│  │  ├─ main.log
+│  │  ├─ main.scss
+│  │  ├─ main.stderr.log
+│  │  └─ main.stdout.log
+│  ├─ img
+│  │  ├─ HSE_logo.jpg
+│  │  ├─ prof_pic.jpg
+│  │  ├─ prof_pic.webp
+│  │  ├─ UCSD_logo.png
+│  │  └─ vandy_logo.png
+│  ├─ js
+│  │  ├─ common.js
+│  │  ├─ distillpub
+│  │  │  ├─ template.v2.js
+│  │  │  ├─ template.v2.js.map
+│  │  │  ├─ transforms.v2.js
+│  │  │  └─ transforms.v2.js.map
+│  │  └─ katex.js
+│  └─ teaching
+│     ├─ ECON1-CAPE-Titova.pdf
+│     ├─ math_camp_notes.pdf
+│     ├─ syllabus-Econ1-SS12020.pdf
+│     ├─ syllabus-Econ3012-Fall2021.pdf
+│     ├─ syllabus-Econ4230-Spring2022.pdf
+│     ├─ syllabus-Econ8000-Fall2022.pdf
+│     └─ syllabus-GTforPS-2014.pdf
+├─ bin
+│  ├─ 0
+│  ├─ cibuild
+│  └─ deploy
+├─ CNAME
+├─ CONTRIBUTING.md
+├─ CV_titova.pdf
+├─ Gemfile
+├─ LICENSE
+├─ papers
+│  ├─ coalition-proof-disclosure.pdf
+│  ├─ malls_paper.pdf
+│  ├─ PVI-titova.pdf
+│  ├─ search-titova.pdf
+│  └─ TA_in_Elections.pdf
+├─ README.md
+├─ slides
+│  ├─ malls_slides_UCSD.pdf
+│  ├─ slides-CPD.pdf
+│  ├─ slides-learning-competition.pdf
+│  ├─ slides-PVI.pdf
+│  ├─ slides-search.pdf
+│  ├─ slides-TA-short.pdf
+│  └─ slides-TA.pdf
+├─ teaching
+│  └─ political-economy-elections
+│     ├─ index.html
+│     ├─ messages.pot
+│     ├─ sitemap.xml
+│     └─ sitemap.xml.gz
+├─ _bibliography
+│  └─ papers.bib
+├─ _config.yml
+├─ _data
+│  ├─ coauthors.yml
+│  └─ teaching.yml
+├─ _includes
+│  ├─ footer.aux
+│  ├─ footer.fdb_latexmk
+│  ├─ footer.fls
+│  ├─ footer.html
+│  ├─ footer.log
+│  ├─ footer.stderr.log
+│  ├─ footer.stdout.log
+│  ├─ head.html
+│  ├─ header.html
+│  ├─ hemline.html
+│  ├─ news.html
+│  ├─ pagination.html
+│  ├─ social.html
+│  └─ teaching_layout.html
+├─ _layouts
+│  ├─ about.html
+│  ├─ bib.html
+│  ├─ default.html
+│  ├─ distill.html
+│  ├─ none.html
+│  ├─ page.html
+│  ├─ post.html
+│  └─ research.html
+├─ _news
+│  └─ announcement_3.md
+├─ _pages
+│  ├─ .Rhistory
+│  ├─ about.md
+│  ├─ research.md
+│  └─ teaching.md
+└─ _sass
+   ├─ _base.scss
+   ├─ _layout.scss
+   └─ _variables.scss
+
+```
