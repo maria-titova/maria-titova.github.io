@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /******************************************************************************* Variables used throughout the theme. To adjust anything, simply edit the variables below and rebuild the theme. */
 /* Set theme colors *************************/
 /****************************************************************************** Content */
@@ -76,41 +77,51 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .distill a:hover { border-bottom-color: #B509AC; text-decoration: none; }
 
-.publications { margin-bottom: 1rem; }
+.publications { margin: 0 auto 2rem; max-width: 880px; /* readable width */ padding: 0 1rem; /* mobile gutter */ /* Year headers / dividers */ /* Section titles */ /* Right-side date (month/year) */ /* Bibliography list */ /* Small-screen: date drops BELOW and stays right-aligned (fixes bad wraps) */ }
 
-.publications h2.year { color: #424242; border-top: 1px solid #e8e8e8; padding-top: 3rem; margin-bottom: -3rem; text-align: right; font-size: 0.85em; font-style: italic; }
+.publications h2.year { color: #424242; border-top: 1px solid #e8e8e8; padding-top: 2.5rem; margin: 0 0 0.5rem; text-align: right; font-size: 0.9em; font-style: italic; letter-spacing: .02em; }
 
-.publications h3 { font-size: 1.6em; padding-top: 0.1em; text-align: center; }
+.publications h3 { font-size: clamp(1.5rem, 2vw, 1.9rem); padding-top: 0; /* remove the tiny extra bump */ text-align: center; margin: 0.6rem 0 0.4rem; /* much tighter vertical spacing */ font-weight: 250; /* looks more balanced than 350 */ }
 
-.publications ol.bibliography { border-bottom: 1px solid #e8e8e8; list-style: none; padding: 0; margin-top: 1; }
+.publications .pub-right { color: #757575; /* or #999 if vars not available */ font-style: italic; font-size: 0.85em; text-align: right; white-space: nowrap; /* keep “July 2025” together */ margin-left: .5rem; /* tiny separation from title */ }
 
-.publications ol.bibliography li { margin-bottom: 1rem; }
+.publications ol.bibliography { border-bottom: 1px solid #e8e8e8; list-style: none; padding: 0; margin: 0; }
 
-.publications ol.bibliography li span { display: block; }
+.publications ol.bibliography li { padding: .15rem 0 .1rem; /* tighter, consistent spacing */ /* LINE 1: title + (with ...) + date — use grid for perfect wrapping */ /* Title (slightly less bold than default <b>) */ /* Authors inline with title; keep pink dashed links */ /* LINE 2: journal / note on its own line */ /* LINE 3: action links (keep your existing button styles) */ /* Abstract + bibtex buttons still look/behave the same */ /* Abstract animation block */ /* Abstract border + ensure block to animate */ }
 
-.publications ol.bibliography li .title { font-weight: bolder; }
+.publications ol.bibliography li .pub-line { display: grid; grid-template-columns: 1fr auto; /* left grows, right fits content */ column-gap: .4rem; align-items: baseline; }
+
+.publications ol.bibliography li .pub-left { flex: 1 1 260px; min-width: 0; /* allow wrapping within left */ }
+
+.publications ol.bibliography li .title { font-weight: 600; line-height: 1.25; margin-right: .25em; }
+
+.publications ol.bibliography li .author { display: inline-block; /* ensure inline next to title */ margin-left: .0em; color: #828282; font-style: italic; }
 
 .publications ol.bibliography li .author a { border-bottom: 1px dashed #B509AC; }
 
 .publications ol.bibliography li .author a:hover { border-bottom-style: solid; text-decoration: none; }
 
-.publications ol.bibliography li .author > em { border-bottom: 1px solid; font-style: normal; }
+.publications ol.bibliography li .author > em { /* if you ever emphasize your name */ border-bottom: 1px solid; font-style: normal; }
 
-.publications ol.bibliography li em.star { border-bottom: none; color: #B509AC; font-style: normal; }
+.publications ol.bibliography li .periodical { display: block; font-size: 0.9em; margin-top: .2rem; color: #828282; font-style: italic; }
+
+.publications ol.bibliography li .links { display: flex; flex-wrap: wrap; gap: .3rem .4rem; /* modest gap; not clumpy */ margin-top: .15rem; }
 
 .publications ol.bibliography li a.abstract, .publications ol.bibliography li a.bibtex { cursor: pointer; }
 
-.publications ol.bibliography li .hidden { font-size: 0.875rem; max-height: 0px; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
+.publications ol.bibliography li .hidden { font-size: 0.875rem; max-height: 0; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: max-height 0.15s ease; }
 
-.publications ol.bibliography li .hidden p { line-height: 1.4em; margin: 10px; }
+.publications ol.bibliography li .hidden p { line-height: 1.5; margin: 10px; }
 
-.publications ol.bibliography li .hidden pre { font-size: 1em; line-height: 1.4em; padding: 10px; }
+.publications ol.bibliography li .hidden pre { font-size: 1em; line-height: 1.4; padding: 10px; }
 
-.publications ol.bibliography li .hidden.open { max-height: 100em; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
+.publications ol.bibliography li .hidden.open { max-height: 100em; }
 
-.publications ol.bibliography li span.abstract.hidden { border: dashed 1px white; }
+.publications ol.bibliography li span.abstract.hidden { border: 1px dashed white; display: block; width: 100%; margin-top: .35rem; }
 
 .publications ol.bibliography li span.abstract.hidden.open { border-color: #828282; }
+
+@media (max-width: 900px) { .publications ol.bibliography li .pub-line { grid-template-columns: 1fr; /* single column */ } .publications .pub-right { justify-self: end; /* right-align in the new row */ margin-top: .12rem; margin-left: 0; } }
 
 .post a.btn { color: #424242; border: 1px solid #424242; padding-left: 0.25rem; padding-right: 0.25rem; padding-top: 0.05rem; padding-bottom: 0.05rem; font-size: 0.65em; margin-left: 0.1rem; }
 
